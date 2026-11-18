@@ -101,7 +101,8 @@ jobs:
           touch demo.log
           tail -n 0 -F demo.log &
           TAIL=$!
-          ( while sleep 1800; do bash scripts/save_state.sh; done ) &
+          # early saves at 5 and 15 min give a quick health signal, then every 30 min
+          ( sleep 300; bash scripts/save_state.sh; sleep 600; bash scripts/save_state.sh; while sleep 1800; do bash scripts/save_state.sh; done ) &
           SAVER=$!
           rc=0
           # hard cap below the job timeout; demo.py handles SIGTERM cleanly (paper-closes, final stats)
