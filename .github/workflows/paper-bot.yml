@@ -28,8 +28,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: pip
@@ -44,12 +44,12 @@ jobs:
       RUN_TAG: ${{ github.run_id }}-${{ github.run_attempt }}
       RUN_MINUTES: ${{ github.event.inputs.run_minutes || '340' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: pip
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install
@@ -80,19 +80,19 @@ jobs:
           GMGN_API_KEY: ${{ secrets.GMGN_API_KEY }}
         run: |
           if [ -z "$GMGN_API_KEY" ]; then echo "GMGN_API_KEY secret missing"; exit 1; fi
-          out=$(timeout 30 gmgn-cli market trenches --chain sol --type new_creation --limit 3 --raw 2>&1) || true
-          python3 - "$out" <<'PY'
-          import json, sys
-          s = sys.argv[1]
+          timeout 30 gmgn-cli market trenches --chain sol --type new_creation --limit 3 --raw > /tmp/smoke.json 2>&1 || true
+          python3 - <<'PY'
+          import json, re, sys
+          s = open("/tmp/smoke.json").read()
           try:
               d = json.loads(s)
               n = len(d.get("new_creation") or []) if isinstance(d, dict) else len(d)
-              print(f"GMGN OK: {n} new_creation rows")
+              print(f"GMGN OK: {n} new_creation rows ({len(s)} bytes)")
           except Exception:
-              import re
               print("GMGN smoke test FAILED:", re.sub(r"[A-Za-z0-9_+=]{32,}", "<redacted>", s)[:400])
               sys.exit(1)
           PY
+          rm -f /tmp/smoke.json
 
       - name: Run paper bot
         env:
