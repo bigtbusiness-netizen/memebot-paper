@@ -949,8 +949,12 @@ def heartbeat_loop(end):
         STOP_EVENT.wait(timeout=interval)
 
 
+SIGNALLED = [False]  # cancelled runs skip the slow skipped-coin followup
+
+
 def _on_signal(signum, _frame):
     log(f"signal {signum} received: stopping cleanly")
+    SIGNALLED[0] = True
     STOP_EVENT.set()
 
 
@@ -1005,7 +1009,7 @@ def main():
             pass
         write_stats(final=True)
         try:
-            fu = followup()
+            fu = followup() if not SIGNALLED[0] else {"checked": 0, "skipped": "stopped by signal"}
         except Exception as e:
             fu = {"checked": 0, "error": redact(e)}
             report_error("followup", e)
