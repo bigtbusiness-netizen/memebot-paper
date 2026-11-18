@@ -1,6 +1,6 @@
 # Paper bot summary (all runs, simulated only)
 
-- updated: 2026-11-19 01:13 EET
+- updated: 2026-11-19 01:16 EET
 - paper buys: 0  | fully closed: 0
 - realized paper P&L: $+0.00 (stake $2/trade)
 
