@@ -1,45 +1,33 @@
 {
- "updated": "2026-11-19 21:31:07",
+ "updated": "2026-11-19 22:01:08",
  "final": false,
  "pid": 2341,
  "started": "2026-11-19 20:46:05",
  "ends": "2026-11-20 02:26:05",
  "counts": {
-  "launches_seen": 1735,
-  "candidates_evaluated": 65,
-  "passed_filters": 4,
+  "launches_seen": 2825,
+  "candidates_evaluated": 111,
+  "passed_filters": 5,
   "security_rejects": 0,
   "bought": 2,
   "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 25,
-  "bundler rate high": 17,
-  "score # below min #": 5,
-  "serial dev (many launches, low graduation)": 5,
-  "dev holds too much": 4,
-  "weak live activity (#m buys/sells/volume)": 2,
+  "dev already sold": 49,
+  "bundler rate high": 21,
+  "score # below min #": 9,
+  "dev holds too much": 9,
+  "serial dev (many launches, low graduation)": 6,
+  "copycat X link": 4,
+  "weak live activity (#m buys/sells/volume)": 3,
+  "mcap out of range": 3,
+  "snipers hold too much": 3,
   "BOUGHT": 2,
-  "insider/rat traders high": 2,
-  "copycat X link": 1,
-  "top# concentration": 1,
-  "mcap out of range": 1
+  "insider/rat traders high": 1,
+  "top# concentration": 1
  },
  "watching": [],
- "open_positions": [
-  {
-   "symbol": "District ",
-   "mint": "9TvhY5Riuda52nz8eN6aFg92xL8DRxnarL6jmatqpump",
-   "entry_mcap": 4822,
-   "mcap_now": 4882,
-   "value_usd": 1.907,
-   "unrealized_pnl_usd": -0.093,
-   "realized_usd": 0.0,
-   "tp1_hit": false,
-   "held_min": 29.9,
-   "stale_s": 0.0
-  }
- ],
+ "open_positions": [],
  "closed": [
   {
    "symbol": "P2P",
@@ -49,34 +37,43 @@
    "pnl_usd": -0.401,
    "pnl_pct": -20.1,
    "held_min": 1.3
+  },
+  {
+   "symbol": "District ",
+   "mint": "9TvhY5Riuda52nz8eN6aFg92xL8DRxnarL6jmatqpump",
+   "entry_mcap": 4822,
+   "exit_reason": "stop loss -36%",
+   "pnl_usd": -0.727,
+   "pnl_pct": -36.3,
+   "held_min": 32.3
   }
  ],
- "realized_pnl_usd": -0.401,
- "unrealized_pnl_usd": -0.093,
- "total_pnl_usd": -0.494,
+ "realized_pnl_usd": -1.128,
+ "unrealized_pnl_usd": 0,
+ "total_pnl_usd": -1.128,
  "win_rate": 0.0,
  "api": {
-  "calls": 440,
+  "calls": 635,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795116667.185353
+  "last_ok": 1795118468.4496067
  },
- "sol_usd": 73.88735153265638,
+ "sol_usd": 73.4553578482969,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 21:30:48",
-  "monitor": "2026-11-19 21:31:05",
-  "price": "2026-11-19 21:31:07",
-  "heartbeat": "2026-11-19 21:30:07"
+  "scan": "2026-11-19 22:01:08",
+  "monitor": "2026-11-19 22:01:05",
+  "price": "2026-11-19 21:33:30",
+  "heartbeat": "2026-11-19 22:00:10"
  },
  "ticks_epoch": {
-  "scan": 1795116648.4941316,
-  "monitor": 1795116665.6922178,
-  "price": 1795116667.1853778,
-  "heartbeat": 1795116607.7451162
+  "scan": 1795118468.449961,
+  "monitor": 1795118465.7167075,
+  "price": 1795116810.0333285,
+  "heartbeat": 1795118410.293243
  }
 }

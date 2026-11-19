@@ -8,3 +8,4 @@ time,action,mint,symbol,name,reason,price_usd,mcap_usd,usd_value,pnl_usd,pnl_pct
 2026-11-19 21:01:10,BUY,9TvhY5Riuda52nz8eN6aFg92xL8DRxnarL6jmatqpump,District ,District City,passed GMGN filters + confirm,4.8215e-06,4822,2.00,,,5.26,age 3m holders 26 top10 18% smart 1 kol 0 5m 102b/45s $5147 dev_launches 1 confirmed
 2026-11-19 21:16:50,BUY,CgWF3bggdshu74CFVd6DieLmwLo8JtAsSavrsdqppump,P2P,PAID 2 PLAY,passed GMGN filters + confirm,1.4346e-05,14346,2.00,,,12.54,age 8m holders 154 top10 20% smart 3 kol 0 5m 342b/209s $21707 dev_launches 1 confirmed
 2026-11-19 21:18:08,SELL,CgWF3bggdshu74CFVd6DieLmwLo8JtAsSavrsdqppump,P2P,PAID 2 PLAY,early dump -20% in 1.3m,1.2177e-05,12177,1.60,-0.40,-20.1,,
+2026-11-19 21:33:30,SELL,9TvhY5Riuda52nz8eN6aFg92xL8DRxnarL6jmatqpump,District ,District City,stop loss -36%,3.2597e-06,3260,1.27,-0.73,-36.3,,

@@ -1,9 +1,9 @@
 # Paper bot summary (all runs, simulated only)
 
-- updated: 2026-11-19 21:31 EET
-- paper buys: 5  | fully closed: 4
-- realized paper P&L: $-3.66 (stake $2/trade)
-- winners: 0/4 (0%)
+- updated: 2026-11-19 22:01 EET
+- paper buys: 5  | fully closed: 5
+- realized paper P&L: $-4.39 (stake $2/trade)
+- winners: 0/5 (0%)
 
 Last 15 trade rows:
 
@@ -18,3 +18,4 @@ Last 15 trade rows:
 | 2026-11-19 21:01:10 | BUY | District  | passed GMGN filters + confirm | 2.00 |  |
 | 2026-11-19 21:16:50 | BUY | P2P | passed GMGN filters + confirm | 2.00 |  |
 | 2026-11-19 21:18:08 | SELL | P2P | early dump -20% in 1.3m | 1.60 | -0.40 |
+| 2026-11-19 21:33:30 | SELL | District  | stop loss -36% | 1.27 | -0.73 |
