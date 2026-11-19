@@ -1,3 +1,5 @@
 time,action,mint,symbol,name,reason,price_usd,mcap_usd,usd_value,pnl_usd,pnl_pct,score,note
 2026-11-19 01:23:20,BUY,9WDfv9svBroRmUj4GnQX6ruRdC8gSAqeLyDnKQQ4pump,SPIKES,The Batcat,passed GMGN filters + confirm,5.0744e-06,5074,2.00,,,4.5,age 3m holders 50 top10 19% smart 0 kol 0 5m 100b/66s $7559 dev_launches 1 confirmed
 2026-11-19 01:45:27,SELL,9WDfv9svBroRmUj4GnQX6ruRdC8gSAqeLyDnKQQ4pump,SPIKES,The Batcat,stop loss -54%,2.4568e-06,2457,0.91,-1.09,-54.4,,
+2026-11-19 02:50:20,BUY,4BZZvZX7NCmdGcKXNmsXaeVNBbe8XJ4gAtLRYABqpump,SPA6,South Park Auto 6,passed GMGN filters + confirm,1.2420e-05,12420,2.00,,,4.0,age 5m holders 208 top10 32% smart 0 kol 0 5m 277b/68s $11353 dev_launches 1 confirmed
+2026-11-19 02:55:03,SELL,4BZZvZX7NCmdGcKXNmsXaeVNBbe8XJ4gAtLRYABqpump,SPA6,South Park Auto 6,stop loss -84%,2.0998e-06,2100,0.32,-1.68,-84.1,,
