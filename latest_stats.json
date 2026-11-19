@@ -1,126 +1,51 @@
 {
- "updated": "2026-11-19 23:30:53",
+ "updated": "2026-11-19 23:37:42",
  "final": false,
- "pid": 2341,
- "started": "2026-11-19 20:46:05",
- "ends": "2026-11-20 02:26:05",
+ "pid": 2513,
+ "started": "2026-11-19 23:32:54",
+ "ends": "2026-11-20 05:12:54",
  "counts": {
-  "launches_seen": 5996,
-  "candidates_evaluated": 236,
-  "passed_filters": 15,
+  "launches_seen": 227,
+  "candidates_evaluated": 11,
+  "passed_filters": 0,
   "security_rejects": 0,
-  "bought": 7,
-  "confirm_rejects": 3
+  "bought": 0,
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 112,
-  "bundler rate high": 38,
-  "dev holds too much": 22,
-  "score # below min #": 12,
-  "serial dev (many launches, low graduation)": 10,
-  "copycat X link": 8,
-  "snipers hold too much": 8,
-  "BOUGHT": 7,
-  "mcap out of range": 6,
-  "weak live activity (#m buys/sells/volume)": 5,
-  "top# concentration": 3,
-  "dev sold during confirm wait": 3,
-  "insider/rat traders high": 1,
-  "serial dev (many launches, none graduated)": 1
+  "dev already sold": 8,
+  "dev holds too much": 2,
+  "copycat X link": 1
  },
  "watching": [],
  "open_positions": [],
- "closed": [
-  {
-   "symbol": "P2P",
-   "mint": "CgWF3bggdshu74CFVd6DieLmwLo8JtAsSavrsdqppump",
-   "entry_mcap": 14346,
-   "exit_reason": "early dump -20% in 1.3m",
-   "pnl_usd": -0.401,
-   "pnl_pct": -20.1,
-   "held_min": 1.3
-  },
-  {
-   "symbol": "District ",
-   "mint": "9TvhY5Riuda52nz8eN6aFg92xL8DRxnarL6jmatqpump",
-   "entry_mcap": 4822,
-   "exit_reason": "stop loss -36%",
-   "pnl_usd": -0.727,
-   "pnl_pct": -36.3,
-   "held_min": 32.3
-  },
-  {
-   "symbol": "JANITOR",
-   "mint": "5YkqeTqa4rnLun3DzdR4afat4CiSxWZJH9e5cdNbpump",
-   "entry_mcap": 12554,
-   "exit_reason": "stop loss -35%",
-   "pnl_usd": -0.705,
-   "pnl_pct": -35.3,
-   "held_min": 3.5
-  },
-  {
-   "symbol": "DTTY",
-   "mint": "5L3X8cmwJhrvSwKMg3Hrug88xAFbWvZkQxYZ1R11pump",
-   "entry_mcap": 13730,
-   "exit_reason": "early dump -23% in 1.1m",
-   "pnl_usd": -0.458,
-   "pnl_pct": -22.9,
-   "held_min": 1.1
-  },
-  {
-   "symbol": "DINO",
-   "mint": "7psGNEEbiu5VgCPaR4wfed1XEruZFtkKsqXsc8TCpump",
-   "entry_mcap": 5359,
-   "exit_reason": "early dump -30% in 1.3m",
-   "pnl_usd": -0.593,
-   "pnl_pct": -29.6,
-   "held_min": 1.3
-  },
-  {
-   "symbol": "ANTS",
-   "mint": "aVSrnRoQH9SPADvZ6ZzzZUS8MfvrooCvti8rkWcpump",
-   "entry_mcap": 15306,
-   "exit_reason": "early dump -21% in 2.6m",
-   "pnl_usd": -0.429,
-   "pnl_pct": -21.5,
-   "held_min": 2.6
-  },
-  {
-   "symbol": "COOLDOG",
-   "mint": "9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump",
-   "entry_mcap": 7669,
-   "exit_reason": "trailing stop (+57%)",
-   "pnl_usd": 1.855,
-   "pnl_pct": 92.7,
-   "held_min": 35.3
-  }
- ],
- "realized_pnl_usd": -1.458,
+ "closed": [],
+ "realized_pnl_usd": 0,
  "unrealized_pnl_usd": 0,
- "total_pnl_usd": -1.458,
- "win_rate": 0.143,
+ "total_pnl_usd": 0,
+ "win_rate": null,
  "api": {
-  "calls": 1428,
-  "errors": 24,
-  "rate_limited": 23,
-  "timeouts": 1,
-  "last_error": "[gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=account is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-19 23:30:10 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5",
-  "last_ok": 1795123838.0505545
+  "calls": 30,
+  "errors": 0,
+  "rate_limited": 0,
+  "timeouts": 0,
+  "last_error": "",
+  "last_ok": 1795124257.4384985
  },
- "sol_usd": 72.60387070724471,
+ "sol_usd": 72.31689232440105,
  "error_count": 0,
- "api_warnings": 24,
+ "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 23:30:38",
-  "monitor": "2026-11-19 23:30:53",
-  "price": "2026-11-19 23:07:07",
-  "heartbeat": "2026-11-19 23:30:17"
+  "scan": "2026-11-19 23:37:37",
+  "monitor": "2026-11-19 23:37:42",
+  "price": null,
+  "heartbeat": "2026-11-19 23:36:54"
  },
  "ticks_epoch": {
-  "scan": 1795123838.050898,
-  "monitor": 1795123853.7936938,
-  "price": 1795122427.2388241,
-  "heartbeat": 1795123817.945
+  "scan": 1795124257.4387236,
+  "monitor": 1795124262.8470018,
+  "price": 0,
+  "heartbeat": 1795124214.913339
  }
 }
