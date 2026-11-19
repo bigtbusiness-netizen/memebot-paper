@@ -80,3 +80,42 @@
 2026-11-19 21:58:10 HEARTBEAT up 72.1m left 267.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 1s ago mon 4s ago px 1480s ago api 617/0t0 r0 errors 0
 2026-11-19 21:59:10 HEARTBEAT up 73.1m left 266.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 1s ago mon 4s ago px 1540s ago api 623/0t0 r0 errors 0
 2026-11-19 22:00:10 HEARTBEAT up 74.1m left 265.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 1s ago mon 4s ago px 1600s ago api 629/0t0 r0 errors 0
+2026-11-19 22:01:10 HEARTBEAT up 75.1m left 264.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 1s ago mon 4s ago px 1660s ago api 635/0t0 r0 errors 0
+2026-11-19 22:02:10 HEARTBEAT up 76.1m left 263.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 22s ago mon 4s ago px 1720s ago api 643/0t0 r0 errors 0
+2026-11-19 22:02:10 WATCH GATE AGNz3NwZPPD5xCm5eGJmnoiTScR3drUAbS4DCb1Wpump mcap $5,275 score 6.0 — recheck in 45s
+2026-11-19 22:03:10 HEARTBEAT up 77.1m left 262.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 1 scan 22s ago mon 4s ago px 1780s ago api 651/0t0 r0 errors 0
+2026-11-19 22:03:10 CONFIRM REJECT GATE AGNz3NwZPPD5xCm5eGJmnoiTScR3drUAbS4DCb1Wpump — dev sold during confirm wait
+2026-11-19 22:03:43 WARN trenches(candidates): ApiError: cli timeout after 15s: market trenches --chain sol --type new_creation
+2026-11-19 22:04:10 HEARTBEAT up 78.1m left 261.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 2s ago mon 5s ago px 1840s ago api 657/1t1 r0 errors 0
+2026-11-19 22:05:10 HEARTBEAT up 79.1m left 260.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 2s ago mon 5s ago px 1900s ago api 663/1t1 r0 errors 0
+2026-11-19 22:06:10 HEARTBEAT up 80.1m left 259.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 2s ago mon 5s ago px 1960s ago api 669/1t1 r0 errors 0
+2026-11-19 22:07:10 HEARTBEAT up 81.1m left 258.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 2s ago mon 5s ago px 2020s ago api 675/1t1 r0 errors 0
+2026-11-19 22:08:10 HEARTBEAT up 82.1m left 257.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 2s ago mon 5s ago px 2080s ago api 681/1t1 r0 errors 0
+2026-11-19 22:09:10 HEARTBEAT up 83.1m left 256.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 2s ago mon 5s ago px 2140s ago api 687/1t1 r0 errors 0
+2026-11-19 22:10:11 HEARTBEAT up 84.1m left 255.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 2s ago mon 5s ago px 2201s ago api 693/1t1 r0 errors 0
+2026-11-19 22:11:11 HEARTBEAT up 85.1m left 254.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 2s ago mon 5s ago px 2261s ago api 699/1t1 r0 errors 0
+2026-11-19 22:12:11 HEARTBEAT up 86.1m left 253.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 2s ago mon 5s ago px 2321s ago api 705/1t1 r0 errors 0
+2026-11-19 22:13:11 HEARTBEAT up 87.1m left 252.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 2s ago mon 5s ago px 2381s ago api 711/1t1 r0 errors 0
+2026-11-19 22:14:11 HEARTBEAT up 88.1m left 251.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 3s ago mon 5s ago px 2441s ago api 717/1t1 r0 errors 0
+2026-11-19 22:15:11 HEARTBEAT up 89.1m left 250.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 3s ago mon 5s ago px 2501s ago api 723/1t1 r0 errors 0
+2026-11-19 22:16:11 HEARTBEAT up 90.1m left 249.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 3s ago mon 5s ago px 2561s ago api 729/1t1 r0 errors 0
+2026-11-19 22:17:11 HEARTBEAT up 91.1m left 248.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 3s ago mon 5s ago px 2621s ago api 735/1t1 r0 errors 0
+2026-11-19 22:18:11 HEARTBEAT up 92.1m left 247.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px 2681s ago api 741/1t1 r0 errors 0
+2026-11-19 22:19:10 WATCH JANITOR 5YkqeTqa4rnLun3DzdR4afat4CiSxWZJH9e5cdNbpump mcap $8,954 score 17.2 — recheck in 45s
+2026-11-19 22:19:11 HEARTBEAT up 93.1m left 246.9m open 0 [-] closed 2 pnl $-1.13 unreal $+0.00 watching 1 scan 1s ago mon 6s ago px 2741s ago api 749/1t1 r0 errors 0
+2026-11-19 22:20:10 PAPER BUY JANITOR 5YkqeTqa4rnLun3DzdR4afat4CiSxWZJH9e5cdNbpump mcap $12,554 score 17.2 | age 4m holders 120 top10 22% smart 4 kol 0 5m 431b/258s $24066 dev_launches 1 confirmed
+2026-11-19 22:20:11 HEARTBEAT up 94.1m left 245.9m open 1 [JANITOR] closed 2 pnl $-1.13 unreal $-0.12 watching 0 scan 1s ago mon 6s ago px 2801s ago api 757/1t1 r0 errors 0
+2026-11-19 22:21:11 HEARTBEAT up 95.1m left 244.9m open 1 [JANITOR] closed 2 pnl $-1.13 unreal $-0.35 watching 0 scan 2s ago mon 6s ago px 4s ago api 770/1t1 r0 errors 0
+2026-11-19 22:22:11 HEARTBEAT up 96.1m left 243.9m open 1 [JANITOR] closed 2 pnl $-1.13 unreal $+0.18 watching 0 scan 2s ago mon 6s ago px 4s ago api 781/1t1 r0 errors 0
+2026-11-19 22:23:11 HEARTBEAT up 97.1m left 242.9m open 1 [JANITOR] closed 2 pnl $-1.13 unreal $-0.15 watching 0 scan 2s ago mon 6s ago px 4s ago api 792/1t1 r0 errors 0
+2026-11-19 22:23:42 PAPER SELL JANITOR 100% - stop loss -35%: $1.29 pnl $-0.71
+2026-11-19 22:24:12 HEARTBEAT up 98.1m left 241.9m open 0 [-] closed 3 pnl $-1.83 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px 30s ago api 801/1t1 r0 errors 0
+2026-11-19 22:25:12 HEARTBEAT up 99.1m left 240.9m open 0 [-] closed 3 pnl $-1.83 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px 90s ago api 807/1t1 r0 errors 0
+2026-11-19 22:26:12 HEARTBEAT up 100.1m left 239.9m open 0 [-] closed 3 pnl $-1.83 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px 150s ago api 813/1t1 r0 errors 0
+2026-11-19 22:27:12 HEARTBEAT up 101.1m left 238.9m open 0 [-] closed 3 pnl $-1.83 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px 210s ago api 819/1t1 r0 errors 0
+2026-11-19 22:28:12 HEARTBEAT up 102.1m left 237.9m open 0 [-] closed 3 pnl $-1.83 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px 270s ago api 825/1t1 r0 errors 0
+2026-11-19 22:28:50 WATCH Leap EGDMWQ1J7J2thxS4bZXWo82HUtpnAnQ5dHcCMssppump mcap $6,452 score 6.07 — recheck in 45s
+2026-11-19 22:29:12 HEARTBEAT up 103.1m left 236.9m open 0 [-] closed 3 pnl $-1.83 unreal $+0.00 watching 1 scan 4s ago mon 6s ago px 330s ago api 833/1t1 r0 errors 0
+2026-11-19 22:29:50 CONFIRM REJECT Leap EGDMWQ1J7J2thxS4bZXWo82HUtpnAnQ5dHcCMssppump — dev sold during confirm wait
+2026-11-19 22:30:12 HEARTBEAT up 104.1m left 235.9m open 0 [-] closed 3 pnl $-1.83 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px 390s ago api 841/1t1 r0 errors 0
+2026-11-19 22:30:50 WATCH COOLDOG 9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump mcap $5,998 score 4.24 — recheck in 45s

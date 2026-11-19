@@ -1,32 +1,42 @@
 {
- "updated": "2026-11-19 22:01:08",
+ "updated": "2026-11-19 22:31:08",
  "final": false,
  "pid": 2341,
  "started": "2026-11-19 20:46:05",
  "ends": "2026-11-20 02:26:05",
  "counts": {
-  "launches_seen": 2825,
-  "candidates_evaluated": 111,
-  "passed_filters": 5,
+  "launches_seen": 3870,
+  "candidates_evaluated": 166,
+  "passed_filters": 10,
   "security_rejects": 0,
-  "bought": 2,
-  "confirm_rejects": 0
+  "bought": 3,
+  "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 49,
-  "bundler rate high": 21,
+  "dev already sold": 73,
+  "bundler rate high": 33,
+  "dev holds too much": 14,
   "score # below min #": 9,
-  "dev holds too much": 9,
-  "serial dev (many launches, low graduation)": 6,
-  "copycat X link": 4,
-  "weak live activity (#m buys/sells/volume)": 3,
-  "mcap out of range": 3,
-  "snipers hold too much": 3,
-  "BOUGHT": 2,
+  "serial dev (many launches, low graduation)": 8,
+  "snipers hold too much": 6,
+  "copycat X link": 5,
+  "mcap out of range": 5,
+  "weak live activity (#m buys/sells/volume)": 4,
+  "BOUGHT": 3,
+  "dev sold during confirm wait": 2,
   "insider/rat traders high": 1,
-  "top# concentration": 1
+  "top# concentration": 1,
+  "serial dev (many launches, none graduated)": 1
  },
- "watching": [],
+ "watching": [
+  {
+   "symbol": "COOLDOG",
+   "mint": "9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump",
+   "score": 4.24,
+   "waited_s": 17.6,
+   "mcap": 5998
+  }
+ ],
  "open_positions": [],
  "closed": [
   {
@@ -46,34 +56,43 @@
    "pnl_usd": -0.727,
    "pnl_pct": -36.3,
    "held_min": 32.3
+  },
+  {
+   "symbol": "JANITOR",
+   "mint": "5YkqeTqa4rnLun3DzdR4afat4CiSxWZJH9e5cdNbpump",
+   "entry_mcap": 12554,
+   "exit_reason": "stop loss -35%",
+   "pnl_usd": -0.705,
+   "pnl_pct": -35.3,
+   "held_min": 3.5
   }
  ],
- "realized_pnl_usd": -1.128,
+ "realized_pnl_usd": -1.833,
  "unrealized_pnl_usd": 0,
- "total_pnl_usd": -1.128,
+ "total_pnl_usd": -1.833,
  "win_rate": 0.0,
  "api": {
-  "calls": 635,
-  "errors": 0,
+  "calls": 849,
+  "errors": 1,
   "rate_limited": 0,
-  "timeouts": 0,
-  "last_error": "",
-  "last_ok": 1795118468.4496067
+  "timeouts": 1,
+  "last_error": "cli timeout after 15s: market trenches --chain sol --type new_creation",
+  "last_ok": 1795120268.405053
  },
- "sol_usd": 73.4553578482969,
+ "sol_usd": 73.01619050085888,
  "error_count": 0,
- "api_warnings": 0,
+ "api_warnings": 1,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 22:01:08",
-  "monitor": "2026-11-19 22:01:05",
-  "price": "2026-11-19 21:33:30",
-  "heartbeat": "2026-11-19 22:00:10"
+  "scan": "2026-11-19 22:31:08",
+  "monitor": "2026-11-19 22:31:05",
+  "price": "2026-11-19 22:23:42",
+  "heartbeat": "2026-11-19 22:30:12"
  },
  "ticks_epoch": {
-  "scan": 1795118468.449961,
-  "monitor": 1795118465.7167075,
-  "price": 1795116810.0333285,
-  "heartbeat": 1795118410.293243
+  "scan": 1795120268.4053228,
+  "monitor": 1795120265.7417507,
+  "price": 1795119822.0651448,
+  "heartbeat": 1795120212.5003042
  }
 }
