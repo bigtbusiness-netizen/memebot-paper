@@ -18,3 +18,5 @@ time,action,mint,symbol,name,reason,price_usd,mcap_usd,usd_value,pnl_usd,pnl_pct
 2026-11-19 22:56:30,BUY,aVSrnRoQH9SPADvZ6ZzzZUS8MfvrooCvti8rkWcpump,ANTS,Antpad,passed GMGN filters + confirm,1.5306e-05,15306,2.00,,,16.69,age 26m holders 69 top10 28% smart 5 kol 0 5m 252b/142s $21651 dev_launches 1 confirmed
 2026-11-19 22:57:30,SELL,7psGNEEbiu5VgCPaR4wfed1XEruZFtkKsqXsc8TCpump,DINO,dinocoin,early dump -30% in 1.3m,4.0042e-06,4004,1.41,-0.59,-29.6,,
 2026-11-19 22:59:08,SELL,aVSrnRoQH9SPADvZ6ZzzZUS8MfvrooCvti8rkWcpump,ANTS,Antpad,early dump -21% in 2.6m,1.2765e-05,12765,1.57,-0.43,-21.5,,
+2026-11-19 23:03:18,SELL50%,9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump,COOLDOG,Cool Dog,TP1 +128%,1.8602e-05,18602,2.28,+1.28,+128.4,,
+2026-11-19 23:07:07,SELL,9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump,COOLDOG,Cool Dog,trailing stop (+57%),1.2792e-05,12792,1.57,+0.57,+57.1,,

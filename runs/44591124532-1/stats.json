@@ -1,48 +1,35 @@
 {
- "updated": "2026-11-19 23:01:09",
+ "updated": "2026-11-19 23:30:53",
  "final": false,
  "pid": 2341,
  "started": "2026-11-19 20:46:05",
  "ends": "2026-11-20 02:26:05",
  "counts": {
-  "launches_seen": 5007,
-  "candidates_evaluated": 204,
-  "passed_filters": 14,
+  "launches_seen": 5996,
+  "candidates_evaluated": 236,
+  "passed_filters": 15,
   "security_rejects": 0,
   "bought": 7,
-  "confirm_rejects": 2
+  "confirm_rejects": 3
  },
  "filtered_by_reason": {
-  "dev already sold": 91,
-  "bundler rate high": 36,
-  "dev holds too much": 20,
+  "dev already sold": 112,
+  "bundler rate high": 38,
+  "dev holds too much": 22,
   "score # below min #": 12,
-  "serial dev (many launches, low graduation)": 9,
+  "serial dev (many launches, low graduation)": 10,
+  "copycat X link": 8,
+  "snipers hold too much": 8,
   "BOUGHT": 7,
-  "snipers hold too much": 7,
-  "copycat X link": 6,
   "mcap out of range": 6,
   "weak live activity (#m buys/sells/volume)": 5,
-  "dev sold during confirm wait": 2,
+  "top# concentration": 3,
+  "dev sold during confirm wait": 3,
   "insider/rat traders high": 1,
-  "top# concentration": 1,
   "serial dev (many launches, none graduated)": 1
  },
  "watching": [],
- "open_positions": [
-  {
-   "symbol": "COOLDOG",
-   "mint": "9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump",
-   "entry_mcap": 7669,
-   "mcap_now": 15327,
-   "value_usd": 3.764,
-   "unrealized_pnl_usd": 1.764,
-   "realized_usd": 0.0,
-   "tp1_hit": false,
-   "held_min": 29.3,
-   "stale_s": 2.4
-  }
- ],
+ "open_positions": [],
  "closed": [
   {
    "symbol": "P2P",
@@ -97,34 +84,43 @@
    "pnl_usd": -0.429,
    "pnl_pct": -21.5,
    "held_min": 2.6
+  },
+  {
+   "symbol": "COOLDOG",
+   "mint": "9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump",
+   "entry_mcap": 7669,
+   "exit_reason": "trailing stop (+57%)",
+   "pnl_usd": 1.855,
+   "pnl_pct": 92.7,
+   "held_min": 35.3
   }
  ],
- "realized_pnl_usd": -3.313,
- "unrealized_pnl_usd": 1.764,
- "total_pnl_usd": -1.549,
- "win_rate": 0.0,
+ "realized_pnl_usd": -1.458,
+ "unrealized_pnl_usd": 0,
+ "total_pnl_usd": -1.458,
+ "win_rate": 0.143,
  "api": {
-  "calls": 1218,
-  "errors": 1,
-  "rate_limited": 0,
+  "calls": 1428,
+  "errors": 24,
+  "rate_limited": 23,
   "timeouts": 1,
-  "last_error": "cli timeout after 15s: market trenches --chain sol --type new_creation",
-  "last_ok": 1795122069.5995598
+  "last_error": "[gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=account is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-19 23:30:10 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5",
+  "last_ok": 1795123838.0505545
  },
- "sol_usd": 72.89796334218869,
+ "sol_usd": 72.60387070724471,
  "error_count": 0,
- "api_warnings": 1,
+ "api_warnings": 24,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 23:01:09",
-  "monitor": "2026-11-19 23:01:05",
-  "price": "2026-11-19 23:01:07",
-  "heartbeat": "2026-11-19 23:00:14"
+  "scan": "2026-11-19 23:30:38",
+  "monitor": "2026-11-19 23:30:53",
+  "price": "2026-11-19 23:07:07",
+  "heartbeat": "2026-11-19 23:30:17"
  },
  "ticks_epoch": {
-  "scan": 1795122069.5997486,
-  "monitor": 1795122065.7679548,
-  "price": 1795122067.2235684,
-  "heartbeat": 1795122014.5204687
+  "scan": 1795123838.050898,
+  "monitor": 1795123853.7936938,
+  "price": 1795122427.2388241,
+  "heartbeat": 1795123817.945
  }
 }
