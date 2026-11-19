@@ -1,22 +1,26 @@
 {
- "updated": "2026-11-19 23:47:55",
+ "updated": "2026-11-20 00:17:56",
  "final": false,
  "pid": 2513,
  "started": "2026-11-19 23:32:54",
  "ends": "2026-11-20 05:12:54",
  "counts": {
-  "launches_seen": 660,
-  "candidates_evaluated": 16,
-  "passed_filters": 1,
+  "launches_seen": 1853,
+  "candidates_evaluated": 37,
+  "passed_filters": 2,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 11,
-  "dev holds too much": 3,
+  "dev already sold": 25,
+  "dev holds too much": 4,
+  "serial dev (many launches, low graduation)": 2,
+  "bundler rate high": 2,
   "copycat X link": 1,
-  "weak live activity (#m buys/sells/volume)": 1
+  "weak live activity (#m buys/sells/volume)": 1,
+  "snipers hold too much": 1,
+  "no smart money and buy pressure not strong enough": 1
  },
  "watching": [],
  "open_positions": [],
@@ -26,27 +30,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 93,
-  "errors": 0,
-  "rate_limited": 0,
+  "calls": 271,
+  "errors": 2,
+  "rate_limited": 2,
   "timeouts": 0,
-  "last_error": "",
-  "last_ok": 1795124875.129443
+  "last_error": "[gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-20 00:02:09 GMT+02:00 (~41s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up",
+  "last_ok": 1795126676.2525344
  },
- "sol_usd": 72.21176417363313,
+ "sol_usd": 72.41020547920044,
  "error_count": 0,
- "api_warnings": 0,
+ "api_warnings": 2,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 23:47:37",
-  "monitor": "2026-11-19 23:47:54",
+  "scan": "2026-11-20 00:17:38",
+  "monitor": "2026-11-20 00:17:54",
   "price": null,
-  "heartbeat": "2026-11-19 23:47:55"
+  "heartbeat": "2026-11-20 00:17:56"
  },
  "ticks_epoch": {
-  "scan": 1795124857.4460263,
-  "monitor": 1795124874.8559222,
+  "scan": 1795126658.5719194,
+  "monitor": 1795126674.8853376,
   "price": 0,
-  "heartbeat": 1795124875.3016434
+  "heartbeat": 1795126676.5805259
  }
 }
