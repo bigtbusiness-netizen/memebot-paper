@@ -1,6 +1,6 @@
 # Paper bot summary (all runs, simulated only)
 
-- updated: 2026-11-19 12:29 EET
+- updated: 2026-11-19 12:54 EET
 - paper buys: 3  | fully closed: 3
 - realized paper P&L: $-3.26 (stake $2/trade)
 - winners: 0/3 (0%)
