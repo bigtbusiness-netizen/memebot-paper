@@ -1,43 +1,48 @@
 {
- "updated": "2026-11-19 22:31:08",
+ "updated": "2026-11-19 23:01:09",
  "final": false,
  "pid": 2341,
  "started": "2026-11-19 20:46:05",
  "ends": "2026-11-20 02:26:05",
  "counts": {
-  "launches_seen": 3870,
-  "candidates_evaluated": 166,
-  "passed_filters": 10,
+  "launches_seen": 5007,
+  "candidates_evaluated": 204,
+  "passed_filters": 14,
   "security_rejects": 0,
-  "bought": 3,
+  "bought": 7,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 73,
-  "bundler rate high": 33,
-  "dev holds too much": 14,
-  "score # below min #": 9,
-  "serial dev (many launches, low graduation)": 8,
-  "snipers hold too much": 6,
-  "copycat X link": 5,
-  "mcap out of range": 5,
-  "weak live activity (#m buys/sells/volume)": 4,
-  "BOUGHT": 3,
+  "dev already sold": 91,
+  "bundler rate high": 36,
+  "dev holds too much": 20,
+  "score # below min #": 12,
+  "serial dev (many launches, low graduation)": 9,
+  "BOUGHT": 7,
+  "snipers hold too much": 7,
+  "copycat X link": 6,
+  "mcap out of range": 6,
+  "weak live activity (#m buys/sells/volume)": 5,
   "dev sold during confirm wait": 2,
   "insider/rat traders high": 1,
   "top# concentration": 1,
   "serial dev (many launches, none graduated)": 1
  },
- "watching": [
+ "watching": [],
+ "open_positions": [
   {
    "symbol": "COOLDOG",
    "mint": "9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump",
-   "score": 4.24,
-   "waited_s": 17.6,
-   "mcap": 5998
+   "entry_mcap": 7669,
+   "mcap_now": 15327,
+   "value_usd": 3.764,
+   "unrealized_pnl_usd": 1.764,
+   "realized_usd": 0.0,
+   "tp1_hit": false,
+   "held_min": 29.3,
+   "stale_s": 2.4
   }
  ],
- "open_positions": [],
  "closed": [
   {
    "symbol": "P2P",
@@ -65,34 +70,61 @@
    "pnl_usd": -0.705,
    "pnl_pct": -35.3,
    "held_min": 3.5
+  },
+  {
+   "symbol": "DTTY",
+   "mint": "5L3X8cmwJhrvSwKMg3Hrug88xAFbWvZkQxYZ1R11pump",
+   "entry_mcap": 13730,
+   "exit_reason": "early dump -23% in 1.1m",
+   "pnl_usd": -0.458,
+   "pnl_pct": -22.9,
+   "held_min": 1.1
+  },
+  {
+   "symbol": "DINO",
+   "mint": "7psGNEEbiu5VgCPaR4wfed1XEruZFtkKsqXsc8TCpump",
+   "entry_mcap": 5359,
+   "exit_reason": "early dump -30% in 1.3m",
+   "pnl_usd": -0.593,
+   "pnl_pct": -29.6,
+   "held_min": 1.3
+  },
+  {
+   "symbol": "ANTS",
+   "mint": "aVSrnRoQH9SPADvZ6ZzzZUS8MfvrooCvti8rkWcpump",
+   "entry_mcap": 15306,
+   "exit_reason": "early dump -21% in 2.6m",
+   "pnl_usd": -0.429,
+   "pnl_pct": -21.5,
+   "held_min": 2.6
   }
  ],
- "realized_pnl_usd": -1.833,
- "unrealized_pnl_usd": 0,
- "total_pnl_usd": -1.833,
+ "realized_pnl_usd": -3.313,
+ "unrealized_pnl_usd": 1.764,
+ "total_pnl_usd": -1.549,
  "win_rate": 0.0,
  "api": {
-  "calls": 849,
+  "calls": 1218,
   "errors": 1,
   "rate_limited": 0,
   "timeouts": 1,
   "last_error": "cli timeout after 15s: market trenches --chain sol --type new_creation",
-  "last_ok": 1795120268.405053
+  "last_ok": 1795122069.5995598
  },
- "sol_usd": 73.01619050085888,
+ "sol_usd": 72.89796334218869,
  "error_count": 0,
  "api_warnings": 1,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 22:31:08",
-  "monitor": "2026-11-19 22:31:05",
-  "price": "2026-11-19 22:23:42",
-  "heartbeat": "2026-11-19 22:30:12"
+  "scan": "2026-11-19 23:01:09",
+  "monitor": "2026-11-19 23:01:05",
+  "price": "2026-11-19 23:01:07",
+  "heartbeat": "2026-11-19 23:00:14"
  },
  "ticks_epoch": {
-  "scan": 1795120268.4053228,
-  "monitor": 1795120265.7417507,
-  "price": 1795119822.0651448,
-  "heartbeat": 1795120212.5003042
+  "scan": 1795122069.5997486,
+  "monitor": 1795122065.7679548,
+  "price": 1795122067.2235684,
+  "heartbeat": 1795122014.5204687
  }
 }

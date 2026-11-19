@@ -1,18 +1,14 @@
 # Paper bot summary (all runs, simulated only)
 
-- updated: 2026-11-19 22:31 EET
-- paper buys: 6  | fully closed: 6
-- realized paper P&L: $-5.10 (stake $2/trade)
-- winners: 0/6 (0%)
+- updated: 2026-11-19 23:01 EET
+- paper buys: 10  | fully closed: 9
+- realized paper P&L: $-6.58 (stake $2/trade)
+- winners: 0/9 (0%)
 
 Last 15 trade rows:
 
 | time | action | symbol | reason | usd | pnl |
 |---|---|---|---|---|---|
-| 2026-11-19 01:23:20 | BUY | SPIKES | passed GMGN filters + confirm | 2.00 |  |
-| 2026-11-19 01:45:27 | SELL | SPIKES | stop loss -54% | 0.91 | -1.09 |
-| 2026-11-19 02:50:20 | BUY | SPA6 | passed GMGN filters + confirm | 2.00 |  |
-| 2026-11-19 02:55:03 | SELL | SPA6 | stop loss -84% | 0.32 | -1.68 |
 | 2026-11-19 10:49:19 | BUY | AUDADUDE | passed GMGN filters + confirm | 2.00 |  |
 | 2026-11-19 10:50:47 | SELL | AUDADUDE | early dump -25% in 1.5m | 1.51 | -0.49 |
 | 2026-11-19 21:01:10 | BUY | District  | passed GMGN filters + confirm | 2.00 |  |
@@ -21,3 +17,10 @@ Last 15 trade rows:
 | 2026-11-19 21:33:30 | SELL | District  | stop loss -36% | 1.27 | -0.73 |
 | 2026-11-19 22:20:10 | BUY | JANITOR | passed GMGN filters + confirm | 2.00 |  |
 | 2026-11-19 22:23:42 | SELL | JANITOR | stop loss -35% | 1.29 | -0.71 |
+| 2026-11-19 22:31:50 | BUY | COOLDOG | passed GMGN filters + confirm | 2.00 |  |
+| 2026-11-19 22:52:11 | BUY | DTTY | passed GMGN filters + confirm | 2.00 |  |
+| 2026-11-19 22:53:18 | SELL | DTTY | early dump -23% in 1.1m | 1.54 | -0.46 |
+| 2026-11-19 22:56:11 | BUY | DINO | passed GMGN filters + confirm | 2.00 |  |
+| 2026-11-19 22:56:30 | BUY | ANTS | passed GMGN filters + confirm | 2.00 |  |
+| 2026-11-19 22:57:30 | SELL | DINO | early dump -30% in 1.3m | 1.41 | -0.59 |
+| 2026-11-19 22:59:08 | SELL | ANTS | early dump -21% in 2.6m | 1.57 | -0.43 |

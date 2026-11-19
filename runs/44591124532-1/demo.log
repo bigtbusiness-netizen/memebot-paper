@@ -119,3 +119,43 @@
 2026-11-19 22:29:50 CONFIRM REJECT Leap EGDMWQ1J7J2thxS4bZXWo82HUtpnAnQ5dHcCMssppump — dev sold during confirm wait
 2026-11-19 22:30:12 HEARTBEAT up 104.1m left 235.9m open 0 [-] closed 3 pnl $-1.83 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px 390s ago api 841/1t1 r0 errors 0
 2026-11-19 22:30:50 WATCH COOLDOG 9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump mcap $5,998 score 4.24 — recheck in 45s
+2026-11-19 22:31:12 HEARTBEAT up 105.1m left 234.9m open 0 [-] closed 3 pnl $-1.83 unreal $+0.00 watching 1 scan 4s ago mon 6s ago px 450s ago api 849/1t1 r0 errors 0
+2026-11-19 22:31:50 PAPER BUY COOLDOG 9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump mcap $7,669 score 4.24 | age 3m holders 24 top10 23% smart 0 kol 0 5m 50b/31s $6939 dev_launches 1 confirmed
+2026-11-19 22:32:12 HEARTBEAT up 106.1m left 233.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $-0.12 watching 0 scan 2s ago mon 6s ago px 5s ago api 859/1t1 r0 errors 0
+2026-11-19 22:33:12 HEARTBEAT up 107.1m left 232.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.53 watching 0 scan 2s ago mon 6s ago px 5s ago api 870/1t1 r0 errors 0
+2026-11-19 22:34:12 HEARTBEAT up 108.1m left 231.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.93 watching 0 scan 2s ago mon 6s ago px 5s ago api 883/1t1 r0 errors 0
+2026-11-19 22:35:12 HEARTBEAT up 109.1m left 230.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+1.07 watching 0 scan 3s ago mon 6s ago px 5s ago api 894/1t1 r0 errors 0
+2026-11-19 22:36:12 HEARTBEAT up 110.1m left 229.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+1.33 watching 0 scan 3s ago mon 7s ago px 5s ago api 905/1t1 r0 errors 0
+2026-11-19 22:37:12 HEARTBEAT up 111.1m left 228.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.78 watching 0 scan 3s ago mon 7s ago px 5s ago api 916/1t1 r0 errors 0
+2026-11-19 22:38:12 HEARTBEAT up 112.1m left 227.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.75 watching 0 scan 3s ago mon 7s ago px 5s ago api 927/1t1 r0 errors 0
+2026-11-19 22:39:12 HEARTBEAT up 113.1m left 226.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.36 watching 0 scan 3s ago mon 7s ago px 5s ago api 938/1t1 r0 errors 0
+2026-11-19 22:40:13 HEARTBEAT up 114.1m left 225.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.32 watching 0 scan 3s ago mon 7s ago px 5s ago api 949/1t1 r0 errors 0
+2026-11-19 22:41:13 HEARTBEAT up 115.1m left 224.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.14 watching 0 scan 3s ago mon 7s ago px 5s ago api 960/1t1 r0 errors 0
+2026-11-19 22:42:13 HEARTBEAT up 116.1m left 223.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.23 watching 0 scan 3s ago mon 7s ago px 6s ago api 971/1t1 r0 errors 0
+2026-11-19 22:43:13 HEARTBEAT up 117.1m left 222.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.26 watching 0 scan 3s ago mon 7s ago px 6s ago api 982/1t1 r0 errors 0
+2026-11-19 22:44:13 HEARTBEAT up 118.1m left 221.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $-0.24 watching 0 scan 3s ago mon 7s ago px 6s ago api 993/1t1 r0 errors 0
+2026-11-19 22:45:13 HEARTBEAT up 119.1m left 220.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $-0.24 watching 0 scan 3s ago mon 7s ago px 6s ago api 1004/1t1 r0 errors 0
+2026-11-19 22:46:13 HEARTBEAT up 120.1m left 219.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.15 watching 0 scan 3s ago mon 7s ago px 6s ago api 1015/1t1 r0 errors 0
+2026-11-19 22:47:13 HEARTBEAT up 121.1m left 218.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.59 watching 0 scan 3s ago mon 7s ago px 6s ago api 1026/1t1 r0 errors 0
+2026-11-19 22:48:13 HEARTBEAT up 122.1m left 217.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.59 watching 0 scan 4s ago mon 7s ago px 6s ago api 1037/1t1 r0 errors 0
+2026-11-19 22:49:13 HEARTBEAT up 123.1m left 216.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.47 watching 0 scan 4s ago mon 7s ago px 6s ago api 1048/1t1 r0 errors 0
+2026-11-19 22:50:13 HEARTBEAT up 124.1m left 215.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.32 watching 0 scan 4s ago mon 8s ago px 6s ago api 1059/1t1 r0 errors 0
+2026-11-19 22:51:11 WATCH DTTY 5L3X8cmwJhrvSwKMg3Hrug88xAFbWvZkQxYZ1R11pump mcap $11,327 score 11.89 — recheck in 45s
+2026-11-19 22:51:13 HEARTBEAT up 125.1m left 214.9m open 1 [COOLDOG] closed 3 pnl $-1.83 unreal $+0.31 watching 1 scan 1s ago mon 8s ago px 6s ago api 1072/1t1 r0 errors 0
+2026-11-19 22:52:11 PAPER BUY DTTY 5L3X8cmwJhrvSwKMg3Hrug88xAFbWvZkQxYZ1R11pump mcap $13,730 score 11.89 | age 3m holders 57 top10 27% smart 3 kol 0 5m 168b/87s $22198 dev_launches 1 confirmed
+2026-11-19 22:52:13 HEARTBEAT up 126.1m left 213.9m open 2 [COOLDOG,DTTY] closed 3 pnl $-1.83 unreal $+0.19 watching 0 scan 1s ago mon 8s ago px 6s ago api 1085/1t1 r0 errors 0
+2026-11-19 22:53:13 HEARTBEAT up 127.1m left 212.9m open 2 [COOLDOG,DTTY] closed 3 pnl $-1.83 unreal $+0.10 watching 0 scan 3s ago mon 8s ago px 5s ago api 1101/1t1 r0 errors 0
+2026-11-19 22:53:18 PAPER SELL DTTY 100% - early dump -23% in 1.1m: $1.54 pnl $-0.46
+2026-11-19 22:54:14 HEARTBEAT up 128.1m left 211.9m open 1 [COOLDOG] closed 4 pnl $-2.29 unreal $+1.24 watching 0 scan 4s ago mon 8s ago px 6s ago api 1113/1t1 r0 errors 0
+2026-11-19 22:55:11 WATCH DINO 7psGNEEbiu5VgCPaR4wfed1XEruZFtkKsqXsc8TCpump mcap $4,124 score 4.3 — recheck in 45s
+2026-11-19 22:55:14 HEARTBEAT up 129.1m left 210.9m open 1 [COOLDOG] closed 4 pnl $-2.29 unreal $+1.17 watching 1 scan 2s ago mon 8s ago px 6s ago api 1126/1t1 r0 errors 0
+2026-11-19 22:55:30 WATCH ANTS aVSrnRoQH9SPADvZ6ZzzZUS8MfvrooCvti8rkWcpump mcap $11,729 score 16.69 — recheck in 45s
+2026-11-19 22:56:11 PAPER BUY DINO 7psGNEEbiu5VgCPaR4wfed1XEruZFtkKsqXsc8TCpump mcap $5,359 score 4.3 | age 3m holders 30 top10 22% smart 1 kol 0 5m 109b/59s $4752 dev_launches 24 confirmed
+2026-11-19 22:56:14 HEARTBEAT up 130.1m left 209.9m open 2 [COOLDOG,DINO] closed 4 pnl $-2.29 unreal $+0.87 watching 1 scan 2s ago mon 8s ago px 6s ago api 1141/1t1 r0 errors 0
+2026-11-19 22:56:30 PAPER BUY ANTS aVSrnRoQH9SPADvZ6ZzzZUS8MfvrooCvti8rkWcpump mcap $15,306 score 16.69 | age 26m holders 69 top10 28% smart 5 kol 0 5m 252b/142s $21651 dev_launches 1 confirmed
+2026-11-19 22:57:14 HEARTBEAT up 131.1m left 208.9m open 3 [COOLDOG,DINO,ANTS] closed 4 pnl $-2.29 unreal $+1.11 watching 0 scan 2s ago mon 8s ago px 4s ago api 1162/1t1 r0 errors 0
+2026-11-19 22:57:30 PAPER SELL DINO 100% - early dump -30% in 1.3m: $1.41 pnl $-0.59
+2026-11-19 22:58:14 HEARTBEAT up 132.1m left 207.9m open 2 [COOLDOG,ANTS] closed 5 pnl $-2.88 unreal $+1.00 watching 0 scan 3s ago mon 8s ago px 5s ago api 1180/1t1 r0 errors 0
+2026-11-19 22:59:08 PAPER SELL ANTS 100% - early dump -21% in 2.6m: $1.57 pnl $-0.43
+2026-11-19 22:59:14 HEARTBEAT up 133.1m left 206.9m open 1 [COOLDOG] closed 6 pnl $-3.31 unreal $+1.88 watching 0 scan 3s ago mon 8s ago px 5s ago api 1196/1t1 r0 errors 0
+2026-11-19 23:00:14 HEARTBEAT up 134.2m left 205.8m open 1 [COOLDOG] closed 6 pnl $-3.31 unreal $+1.50 watching 0 scan 4s ago mon 8s ago px 7s ago api 1207/1t1 r0 errors 0

@@ -11,3 +11,10 @@ time,action,mint,symbol,name,reason,price_usd,mcap_usd,usd_value,pnl_usd,pnl_pct
 2026-11-19 21:33:30,SELL,9TvhY5Riuda52nz8eN6aFg92xL8DRxnarL6jmatqpump,District ,District City,stop loss -36%,3.2597e-06,3260,1.27,-0.73,-36.3,,
 2026-11-19 22:20:10,BUY,5YkqeTqa4rnLun3DzdR4afat4CiSxWZJH9e5cdNbpump,JANITOR,High Net Worth Janitor,passed GMGN filters + confirm,1.2554e-05,12554,2.00,,,17.2,age 4m holders 120 top10 22% smart 4 kol 0 5m 431b/258s $24066 dev_launches 1 confirmed
 2026-11-19 22:23:42,SELL,5YkqeTqa4rnLun3DzdR4afat4CiSxWZJH9e5cdNbpump,JANITOR,High Net Worth Janitor,stop loss -35%,8.6291e-06,8629,1.29,-0.71,-35.3,,
+2026-11-19 22:31:50,BUY,9xxXnVD9irb8m4crVEEo4EUCMWvYuH3HcG15wTnpump,COOLDOG,Cool Dog,passed GMGN filters + confirm,7.6692e-06,7669,2.00,,,4.24,age 3m holders 24 top10 23% smart 0 kol 0 5m 50b/31s $6939 dev_launches 1 confirmed
+2026-11-19 22:52:11,BUY,5L3X8cmwJhrvSwKMg3Hrug88xAFbWvZkQxYZ1R11pump,DTTY,DatityCoin,passed GMGN filters + confirm,1.3730e-05,13730,2.00,,,11.89,age 3m holders 57 top10 27% smart 3 kol 0 5m 168b/87s $22198 dev_launches 1 confirmed
+2026-11-19 22:53:18,SELL,5L3X8cmwJhrvSwKMg3Hrug88xAFbWvZkQxYZ1R11pump,DTTY,DatityCoin,early dump -23% in 1.1m,1.1244e-05,11244,1.54,-0.46,-22.9,,
+2026-11-19 22:56:11,BUY,7psGNEEbiu5VgCPaR4wfed1XEruZFtkKsqXsc8TCpump,DINO,dinocoin,passed GMGN filters + confirm,5.3593e-06,5359,2.00,,,4.3,age 3m holders 30 top10 22% smart 1 kol 0 5m 109b/59s $4752 dev_launches 24 confirmed
+2026-11-19 22:56:30,BUY,aVSrnRoQH9SPADvZ6ZzzZUS8MfvrooCvti8rkWcpump,ANTS,Antpad,passed GMGN filters + confirm,1.5306e-05,15306,2.00,,,16.69,age 26m holders 69 top10 28% smart 5 kol 0 5m 252b/142s $21651 dev_launches 1 confirmed
+2026-11-19 22:57:30,SELL,7psGNEEbiu5VgCPaR4wfed1XEruZFtkKsqXsc8TCpump,DINO,dinocoin,early dump -30% in 1.3m,4.0042e-06,4004,1.41,-0.59,-29.6,,
+2026-11-19 22:59:08,SELL,aVSrnRoQH9SPADvZ6ZzzZUS8MfvrooCvti8rkWcpump,ANTS,Antpad,early dump -21% in 2.6m,1.2765e-05,12765,1.57,-0.43,-21.5,,
