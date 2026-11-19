@@ -1,87 +1,53 @@
 {
- "updated": "2026-11-19 12:54:50",
- "final": true,
- "pid": 2569,
- "started": "2026-11-19 07:14:34",
- "ends": "2026-11-19 12:54:34",
+ "updated": "2026-11-19 20:50:53",
+ "final": false,
+ "pid": 2341,
+ "started": "2026-11-19 20:46:05",
+ "ends": "2026-11-20 02:26:05",
  "counts": {
-  "launches_seen": 7855,
-  "candidates_evaluated": 313,
-  "passed_filters": 12,
+  "launches_seen": 208,
+  "candidates_evaluated": 16,
+  "passed_filters": 0,
   "security_rejects": 0,
-  "bought": 1,
-  "confirm_rejects": 2
+  "bought": 0,
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 155,
-  "bundler rate high": 51,
-  "dev holds too much": 33,
-  "snipers hold too much": 19,
-  "serial dev (many launches, low graduation)": 17,
-  "score # below min #": 10,
-  "weak live activity (#m buys/sells/volume)": 9,
-  "mcap out of range": 6,
-  "top# concentration": 5,
-  "copycat X link": 2,
-  "entrapment ratio high": 1,
-  "serial dev (many launches, none graduated)": 1,
-  "activity faded during confirm": 1,
-  "dumped #% during confirm wait": 1,
-  "insider/rat traders high": 1,
-  "BOUGHT": 1
+  "dev already sold": 8,
+  "bundler rate high": 5,
+  "score # below min #": 1,
+  "dev holds too much": 1,
+  "serial dev (many launches, low graduation)": 1
  },
  "watching": [],
  "open_positions": [],
- "closed": [
-  {
-   "symbol": "AUDADUDE",
-   "mint": "3ZJYbe14NSiK1G3kwQiCasMNPcq3Zw9qcGahphAUpump",
-   "entry_mcap": 13543,
-   "exit_reason": "early dump -25% in 1.5m",
-   "pnl_usd": -0.493,
-   "pnl_pct": -24.6,
-   "held_min": 1.5
-  }
- ],
- "realized_pnl_usd": -0.493,
+ "closed": [],
+ "realized_pnl_usd": 0,
  "unrealized_pnl_usd": 0,
- "total_pnl_usd": -0.493,
- "win_rate": 0.0,
+ "total_pnl_usd": 0,
+ "win_rate": null,
  "api": {
-  "calls": 2093,
+  "calls": 30,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795085690.5009978
+  "last_ok": 1795114248.348296
  },
- "sol_usd": 74.47184247311351,
+ "sol_usd": 74.15573129403647,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 12:54:17",
-  "monitor": "2026-11-19 12:54:22",
-  "price": "2026-11-19 10:50:47",
-  "heartbeat": "2026-11-19 12:53:46"
+  "scan": "2026-11-19 20:50:48",
+  "monitor": "2026-11-19 20:50:53",
+  "price": null,
+  "heartbeat": "2026-11-19 20:50:05"
  },
  "ticks_epoch": {
-  "scan": 1795085657.5467045,
-  "monitor": 1795085662.973708,
-  "price": 1795078247.1816306,
-  "heartbeat": 1795085626.0149019
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 5,
-  "rugged_70pct": 1,
-  "examples": [
-   "STICKS pumped (skip $9478 -> ATH $25461, why: bundler rate high)",
-   "RCTY pumped (skip $8001 -> ATH $22888, why: dev already sold)",
-   "Rocktard pumped (skip $5047 -> ATH $19383, why: dev already sold)",
-   "STREAMERS pumped (skip $5905 -> ATH $12049, why: snipers hold too much)",
-   "CATCOIN pumped (skip $6681 -> ATH $53968, why: serial dev (many launches, low graduation))"
-  ],
-  "errors": 0
+  "scan": 1795114248.3486252,
+  "monitor": 1795114253.6600852,
+  "price": 0,
+  "heartbeat": 1795114205.7704248
  }
 }
