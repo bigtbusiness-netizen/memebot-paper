@@ -1,61 +1,74 @@
 {
- "updated": "2026-11-19 10:29:41",
+ "updated": "2026-11-19 10:59:42",
  "final": false,
  "pid": 2569,
  "started": "2026-11-19 07:14:34",
  "ends": "2026-11-19 12:54:34",
  "counts": {
-  "launches_seen": 4712,
-  "candidates_evaluated": 178,
-  "passed_filters": 5,
+  "launches_seen": 5329,
+  "candidates_evaluated": 211,
+  "passed_filters": 8,
   "security_rejects": 0,
-  "bought": 0,
+  "bought": 1,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 89,
-  "dev holds too much": 27,
-  "bundler rate high": 26,
-  "serial dev (many launches, low graduation)": 11,
-  "snipers hold too much": 8,
-  "score # below min #": 4,
+  "dev already sold": 104,
+  "bundler rate high": 28,
+  "dev holds too much": 26,
+  "snipers hold too much": 14,
+  "serial dev (many launches, low graduation)": 12,
+  "score # below min #": 7,
+  "weak live activity (#m buys/sells/volume)": 5,
   "mcap out of range": 4,
-  "weak live activity (#m buys/sells/volume)": 3,
+  "top# concentration": 3,
   "copycat X link": 2,
   "entrapment ratio high": 1,
   "serial dev (many launches, none graduated)": 1,
   "activity faded during confirm": 1,
-  "dumped #% during confirm wait": 1
+  "dumped #% during confirm wait": 1,
+  "insider/rat traders high": 1,
+  "BOUGHT": 1
  },
  "watching": [],
  "open_positions": [],
- "closed": [],
- "realized_pnl_usd": 0,
+ "closed": [
+  {
+   "symbol": "AUDADUDE",
+   "mint": "3ZJYbe14NSiK1G3kwQiCasMNPcq3Zw9qcGahphAUpump",
+   "entry_mcap": 13543,
+   "exit_reason": "early dump -25% in 1.5m",
+   "pnl_usd": -0.493,
+   "pnl_pct": -24.6,
+   "held_min": 1.5
+  }
+ ],
+ "realized_pnl_usd": -0.493,
  "unrealized_pnl_usd": 0,
- "total_pnl_usd": 0,
- "win_rate": null,
+ "total_pnl_usd": -0.493,
+ "win_rate": 0.0,
  "api": {
-  "calls": 1186,
+  "calls": 1382,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795076977.4587634
+  "last_ok": 1795078777.5204437
  },
- "sol_usd": 74.38614029331761,
+ "sol_usd": 74.475206364489,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 10:29:37",
-  "monitor": "2026-11-19 10:29:34",
-  "price": null,
-  "heartbeat": "2026-11-19 10:29:41"
+  "scan": "2026-11-19 10:59:37",
+  "monitor": "2026-11-19 10:59:34",
+  "price": "2026-11-19 10:50:47",
+  "heartbeat": "2026-11-19 10:59:42"
  },
  "ticks_epoch": {
-  "scan": 1795076977.4591677,
-  "monitor": 1795076974.844381,
-  "price": 0,
-  "heartbeat": 1795076981.521666
+  "scan": 1795078777.5208004,
+  "monitor": 1795078774.8708258,
+  "price": 1795078247.1816306,
+  "heartbeat": 1795078782.4005034
  }
 }
