@@ -5,3 +5,6 @@ time,action,mint,symbol,name,reason,price_usd,mcap_usd,usd_value,pnl_usd,pnl_pct
 2026-11-19 02:55:03,SELL,4BZZvZX7NCmdGcKXNmsXaeVNBbe8XJ4gAtLRYABqpump,SPA6,South Park Auto 6,stop loss -84%,2.0998e-06,2100,0.32,-1.68,-84.1,,
 2026-11-19 10:49:19,BUY,3ZJYbe14NSiK1G3kwQiCasMNPcq3Zw9qcGahphAUpump,AUDADUDE,AUDA DUDE,passed GMGN filters + confirm,1.3543e-05,13543,2.00,,,5.69,age 6m holders 30 top10 29% smart 1 kol 0 5m 190b/61s $10084 dev_launches 4 confirmed
 2026-11-19 10:50:47,SELL,3ZJYbe14NSiK1G3kwQiCasMNPcq3Zw9qcGahphAUpump,AUDADUDE,AUDA DUDE,early dump -25% in 1.5m,1.0836e-05,10836,1.51,-0.49,-24.6,,
+2026-11-19 21:01:10,BUY,9TvhY5Riuda52nz8eN6aFg92xL8DRxnarL6jmatqpump,District ,District City,passed GMGN filters + confirm,4.8215e-06,4822,2.00,,,5.26,age 3m holders 26 top10 18% smart 1 kol 0 5m 102b/45s $5147 dev_launches 1 confirmed
+2026-11-19 21:16:50,BUY,CgWF3bggdshu74CFVd6DieLmwLo8JtAsSavrsdqppump,P2P,PAID 2 PLAY,passed GMGN filters + confirm,1.4346e-05,14346,2.00,,,12.54,age 8m holders 154 top10 20% smart 3 kol 0 5m 342b/209s $21707 dev_launches 1 confirmed
+2026-11-19 21:18:08,SELL,CgWF3bggdshu74CFVd6DieLmwLo8JtAsSavrsdqppump,P2P,PAID 2 PLAY,early dump -20% in 1.3m,1.2177e-05,12177,1.60,-0.40,-20.1,,
