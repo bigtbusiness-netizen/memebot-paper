@@ -1,98 +1,53 @@
 {
- "updated": "2026-11-19 06:58:31",
- "final": true,
- "pid": 2538,
- "started": "2026-11-19 01:18:15",
- "ends": "2026-11-19 06:58:15",
+ "updated": "2026-11-19 07:19:22",
+ "final": false,
+ "pid": 2569,
+ "started": "2026-11-19 07:14:34",
+ "ends": "2026-11-19 12:54:34",
  "counts": {
-  "launches_seen": 10538,
-  "candidates_evaluated": 382,
-  "passed_filters": 16,
+  "launches_seen": 159,
+  "candidates_evaluated": 10,
+  "passed_filters": 0,
   "security_rejects": 0,
-  "bought": 2,
-  "confirm_rejects": 6
+  "bought": 0,
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 217,
-  "bundler rate high": 47,
-  "serial dev (many launches, low graduation)": 26,
-  "dev holds too much": 21,
-  "snipers hold too much": 15,
-  "serial dev (many launches, none graduated)": 10,
-  "score # below min #": 8,
-  "top# concentration": 8,
-  "mcap out of range": 7,
-  "weak live activity (#m buys/sells/volume)": 7,
-  "dumped #% during confirm wait": 5,
-  "copycat X link": 3,
-  "entrapment ratio high": 2,
-  "BOUGHT": 2,
-  "age window": 1,
-  "no smart money and buy pressure not strong enough": 1,
-  "activity faded during confirm": 1
+  "bundler rate high": 4,
+  "dev already sold": 3,
+  "score # below min #": 1,
+  "dev holds too much": 1,
+  "serial dev (many launches, low graduation)": 1
  },
  "watching": [],
  "open_positions": [],
- "closed": [
-  {
-   "symbol": "SPIKES",
-   "mint": "9WDfv9svBroRmUj4GnQX6ruRdC8gSAqeLyDnKQQ4pump",
-   "entry_mcap": 5074,
-   "exit_reason": "stop loss -54%",
-   "pnl_usd": -1.088,
-   "pnl_pct": -54.4,
-   "held_min": 22.1
-  },
-  {
-   "symbol": "SPA6",
-   "mint": "4BZZvZX7NCmdGcKXNmsXaeVNBbe8XJ4gAtLRYABqpump",
-   "entry_mcap": 12420,
-   "exit_reason": "stop loss -84%",
-   "pnl_usd": -1.682,
-   "pnl_pct": -84.1,
-   "held_min": 4.7
-  }
- ],
- "realized_pnl_usd": -2.77,
+ "closed": [],
+ "realized_pnl_usd": 0,
  "unrealized_pnl_usd": 0,
- "total_pnl_usd": -2.77,
- "win_rate": 0.0,
+ "total_pnl_usd": 0,
+ "win_rate": null,
  "api": {
-  "calls": 2238,
+  "calls": 30,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795064311.2103393
+  "last_ok": 1795065557.367178
  },
- "sol_usd": 74.48411970069823,
+ "sol_usd": 74.40841942554566,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 06:57:58",
-  "monitor": "2026-11-19 06:58:03",
-  "price": "2026-11-19 02:55:03",
-  "heartbeat": "2026-11-19 06:57:24"
+  "scan": "2026-11-19 07:19:17",
+  "monitor": "2026-11-19 07:19:22",
+  "price": null,
+  "heartbeat": "2026-11-19 07:18:34"
  },
  "ticks_epoch": {
-  "scan": 1795064278.2569342,
-  "monitor": 1795064283.775708,
-  "price": 1795049703.8058681,
-  "heartbeat": 1795064244.769671
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 6,
-  "rugged_70pct": 2,
-  "examples": [
-   "AudaCity pumped (skip $4320 -> ATH $12964, why: dev already sold)",
-   "AudaCity pumped (skip $4624 -> ATH $16724, why: dev already sold)",
-   "AUDACITY pumped (skip $5007 -> ATH $23889, why: snipers hold too much)",
-   "CLIPCITY pumped (skip $6210 -> ATH $27945, why: dev already sold)",
-   "GTAgent pumped (skip $4473 -> ATH $10155, why: score 1.43 below min 4.0)",
-   "Choco pumped (skip $14378 -> ATH $29917, why: bundler rate high)"
-  ],
-  "errors": 0
+  "scan": 1795065557.3675227,
+  "monitor": 1795065562.6779985,
+  "price": 0,
+  "heartbeat": 1795065514.7436407
  }
 }
