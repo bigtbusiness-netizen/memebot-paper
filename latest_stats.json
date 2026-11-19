@@ -1,34 +1,35 @@
 {
- "updated": "2026-11-19 04:33:20",
+ "updated": "2026-11-19 05:03:21",
  "final": false,
  "pid": 2538,
  "started": "2026-11-19 01:18:15",
  "ends": "2026-11-19 06:58:15",
  "counts": {
-  "launches_seen": 6672,
-  "candidates_evaluated": 239,
-  "passed_filters": 12,
+  "launches_seen": 7689,
+  "candidates_evaluated": 281,
+  "passed_filters": 13,
   "security_rejects": 0,
   "bought": 2,
-  "confirm_rejects": 4
+  "confirm_rejects": 5
  },
  "filtered_by_reason": {
-  "dev already sold": 128,
-  "bundler rate high": 37,
-  "serial dev (many launches, low graduation)": 17,
-  "snipers hold too much": 11,
-  "dev holds too much": 11,
-  "serial dev (many launches, none graduated)": 7,
+  "dev already sold": 149,
+  "bundler rate high": 44,
+  "serial dev (many launches, low graduation)": 18,
+  "dev holds too much": 16,
+  "snipers hold too much": 13,
+  "serial dev (many launches, none graduated)": 8,
+  "score # below min #": 5,
+  "mcap out of range": 5,
   "weak live activity (#m buys/sells/volume)": 5,
-  "score # below min #": 4,
   "top# concentration": 4,
   "dumped #% during confirm wait": 4,
-  "mcap out of range": 3,
+  "copycat X link": 3,
   "entrapment ratio high": 2,
-  "copycat X link": 2,
   "BOUGHT": 2,
   "age window": 1,
-  "no smart money and buy pressure not strong enough": 1
+  "no smart money and buy pressure not strong enough": 1,
+  "activity faded during confirm": 1
  },
  "watching": [],
  "open_positions": [],
@@ -57,27 +58,27 @@
  "total_pnl_usd": -2.77,
  "win_rate": 0.0,
  "api": {
-  "calls": 1343,
+  "calls": 1527,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795055598.1518
+  "last_ok": 1795057398.1807353
  },
- "sol_usd": 73.23840641311557,
+ "sol_usd": 73.16264767467145,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 04:33:18",
-  "monitor": "2026-11-19 04:33:15",
+  "scan": "2026-11-19 05:03:18",
+  "monitor": "2026-11-19 05:03:15",
   "price": "2026-11-19 02:55:03",
-  "heartbeat": "2026-11-19 04:33:20"
+  "heartbeat": "2026-11-19 05:03:21"
  },
  "ticks_epoch": {
-  "scan": 1795055598.1520793,
-  "monitor": 1795055595.627579,
+  "scan": 1795057398.18102,
+  "monitor": 1795057395.6582007,
   "price": 1795049703.8058681,
-  "heartbeat": 1795055600.277831
+  "heartbeat": 1795057401.213628
  }
 }
