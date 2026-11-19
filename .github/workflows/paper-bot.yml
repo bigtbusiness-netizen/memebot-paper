@@ -2,7 +2,8 @@ name: paper-bot
 
 on:
   schedule:
-    - cron: '0 */5 * * *'     # 00,05,10,15,20 UTC; each run lasts ~5h45m, overlaps queue (see concurrency)
+    - cron: '0 */5 * * *'     # BACKUP only: runs chain themselves (see `relaunch`); a cron start while a
+                              # run is active just waits in the concurrency queue
   workflow_dispatch:
     inputs:
       run_minutes:
@@ -14,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: paper-bot
+  group: paper-bot          # one run at a time; at most one more waits (queued), never two in parallel
   cancel-in-progress: false
 
 env:
@@ -119,3 +120,30 @@ jobs:
           bash scripts/save_state.sh
           [ -f stats.json ] && python3 -c "import json;s=json.load(open('stats.json'));print({k:s.get(k) for k in ('final','counts','realized_pnl_usd','total_pnl_usd','win_rate','error_count','api')})" || true
           cat state-wt/SUMMARY.md 2>/dev/null | head -8 || true
+
+  # Self-restart: start the next run as soon as this one ends, so GitHub's flaky cron can't leave gaps.
+  # Stops automatically when: the run was cancelled or failed (needs.run.result != 'success'), the workflow
+  # is disabled (`gh workflow disable paper-bot.yml`), the repo variable AUTO_RESTART is 'off', or another
+  # run is already queued (e.g. the backup cron) -- so it can never fan out or loop on errors.
+  relaunch:
+    needs: run
+    if: ${{ always() && needs.run.result == 'success' && vars.AUTO_RESTART != 'off' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write
+      contents: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Start next run
+        run: |
+          state=$(gh api "repos/$GH_REPO/actions/workflows/paper-bot.yml" --jq .state)
+          echo "workflow state: $state"
+          if [ "$state" != "active" ]; then echo "workflow disabled ($state): not relaunching"; exit 0; fi
+          waiting=$(gh run list --workflow paper-bot.yml --limit 20 --json databaseId,status \
+                    --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.status==\"queued\" or .status==\"pending\" or .status==\"waiting\" or .status==\"requested\" or .status==\"in_progress\")] | length")
+          if [ "${waiting:-0}" != "0" ]; then echo "$waiting other run(s) already queued/active: not relaunching"; exit 0; fi
+          gh workflow run paper-bot.yml --ref "${{ github.ref_name }}"
+          echo "next run requested"

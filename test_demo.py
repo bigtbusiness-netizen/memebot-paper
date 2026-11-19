@@ -19,7 +19,7 @@ NOW = time.time
 
 def trench_row(mint, **kw):
     row = {"address": mint, "symbol": mint[:5].upper(), "name": mint,
-           "created_timestamp": NOW() - 5 * 60, "usd_market_cap": 8000,
+           "created_timestamp": NOW() - 5 * 60, "usd_market_cap": 4500,
            "renounced_mint": 1, "renounced_freeze_account": 1, "rug_ratio": 0, "bundler_trader_amount_rate": 0,
            "suspected_insider_hold_rate": 0, "rat_trader_amount_rate": 0, "entrapment_ratio": 0,
            "is_wash_trading": False, "top_10_holder_rate": 0.2, "top70_sniper_hold_rate": 0.05,
@@ -56,12 +56,15 @@ class FakeGM:
             d.update(self.sec.get(mint, {}))
             return d
         if kind == "token info":
-            i = {"price": 8e-6, "buys": 30, "sells": 10, "vol": 3000, "dev_status": "creator_hold", "dev_rate": 0.02}
+            i = {"price": 4.5e-6, "buys": 30, "sells": 10, "vol": 3000, "dev_status": "creator_hold", "dev_rate": 0.02,
+                 "b1": 6, "s1": 2, "bv1": 600, "sv1": 200, "dev_bal": 20_000_000}
             i.update(self.info.get(mint, {}))
             return {"address": mint, "circulating_supply": "1000000000", "ath_price": i.get("ath", i["price"]),
+                    "creation_timestamp": int(NOW() - 5 * 60),
                     "price": {"price": str(i["price"]), "buys_5m": i["buys"], "sells_5m": i["sells"],
-                              "volume_5m": str(i["vol"])},
-                    "dev": {"creator_token_status": i["dev_status"]},
+                              "volume_5m": str(i["vol"]), "buys_1m": i["b1"], "sells_1m": i["s1"],
+                              "buy_volume_1m": str(i["bv1"]), "sell_volume_1m": str(i["sv1"])},
+                    "dev": {"creator_token_status": i["dev_status"], "creator_token_balance": str(i["dev_bal"])},
                     "stat": {"creator_hold_rate": str(i["dev_rate"])}}
         raise AssertionError(f"unexpected gmgn call {args}")
 
@@ -103,11 +106,16 @@ def stats(demo):
     return json.load(open(demo.STATS))
 
 
-def age_pending(demo, mint, s=46):
-    demo.PENDING[mint]["t0"] -= s
+def age_pending(demo, mint, s=None):
+    """Make the next confirm_pending() the final re-check: wait elapsed, enough earlier checks passed."""
+    p = demo.PENDING[mint]
+    s = s if s is not None else demo.CFG["confirm_wait_s"] + 1
+    p["t0"] -= s
+    p["last_check"] = 0
+    p["checks"] = max(p.get("checks", 0), demo.CFG["confirm_min_checks"] - 1)
 
 
-def buy_one(demo, mint="GOODmint1111", price=8e-6):
+def buy_one(demo, mint="GOODmint1111", price=4.5e-6):
     demo.FAKE.rows = [trench_row(mint)]
     demo.FAKE.info[mint] = {"price": price}
     demo.scan_once()
@@ -130,10 +138,10 @@ def test_coin_passes_all_filters_and_is_bought(demo):
     mint = buy_one(demo)
     p = demo.POS[mint]
     assert demo.COUNTS["bought"] == 1 and demo.COUNTS["passed_filters"] == 1
-    assert approx(p["tokens"], 2.0 / (8e-6 * 1.03))
+    assert approx(p["tokens"], 2.0 / (4.5e-6 * 1.03))
     assert approx(p["value"], 2.0 * 0.97 / 1.03)
     rows = trades(demo)
-    assert rows[0]["action"] == "BUY" and rows[0]["note"].endswith("confirmed")
+    assert rows[0]["action"] == "BUY" and "confirmed v2" in rows[0]["note"]
     assert "PAPER BUY" in logtext(demo)
     assert "ERROR" not in logtext(demo)
     st = stats(demo)
@@ -235,11 +243,15 @@ def test_not_bought_before_wait(demo):
 
 
 @pytest.mark.parametrize("change,expect", [
-    ({"price": 8e-6 * 0.80}, "dumped #% during confirm wait"),
+    ({"price": 4.5e-6 * 0.80}, "dumped #% during confirm wait"),
     ({"dev_status": "creator_close"}, "dev sold during confirm wait"),
     ({"dev_rate": 0}, "dev sold during confirm wait"),
     ({"buys": 2}, "activity faded during confirm"),
-    ({"price": 8e-6 * 2.5}, "mcap left range during confirm"),
+    ({"price": 4.5e-6 * 2.5}, "mcap $#,# above $#,# hard cap"),
+    ({"price": 4.5e-6 * 0.9, "ath": 4.5e-6 * 1.6}, "down #% from peak"),
+    ({"b1": 1}, "buyers dried up (last #m)"),
+    ({"bv1": 100, "sv1": 500}, "sellers outweigh buyers (last #m)"),
+    ({"dev_bal": 10_000_000}, "dev sold during confirm wait"),
     ({"price": 0}, "no price on confirm"),
 ])
 def test_confirm_rejects(demo, change, expect):
@@ -253,7 +265,7 @@ def test_confirm_rejects(demo, change, expect):
 
 def test_small_dip_during_confirm_still_buys(demo):
     m = queue(demo)
-    demo.FAKE.info[m] = {"price": 8e-6 * 0.95}
+    demo.FAKE.info[m] = {"price": 4.5e-6 * 0.95}
     age_pending(demo, m)
     demo.confirm_pending()
     assert m in demo.POS
@@ -269,7 +281,7 @@ def test_confirm_security_fail(demo):
 
 def test_expired_watch_is_never_bought_and_counted_once(demo):
     m = queue(demo)
-    age_pending(demo, m, 45 + 200)
+    age_pending(demo, m, demo.CFG["confirm_wait_s"] + 200)
     demo.confirm_pending()
     assert not demo.POS and demo.REASONS[m] == "confirm window expired"
     assert demo.COUNTS["confirm_rejects"] == 1
@@ -298,7 +310,7 @@ def test_confirm_runs_even_when_candidate_fetch_429s(demo):
 # ---------------- 4. exits + PnL math ----------------
 def test_early_stop(demo):
     m = buy_one(demo)
-    set_price(demo, m, 8e-6 * 0.75, age_min=1)
+    set_price(demo, m, 4.5e-6 * 0.75, age_min=1)
     demo.monitor_once()
     assert m not in demo.POS
     c = demo.CLOSED[0]
@@ -308,10 +320,10 @@ def test_early_stop(demo):
 
 def test_no_early_stop_after_window_but_hard_stop_fires(demo):
     m = buy_one(demo)
-    set_price(demo, m, 8e-6 * 0.80, age_min=5)  # -27% incl haircut: past early window, above -35%
+    set_price(demo, m, 4.5e-6 * 0.80, age_min=5)  # -27% incl haircut: past early window, above -35%
     demo.monitor_once()
     assert m in demo.POS
-    set_price(demo, m, 8e-6 * 0.65, age_min=5)
+    set_price(demo, m, 4.5e-6 * 0.65, age_min=5)
     demo.monitor_once()
     c = demo.CLOSED[0]
     assert c["exit_reason"].startswith("stop loss")
@@ -321,22 +333,22 @@ def test_no_early_stop_after_window_but_hard_stop_fires(demo):
 def test_tp1_then_trailing_stop(demo):
     m = buy_one(demo)
     k = 0.97 / 1.03
-    set_price(demo, m, 8e-6 * 2.5, age_min=5)
+    set_price(demo, m, 4.5e-6 * 2.5, age_min=5)
     demo.monitor_once()
     p = demo.POS[m]
     tp1_pnl = 1.0 * 2.5 * k - 1.0
     assert p["tp1"] and approx(p["realized"], tp1_pnl) and approx(p["cost"], 1.0)
-    assert approx(p["tokens"], 0.5 * 2.0 / (8e-6 * 1.03))
+    assert approx(p["tokens"], 0.5 * 2.0 / (4.5e-6 * 1.03))
     st = stats(demo)
     assert approx(st["realized_pnl_usd"], round(tp1_pnl, 3))
     assert approx(st["unrealized_pnl_usd"], round(1.0 * 2.5 * k - 1.0, 3))
     rows = trades(demo)
     assert rows[-1]["action"] == "SELL50%"
     # new peak 3x, then fall to 2.2x (ratio drops 26.7% -> hold), then 2.0x (-33% -> exit)
-    set_price(demo, m, 8e-6 * 3.0); demo.monitor_once()
-    set_price(demo, m, 8e-6 * 2.2); demo.monitor_once()
+    set_price(demo, m, 4.5e-6 * 3.0); demo.monitor_once()
+    set_price(demo, m, 4.5e-6 * 2.2); demo.monitor_once()
     assert m in demo.POS
-    set_price(demo, m, 8e-6 * 2.0); demo.monitor_once()
+    set_price(demo, m, 4.5e-6 * 2.0); demo.monitor_once()
     assert m not in demo.POS
     c = demo.CLOSED[0]
     total = tp1_pnl + (1.0 * 2.0 * k - 1.0)
@@ -349,7 +361,7 @@ def test_tp1_then_trailing_stop(demo):
 def test_time_stop_with_stale_price_when_gmgn_down(demo):
     m = buy_one(demo)
     k = 0.97 / 1.03
-    set_price(demo, m, 8e-6 * 1.2, age_min=10)
+    set_price(demo, m, 4.5e-6 * 1.2, age_min=10)
     demo.monitor_once()                     # fresh price 1.2x
     p = demo.POS[m]
     p["opened"] = time.time() - 46 * 60
@@ -364,7 +376,7 @@ def test_time_stop_with_stale_price_when_gmgn_down(demo):
 def test_monitor_falls_back_to_dexscreener(demo, monkeypatch):
     m = buy_one(demo)
     demo.FAKE.raise_on[("token info", m)] = TimeoutError("rate limiter wait exceeded")
-    monkeypatch.setattr(demo, "dexscreener_price", lambda mint: (8e-6 * 0.5, 4000.0))
+    monkeypatch.setattr(demo, "dexscreener_price", lambda mint: (4.5e-6 * 0.5, 4000.0))
     demo.POS[m]["opened"] = time.time() - 600
     demo.monitor_once()
     assert demo.CLOSED and demo.CLOSED[0]["exit_reason"].startswith("stop loss")
@@ -497,7 +509,7 @@ def test_concurrent_stats_and_scan_mutations(demo):
 # ---------------- 7. full run: main() + final flush ----------------
 def test_main_short_run_buys_and_flushes_final_stats(demo):
     demo.CFG.update({"run_minutes": 0.06, "scan_every_s": 0.2, "price_every_s": 0.1, "heartbeat_every_s": 0.5,
-                     "confirm_wait_s": 0.3})
+                     "confirm_wait_s": 0.3, "confirm_check_every_s": 0.1})
     demo.FAKE.rows = [trench_row("RUNmint"), trench_row("SKIPmint", rug_ratio=0.9)]
     t0 = time.time()
     demo.main()
@@ -536,3 +548,146 @@ def test_close_all_at_end_paper_closes_open_positions(demo):
     demo.close_all_at_end()
     assert len(demo.POS) == 0 and len(demo.CLOSED) == 1
     assert trades(demo)[-1]["reason"].startswith("run end")
+
+
+# ---------------- 9. v2: hard mcap cap, survival wait, version marker ----------------
+def test_config_hard_cap_is_5k():
+    cfg = json.load(open(os.path.join(HERE, "config.json")))
+    assert cfg["max_mcap"] == 5000 and cfg["version"] == "v2"
+    assert cfg["min_buy_age_min"] >= 2 and cfg["confirm_min_checks"] >= 2
+
+
+def test_spa6_case_12k_never_bought(demo):
+    """SPA6 was bought at $12.4k because v1 allowed max_mcap 15000 (+10% at confirm)."""
+    demo.FAKE.rows = [trench_row("SPA6", usd_market_cap=12420)]
+    demo.scan_once()
+    assert demo.REASONS["SPA6"] == "mcap out of range" and not demo.PENDING and not demo.POS
+
+
+def test_scan_filter_sent_to_gmgn_uses_5k_cap(demo):
+    demo.FAKE.rows = []
+    demo.scan_once()
+    call = [c for c in demo.FAKE.calls if "--max-marketcap" in c][0]
+    assert call[call.index("--max-marketcap") + 1] == "5000"
+
+
+def test_no_tolerance_over_cap_at_watch(demo):
+    demo.FAKE.rows = [trench_row("Q")]
+    demo.FAKE.info["Q"] = {"price": 5.2e-6}  # $5,200: v1 allowed up to 1.1x
+    demo.scan_once()
+    assert demo.REASONS["Q"] == "mcap ran before entry" and not demo.PENDING
+
+
+def test_mcap_crosses_cap_between_watch_and_buy(demo):
+    m = queue(demo)
+    demo.FAKE.info[m] = {"price": 5.01e-6}
+    age_pending(demo, m)
+    demo.confirm_pending()
+    assert not demo.POS and demo.REASONS[m].startswith("mcap $#,# above")
+
+
+def test_open_position_refuses_over_cap(demo):
+    x = trench_row("Z")
+    assert demo.open_position(x, 5, 6e-6, 6000, 30, 10, 3000) is False
+    assert not demo.POS and demo.REASONS["Z"] == "mcap above hard cap at buy"
+    assert "BUY BLOCKED" in logtext(demo)
+
+
+def test_survival_needs_multiple_checks_and_full_wait(demo):
+    m = queue(demo)
+    wait, every = demo.CFG["confirm_wait_s"], demo.CFG["confirm_check_every_s"]
+    p = demo.PENDING[m]
+    # first re-check: due, healthy, but too early -> kept
+    p["t0"] -= every + 1; p["last_check"] -= every + 1
+    assert demo.confirm_pending() == {m: "kept"}
+    assert demo.PENDING[m]["checks"] == 1 and not demo.POS
+    # not due again yet -> no call
+    assert demo.confirm_pending() == {}
+    # wait fully elapsed and second healthy check -> bought
+    p["t0"] -= wait; p["last_check"] -= every + 1
+    assert demo.confirm_pending() == {m: "bought"}
+    assert m in demo.POS
+
+
+def test_survival_requires_min_coin_age(demo):
+    demo.FAKE.rows = [trench_row("Y", created_timestamp=NOW() - 2.2 * 60)]
+    demo.scan_once()
+    assert "Y" in demo.PENDING
+    age_pending(demo, "Y")
+    assert demo.confirm_pending() == {"Y": "kept"}  # healthy but only ~2.2m old
+    demo.PENDING["Y"]["x"]["created_timestamp"] = NOW() - 3.5 * 60
+    demo.PENDING["Y"]["last_check"] = 0
+    assert demo.confirm_pending() == {"Y": "bought"}
+
+
+def test_dump_from_peak_rejected_at_watch(demo):
+    demo.FAKE.rows = [trench_row("Q")]
+    demo.FAKE.info["Q"] = {"ath": 4.5e-6 * 2}  # already 50% below its launch high
+    demo.scan_once()
+    assert demo.REASONS["Q"].startswith("watch: down #% from peak") and not demo.PENDING
+
+
+def test_peak_tracked_across_rechecks(demo):
+    m = queue(demo)
+    demo.FAKE.info[m] = {"price": 4.9e-6}  # pumps to a new high on check 1
+    p = demo.PENDING[m]; p["last_check"] = 0
+    assert demo.confirm_pending() == {m: "kept"}
+    assert approx(p["peak"], 4.9e-6)
+    demo.FAKE.info[m] = {"price": 4.9e-6 * 0.6}  # -40% from the observed peak (ath not updated by GMGN)
+    p["last_check"] = 0
+    demo.confirm_pending()
+    assert demo.REASONS[m].startswith("down #% from peak") or demo.REASONS[m].startswith("dumped")
+
+
+def test_buys_collapsing_rejected(demo):
+    demo.FAKE.rows = [trench_row("Q")]
+    demo.FAKE.info["Q"] = {"buys": 100, "sells": 20, "vol": 8000, "b1": 20}
+    demo.scan_once()
+    assert "Q" in demo.PENDING
+    demo.FAKE.info["Q"] = {"buys": 100, "sells": 20, "vol": 8000, "b1": 4}  # 20/min -> 4/min
+    age_pending(demo, "Q")
+    demo.confirm_pending()
+    assert demo.REASONS["Q"] == "buys collapsing vs watch start" and not demo.POS
+
+
+def test_dev_partial_sell_detected(demo):
+    j = {"dev": {"creator_token_status": "creator_hold", "creator_token_balance": "5000000"},
+         "stat": {"creator_hold_rate": "0.02"}}
+    assert demo.dev_sold_info(j, 0.02, 20_000_000) is True     # balance -75%
+    assert demo.dev_sold_info(j, 0.02, 5_200_000) is False     # tiny change
+    j["stat"]["creator_hold_rate"] = "0.005"
+    assert demo.dev_sold_info(j, 0.02, None) is True           # hold rate -75%
+
+
+def test_dev_sold_before_watch_rejected(demo):
+    demo.FAKE.rows = [trench_row("Q")]
+    demo.FAKE.info["Q"] = {"dev_status": "creator_close"}
+    demo.scan_once()
+    assert demo.REASONS["Q"] == "dev already sold" and not demo.PENDING
+
+
+def test_version_marker_written_once_and_summary_splits(demo, tmp_path):
+    with open(demo.CSV, "w") as fh:
+        fh.write(",".join(demo.FIELDS) + "\n")
+        fh.write("2026-11-19 01:00:00,BUY,OLD,OLD,o,x,1,4000,2.00,,,4,n\n")
+    assert demo.mark_version() is True
+    assert demo.mark_version() is False
+    rows = trades(demo)
+    assert [r["action"] for r in rows] == ["BUY", "MARKER"] and rows[1]["symbol"] == "v2"
+    demo.record({"time": "t", "action": "SELL", "mint": "OLD", "symbol": "OLD", "pnl_usd": "-1.00"})
+    demo.record({"time": "t", "action": "BUY", "mint": "NEW", "symbol": "NEW"})
+    demo.record({"time": "t", "action": "SELL", "mint": "NEW", "symbol": "NEW", "pnl_usd": "+0.50"})
+    out = subprocess.run(["python3", os.path.join(HERE, "scripts", "summarize.py"), demo.CSV],
+                         capture_output=True, text=True, check=True).stdout
+    v2 = out.split("## v2")[1].split("##")[0]
+    allt = out.split("## All-time")[1].split("##")[0]
+    assert "paper buys: 1 " in v2 and "$+0.50" in v2 and "winners: 1/1" in v2
+    assert "paper buys: 2 " in allt and "$-0.50" in allt
+
+
+def test_workflow_self_restart_is_guarded():
+    wf = open(os.path.join(HERE, ".github", "workflows", "paper-bot.yml")).read()
+    assert "actions: write" in wf and "gh workflow run" in wf
+    assert "needs.run.result == 'success'" in wf      # cancelled/failed runs never relaunch
+    assert "cancel-in-progress: false" in wf
+    assert "AUTO_RESTART" in wf and "disabled" in wf

@@ -311,17 +311,80 @@ def dev_sold(x):
     return False
 
 
-def dev_sold_info(j, rate_at_watch=None):
-    """Confirm-time check on a fresh `token info` response (dev / stat blocks).
-    The security endpoint has no creator fields, so this is the real 'dev hasn't sold' recheck."""
+def dev_holding(j):
+    """(hold_rate, token_balance) of the creator from a `token info` response; None when missing."""
     dev = (j or {}).get("dev") or {}
     stat = (j or {}).get("stat") or {}
+    rate = stat.get("creator_hold_rate")
+    bal = dev.get("creator_token_balance", stat.get("creator_token_balance"))
+    return (num(rate) if rate is not None else None), (num(bal) if bal is not None else None)
+
+
+def dev_sold_info(j, rate_at_watch=None, bal_at_watch=None):
+    """Confirm-time check on a fresh `token info` response (GMGN dev / stat blocks:
+    creator_token_status, creator_hold_rate, creator_token_balance).
+    The security endpoint has no creator fields, so this is the real 'dev hasn't sold' recheck.
+    True if GMGN flags the creator as sold/closed, or the creator's balance or hold rate fell by more
+    than max_dev_sell_frac since the coin was first watched (catches partial dev sells too)."""
+    dev = (j or {}).get("dev") or {}
     if str(dev.get("creator_token_status") or "") in SOLD_STATUSES:
         return True
-    now_rate = stat.get("creator_hold_rate")
-    if rate_at_watch and rate_at_watch > 0 and now_rate is not None and num(now_rate) <= 0:
+    frac = CFG.get("max_dev_sell_frac", 0.2)
+    rate, bal = dev_holding(j)
+    if rate_at_watch and rate_at_watch > 0 and rate is not None and rate < rate_at_watch * (1 - frac):
+        return True
+    if bal_at_watch and bal_at_watch > 0 and bal is not None and bal < bal_at_watch * (1 - frac):
         return True
     return False
+
+
+def coin_age_min(x, j=None, now=None):
+    """Minutes since creation (trenches row first, `token info` creation_timestamp as fallback)."""
+    now = now or time.time()
+    created = f(x, "created_timestamp") or num((j or {}).get("creation_timestamp"))
+    return (now - created) / 60 if created else 0.0
+
+
+def mcap_over_cap(mc):
+    """HARD cap (v2): no tolerance band. Never buy above max_mcap."""
+    return mc > CFG["max_mcap"]
+
+
+def survival_reason(pending, j, p, price, mc, now=None):
+    """v2 survival checks, run when a coin is first watched and on every re-check.
+    Returns a reject reason or None. `pending` holds the watch-time snapshot and the observed peak."""
+    now = now or time.time()
+    if price <= 0:
+        return "no price on confirm"
+    if mcap_over_cap(mc):
+        return f"mcap ${mc:,.0f} above ${CFG['max_mcap']:,.0f} hard cap"
+    if mc < CFG["min_mcap"] * 0.8:
+        return "mcap fell below range"
+    # price vs recent high: GMGN ath_price (the high since launch for a coin this young) + every price we saw
+    peak = max(num(j.get("ath_price")) if j else 0.0, pending.get("peak", 0.0), price)
+    pending["peak"] = peak
+    max_dd = CFG.get("max_drop_from_peak_pct", 35) / 100.0
+    if peak > 0 and price < peak * (1 - max_dd):
+        return f"down {(1 - price / peak) * 100:.0f}% from peak"
+    if pending.get("price") and price <= pending["price"] * (1 - CFG.get("confirm_max_drop_pct", 12) / 100.0):
+        return f"dumped {(1 - price / pending['price']) * 100:.0f}% during confirm wait"
+    if dev_sold_info(j, pending.get("dev_rate"), pending.get("dev_bal")):
+        return "dev sold during confirm wait"
+    b5, s5, v5 = int(num(p.get("buys_5m"))), int(num(p.get("sells_5m"))), num(p.get("volume_5m"))
+    if not activity_ok(b5, s5, v5):
+        return "activity faded during confirm"
+    # real buyers still arriving in the LAST minute, not just an early burst
+    b1 = int(num(p.get("buys_1m")))
+    bv1, sv1 = num(p.get("buy_volume_1m")), num(p.get("sell_volume_1m"))
+    if b1 < CFG.get("min_buys_1m", 3):
+        return "buyers dried up (last 1m)"
+    if sv1 > 0 and bv1 < CFG.get("min_buy_sell_vol_ratio_1m", 0.8) * sv1:
+        return "sellers outweigh buyers (last 1m)"
+    base_rate = pending.get("b5", 0) / 5.0  # buys/min averaged over the 5m before we started watching
+    collapse = CFG.get("max_buys_collapse_pct", 60) / 100.0
+    if base_rate >= 4 and b1 < base_rate * (1 - collapse):
+        return "buys collapsing vs watch start"
+    return None
 
 
 def screen(x):
@@ -448,6 +511,13 @@ def open_position(x, score, price, mc, b5, s5, v5, note_extra=""):
     mint = x["address"]
     if price <= 0:
         raise ValueError(f"open_position with non-positive price {price}")
+    if mcap_over_cap(mc):  # last line of defence: the $ cap is absolute at the moment of buy
+        reason(mint, "mcap above hard cap at buy")
+        log(f"BUY BLOCKED {x.get('symbol')} {mint} mcap ${mc:,.0f} > cap ${CFG['max_mcap']:,.0f}")
+        with LOCK:
+            PENDING.pop(mint, None)
+            TRADED.add(mint)
+        return False
     with LOCK:
         if len(POS) >= CFG["max_open"] or mint in POS:
             reason(mint, "passed but max positions")
@@ -486,74 +556,92 @@ def queue_or_reject(x, score):
     _j, p, price, mc = info(mint)
     b5, s5, v5 = int(num(p.get("buys_5m"))), int(num(p.get("sells_5m"))), num(p.get("volume_5m"))
     why, short = None, None
+    dev_rate, dev_bal = dev_holding(_j)
+    snap = {"price": price, "b5": b5, "peak": 0.0, "dev_rate": dev_rate, "dev_bal": dev_bal}
     if not activity_ok(b5, s5, v5):
         why, short = "weak live activity (5m buys/sells/volume)", "activity"
     elif not smart_or_pressure(x, b5, s5, v5):
         why, short = "no smart money and buy pressure not strong enough", "no smart/pressure"
-    elif price <= 0 or mc > CFG["max_mcap"] * 1.1 or mc < CFG["min_mcap"] * 0.8:
+    elif price <= 0 or mcap_over_cap(mc) or mc < CFG["min_mcap"] * 0.8:
         why, short = "mcap ran before entry", "mcap ran"
+    elif dev_sold_info(_j):
+        why, short = "dev already sold", "dev sold"
+    else:
+        sr = survival_reason(dict(snap, price=0), _j, p, price, mc)  # same health rules, no 'vs watch' parts
+        if sr:
+            why, short = f"watch: {sr}", sr
     if why:
         reason(mint, why)
         with LOCK:
             SKIPPED[mint] = {"sym": x.get("symbol"), "mc": mc, "t": time.time(), "why": short}
             TRADED.add(mint)
         return False
-    dev_rate = (_j.get("stat") or {}).get("creator_hold_rate")
+    now = time.time()
     with LOCK:
-        PENDING[mint] = {"x": x, "score": score, "t0": time.time(), "price": price, "mcap": mc,
-                         "b5": b5, "s5": s5, "v5": v5,
-                         "dev_rate": num(dev_rate) if dev_rate is not None else None}
-    log(f"WATCH {x.get('symbol')} {mint} mcap ${mc:,.0f} score {score} — recheck in {CFG.get('confirm_wait_s', 45)}s")
+        PENDING[mint] = {"x": x, "score": score, "t0": now, "last_check": now, "checks": 0,
+                         "price": price, "mcap": mc, "b5": b5, "s5": s5, "v5": v5,
+                         "peak": max(price, num(_j.get("ath_price"))),
+                         "dev_rate": dev_rate, "dev_bal": dev_bal}
+    log(f"WATCH {x.get('symbol')} {mint} mcap ${mc:,.0f} age {coin_age_min(x, _j):.1f}m score {score} — "
+        f"re-check every {CFG.get('confirm_check_every_s', 30)}s, buy after >= {CFG.get('confirm_wait_s', 90)}s "
+        f"and age >= {CFG.get('min_buy_age_min', 3)}m if it survives")
     return True
 
 
 def confirm_one(mint, pending):
-    """Re-check one watched coin after the wait; buy or reject. Returns 'bought'|'rejected'|'kept'."""
-    drop_max = CFG.get("confirm_max_drop_pct", 12) / 100.0
+    """Re-check one watched coin. Rejects as soon as a survival rule fails; buys only once the coin has
+    passed >= confirm_min_checks re-checks over >= confirm_wait_s AND is >= min_buy_age_min old.
+    Returns 'bought'|'rejected'|'kept'."""
     x, score = pending["x"], pending["score"]
+    now = time.time()
+    j, p, price, mc = info(mint)
+    with LOCK:
+        if mint not in PENDING:
+            return "rejected"
+        pending["checks"] = pending.get("checks", 0) + 1
+        pending["last_check"] = now
+        pending["mcap"] = mc
+    why = survival_reason(pending, j, p, price, mc, now)
+    if why:
+        reject_pending(mint, why)
+        return "rejected"
+    b5, s5, v5 = int(num(p.get("buys_5m"))), int(num(p.get("sells_5m"))), num(p.get("volume_5m"))
+    if not smart_or_pressure(x, b5, s5, v5):
+        reject_pending(mint, "smart/pressure faded during confirm")
+        return "rejected"
+    age = coin_age_min(x, j, now)
+    if (now - pending["t0"] < CFG.get("confirm_wait_s", 90) or pending["checks"] < CFG.get("confirm_min_checks", 2)
+            or age < CFG.get("min_buy_age_min", 3)):
+        return "kept"  # healthy so far; keep watching
     ok, _sec = security_ok(mint)
     if not ok:
         reject_pending(mint, REASONS.get(mint, "security failed on confirm"))
-        return "rejected"
-    j, p, price, mc = info(mint)
-    if dev_sold_info(j, pending.get("dev_rate")):
-        reject_pending(mint, "dev sold during confirm wait")
-        return "rejected"
-    b5, s5, v5 = int(num(p.get("buys_5m"))), int(num(p.get("sells_5m"))), num(p.get("volume_5m"))
-    if price <= 0:
-        reject_pending(mint, "no price on confirm")
-        return "rejected"
-    if pending["price"] and price <= pending["price"] * (1 - drop_max):
-        drop = (1 - price / pending["price"]) * 100
-        reject_pending(mint, f"dumped {drop:.0f}% during confirm wait")
-        return "rejected"
-    if mc > CFG["max_mcap"] * 1.1 or mc < CFG["min_mcap"] * 0.8:
-        reject_pending(mint, "mcap left range during confirm")
-        return "rejected"
-    if not activity_ok(b5, s5, v5):
-        reject_pending(mint, "activity faded during confirm")
-        return "rejected"
-    if not smart_or_pressure(x, b5, s5, v5):
-        reject_pending(mint, "smart/pressure faded during confirm")
         return "rejected"
     with LOCK:
         if mint not in PENDING:
             return "rejected"
         if len(POS) >= CFG["max_open"]:
             return "kept"  # retry when a slot opens, until the confirm window expires
-        bought = open_position(x, score, price, mc, b5, s5, v5, note_extra="confirmed")
+        drop = (1 - price / pending["peak"]) * 100 if pending.get("peak") else 0
+        bought = open_position(x, score, price, mc, b5, s5, v5,
+                               note_extra=f"confirmed {CFG.get('version', 'v1')} checks {pending['checks']} "
+                                          f"age {age:.1f}m 1m {int(num(p.get('buys_1m')))}b "
+                                          f"peak_dd {drop:.0f}%")
     return "bought" if bought else "kept"
 
 
 def confirm_pending():
-    wait = CFG.get("confirm_wait_s", 45)
+    wait = CFG.get("confirm_wait_s", 90)
+    every = CFG.get("confirm_check_every_s", 30)
+    now = time.time()
     # 1) expire stale watches FIRST, so an expired coin can never be bought below
     with LOCK:
-        stale = [m for m, p in PENDING.items() if time.time() - p["t0"] > wait + 180]
+        stale = [m for m, p in PENDING.items() if now - p["t0"] > wait + 180]
     for mint in stale:
         reject_pending(mint, "confirm window expired")
     with LOCK:
-        due = [(m, p) for m, p in PENDING.items() if time.time() - p["t0"] >= wait]
+        due = sorted(((m, p) for m, p in PENDING.items() if now - p.get("last_check", p["t0"]) >= every),
+                     key=lambda mp: mp[1].get("last_check", mp[1]["t0"]))
     results = {}
     for mint, pending in due[:3]:
         if STOP_EVENT.is_set() or os.path.exists(STOP):
@@ -782,7 +870,7 @@ def scan_once():
             with LOCK:
                 if m in TRADED or m in PENDING:
                     continue
-                if len(POS) + len(PENDING) >= CFG["max_open"]:
+                if len(POS) >= CFG["max_open"] or len(PENDING) >= CFG.get("max_pending", CFG["max_open"]):
                     reason(m, "passed but max positions")
                     continue
                 if m not in PASSED:
@@ -964,6 +1052,26 @@ def _start_thread(name, target, args=()):
     return t
 
 
+def mark_version():
+    """Write a one-time MARKER row in trades.csv when a new strategy version starts, so before/after
+    can be compared (scripts/summarize.py splits stats on it). History is never rewritten."""
+    v = CFG.get("version")
+    if not v:
+        return False
+    try:
+        with open(CSV) as fh:
+            for r in csv.DictReader(fh):
+                if r.get("action") == "MARKER" and r.get("symbol") == v:
+                    return False
+    except FileNotFoundError:
+        pass
+    record({"time": ts(), "action": "MARKER", "symbol": v, "name": "strategy version start",
+            "reason": f"{v} started: hard mcap cap ${CFG['max_mcap']:,.0f}, buy age >= "
+                      f"{CFG.get('min_buy_age_min')}m, survival re-checks"})
+    log(f"MARKER {v} start written to trades.csv")
+    return True
+
+
 def main():
     if os.path.exists(STOP):
         try:
@@ -976,11 +1084,14 @@ def main():
     RUN_END[0] = end
     log(f"demo start pid {os.getpid()} (paper only, no wallet, no swaps) "
         f"config: mcap ${CFG['min_mcap']}-{CFG['max_mcap']}, age {CFG['min_age_min']}-{CFG['max_age_min']}m, "
-        f"min_score {CFG.get('min_score')}, confirm {CFG.get('confirm_wait_s')}s, "
+        f"min_score {CFG.get('min_score')}, version {CFG.get('version', 'v1')}, buy age >= {CFG.get('min_buy_age_min')}m, "
+        f"confirm {CFG.get('confirm_wait_s')}s/{CFG.get('confirm_min_checks')} checks, "
+        f"peak dd <= {CFG.get('max_drop_from_peak_pct')}%, "
         f"early_stop {CFG.get('early_stop_pct')}%/{CFG.get('early_stop_window_min')}m, "
         f"time_stop {CFG['time_stop_min']}m, run {CFG['run_minutes']}m, ends {ts(end)}")
     with open(os.path.join(D, "demo.pid"), "w") as fh:
         fh.write(str(os.getpid()))
+    mark_version()
     sol_usd()
     threads = {"monitor": (monitor_loop, ()), "heartbeat": (heartbeat_loop, (end,))}
     live = {n: _start_thread(n, fn, a) for n, (fn, a) in threads.items()}
