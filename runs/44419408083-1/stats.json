@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-19 06:33:27",
- "final": false,
+ "updated": "2026-11-19 06:58:31",
+ "final": true,
  "pid": 2538,
  "started": "2026-11-19 01:18:15",
  "ends": "2026-11-19 06:58:15",
  "counts": {
-  "launches_seen": 9979,
-  "candidates_evaluated": 354,
+  "launches_seen": 10538,
+  "candidates_evaluated": 382,
   "passed_filters": 16,
   "security_rejects": 0,
   "bought": 2,
   "confirm_rejects": 6
  },
  "filtered_by_reason": {
-  "dev already sold": 197,
+  "dev already sold": 217,
   "bundler rate high": 47,
   "serial dev (many launches, low graduation)": 26,
-  "dev holds too much": 18,
-  "snipers hold too much": 14,
+  "dev holds too much": 21,
+  "snipers hold too much": 15,
+  "serial dev (many launches, none graduated)": 10,
+  "score # below min #": 8,
   "top# concentration": 8,
-  "serial dev (many launches, none graduated)": 8,
   "mcap out of range": 7,
   "weak live activity (#m buys/sells/volume)": 7,
-  "score # below min #": 6,
   "dumped #% during confirm wait": 5,
   "copycat X link": 3,
   "entrapment ratio high": 2,
@@ -58,27 +58,41 @@
  "total_pnl_usd": -2.77,
  "win_rate": 0.0,
  "api": {
-  "calls": 2075,
+  "calls": 2238,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795062798.2203062
+  "last_ok": 1795064311.2103393
  },
- "sol_usd": 74.47651508410351,
+ "sol_usd": 74.48411970069823,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-19 06:33:18",
-  "monitor": "2026-11-19 06:33:27",
+  "scan": "2026-11-19 06:57:58",
+  "monitor": "2026-11-19 06:58:03",
   "price": "2026-11-19 02:55:03",
-  "heartbeat": "2026-11-19 06:33:24"
+  "heartbeat": "2026-11-19 06:57:24"
  },
  "ticks_epoch": {
-  "scan": 1795062798.2207196,
-  "monitor": 1795062807.751707,
+  "scan": 1795064278.2569342,
+  "monitor": 1795064283.775708,
   "price": 1795049703.8058681,
-  "heartbeat": 1795062804.0194368
+  "heartbeat": 1795064244.769671
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 6,
+  "rugged_70pct": 2,
+  "examples": [
+   "AudaCity pumped (skip $4320 -> ATH $12964, why: dev already sold)",
+   "AudaCity pumped (skip $4624 -> ATH $16724, why: dev already sold)",
+   "AUDACITY pumped (skip $5007 -> ATH $23889, why: snipers hold too much)",
+   "CLIPCITY pumped (skip $6210 -> ATH $27945, why: dev already sold)",
+   "GTAgent pumped (skip $4473 -> ATH $10155, why: score 1.43 below min 4.0)",
+   "Choco pumped (skip $14378 -> ATH $29917, why: bundler rate high)"
+  ],
+  "errors": 0
  }
 }
