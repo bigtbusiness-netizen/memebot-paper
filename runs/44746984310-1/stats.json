@@ -1,31 +1,32 @@
 {
- "updated": "2026-11-20 20:22:16",
+ "updated": "2026-11-20 20:52:16",
  "final": false,
  "pid": 2323,
  "started": "2026-11-20 16:37:13",
  "ends": "2026-11-20 22:17:13",
  "counts": {
-  "launches_seen": 8207,
-  "candidates_evaluated": 245,
-  "passed_filters": 9,
+  "launches_seen": 9310,
+  "candidates_evaluated": 274,
+  "passed_filters": 11,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 177,
-  "dev holds too much": 20,
-  "score # below min #": 11,
-  "serial dev (many launches, low graduation)": 7,
-  "weak live activity (#m buys/sells/volume)": 6,
+  "dev already sold": 197,
+  "dev holds too much": 22,
+  "score # below min #": 10,
+  "serial dev (many launches, low graduation)": 8,
+  "weak live activity (#m buys/sells/volume)": 7,
+  "mcap out of range": 6,
+  "serial dev (many launches, none graduated)": 6,
   "copycat X link": 5,
-  "mcap out of range": 5,
-  "serial dev (many launches, none graduated)": 5,
+  "bundler rate high": 5,
   "snipers hold too much": 4,
-  "bundler rate high": 2,
   "watch: sellers outweigh buyers (last #m)": 1,
   "mcap $#,# above $#,# hard cap": 1,
-  "watch: down #% from peak": 1
+  "watch: down #% from peak": 1,
+  "watch: buyers dried up (last #m)": 1
  },
  "watching": [],
  "open_positions": [],
@@ -35,27 +36,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1371,
+  "calls": 1555,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795198936.382826
+  "last_ok": 1795200736.416263
  },
- "sol_usd": 69.30127828368789,
+ "sol_usd": 68.64317483133941,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-20 20:22:16",
-  "monitor": "2026-11-20 20:22:13",
+  "scan": "2026-11-20 20:52:16",
+  "monitor": "2026-11-20 20:52:13",
   "price": null,
-  "heartbeat": "2026-11-20 20:21:29"
+  "heartbeat": "2026-11-20 20:51:32"
  },
  "ticks_epoch": {
-  "scan": 1795198936.3831468,
-  "monitor": 1795198933.819641,
+  "scan": 1795200736.4165392,
+  "monitor": 1795200733.8430152,
   "price": 0,
-  "heartbeat": 1795198889.8744051
+  "heartbeat": 1795200692.5169585
  }
 }
