@@ -1,31 +1,32 @@
 {
- "updated": "2026-11-20 02:48:01",
+ "updated": "2026-11-20 03:18:02",
  "final": false,
  "pid": 2513,
  "started": "2026-11-19 23:32:54",
  "ends": "2026-11-20 05:12:54",
  "counts": {
-  "launches_seen": 6418,
-  "candidates_evaluated": 214,
-  "passed_filters": 7,
+  "launches_seen": 7302,
+  "candidates_evaluated": 251,
+  "passed_filters": 11,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 1
+  "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 158,
-  "dev holds too much": 14,
+  "dev already sold": 181,
+  "dev holds too much": 15,
+  "serial dev (many launches, low graduation)": 13,
   "score # below min #": 10,
-  "serial dev (many launches, low graduation)": 7,
+  "weak live activity (#m buys/sells/volume)": 7,
+  "bundler rate high": 6,
   "copycat X link": 5,
-  "bundler rate high": 5,
   "mcap out of range": 5,
-  "weak live activity (#m buys/sells/volume)": 4,
+  "serial dev (many launches, none graduated)": 3,
   "no smart money and buy pressure not strong enough": 2,
   "snipers hold too much": 1,
   "mcap $#,# above $#,# hard cap": 1,
-  "serial dev (many launches, none graduated)": 1,
-  "top# concentration": 1
+  "top# concentration": 1,
+  "activity faded during confirm": 1
  },
  "watching": [],
  "open_positions": [],
@@ -35,27 +36,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1183,
+  "calls": 1373,
   "errors": 2,
   "rate_limited": 2,
   "timeouts": 0,
   "last_error": "[gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-20 00:02:09 GMT+02:00 (~41s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up",
-  "last_ok": 1795135678.7054343
+  "last_ok": 1795137478.7078748
  },
- "sol_usd": 72.73922759871806,
+ "sol_usd": 73.09862673511691,
  "error_count": 0,
  "api_warnings": 2,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-20 02:47:58",
-  "monitor": "2026-11-20 02:47:55",
+  "scan": "2026-11-20 03:17:58",
+  "monitor": "2026-11-20 03:17:55",
   "price": null,
-  "heartbeat": "2026-11-20 02:48:01"
+  "heartbeat": "2026-11-20 03:18:02"
  },
  "ticks_epoch": {
-  "scan": 1795135678.7056637,
-  "monitor": 1795135675.0398767,
+  "scan": 1795137478.7081137,
+  "monitor": 1795137475.070295,
   "price": 0,
-  "heartbeat": 1795135681.1457329
+  "heartbeat": 1795137482.1661327
  }
 }
