@@ -1,27 +1,27 @@
 {
- "updated": "2026-11-20 04:48:07",
- "final": false,
+ "updated": "2026-11-20 05:13:11",
+ "final": true,
  "pid": 2513,
  "started": "2026-11-19 23:32:54",
  "ends": "2026-11-20 05:12:54",
  "counts": {
-  "launches_seen": 10025,
-  "candidates_evaluated": 338,
+  "launches_seen": 10616,
+  "candidates_evaluated": 359,
   "passed_filters": 16,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 3
  },
  "filtered_by_reason": {
-  "dev already sold": 244,
-  "dev holds too much": 20,
-  "serial dev (many launches, low graduation)": 14,
-  "score # below min #": 13,
+  "dev already sold": 256,
+  "dev holds too much": 22,
+  "serial dev (many launches, low graduation)": 15,
+  "score # below min #": 14,
+  "bundler rate high": 12,
   "weak live activity (#m buys/sells/volume)": 11,
-  "bundler rate high": 10,
-  "mcap out of range": 8,
+  "mcap out of range": 9,
   "copycat X link": 6,
-  "serial dev (many launches, none graduated)": 3,
+  "serial dev (many launches, none graduated)": 4,
   "snipers hold too much": 2,
   "no smart money and buy pressure not strong enough": 2,
   "mcap $#,# above $#,# hard cap": 1,
@@ -38,27 +38,45 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1925,
+  "calls": 2088,
   "errors": 2,
   "rate_limited": 2,
   "timeouts": 0,
   "last_error": "[gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-20 00:02:09 GMT+02:00 (~41s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up",
-  "last_ok": 1795142878.7349002
+  "last_ok": 1795144391.6961555
  },
- "sol_usd": 72.17603552259519,
+ "sol_usd": 72.21603554714208,
  "error_count": 0,
  "api_warnings": 2,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-20 04:47:58",
-  "monitor": "2026-11-20 04:48:07",
+  "scan": "2026-11-20 05:12:38",
+  "monitor": "2026-11-20 05:12:55",
   "price": null,
-  "heartbeat": "2026-11-20 04:48:05"
+  "heartbeat": "2026-11-20 05:12:06"
  },
  "ticks_epoch": {
-  "scan": 1795142878.7351046,
-  "monitor": 1795142887.1610818,
+  "scan": 1795144358.7619739,
+  "monitor": 1795144375.1855483,
   "price": 0,
-  "heartbeat": 1795142885.3054917
+  "heartbeat": 1795144326.1092672
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 10,
+  "rugged_70pct": 0,
+  "examples": [
+   "WOKESLOP pumped (skip $4673 -> ATH $15630, why: serial dev (many launches, low graduation))",
+   "PS6 pumped (skip $3930 -> ATH $11513, why: dev already sold)",
+   "FIONA pumped (skip $3352 -> ATH $28200, why: dev already sold)",
+   "BETSAQ pumped (skip $3523 -> ATH $9293, why: dev already sold)",
+   "CINCINNATIZOO pumped (skip $3787 -> ATH $8090, why: dev already sold)",
+   "RM pumped (skip $4590 -> ATH $11395, why: copycat X link)",
+   "BLOX pumped (skip $4502 -> ATH $11138, why: dev already sold)",
+   "ANT pumped (skip $4392 -> ATH $10435, why: dev already sold)",
+   "Clester pumped (skip $3521 -> ATH $9050, why: activity)",
+   "FIONA pumped (skip $4416 -> ATH $13480, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
