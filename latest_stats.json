@@ -1,30 +1,31 @@
 {
- "updated": "2026-11-20 13:40:50",
+ "updated": "2026-11-20 14:10:50",
  "final": false,
  "pid": 2556,
  "started": "2026-11-20 10:55:47",
  "ends": "2026-11-20 16:35:47",
  "counts": {
-  "launches_seen": 3468,
-  "candidates_evaluated": 125,
-  "passed_filters": 4,
+  "launches_seen": 4108,
+  "candidates_evaluated": 150,
+  "passed_filters": 5,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 96,
-  "serial dev (many launches, low graduation)": 7,
-  "score # below min #": 4,
-  "weak live activity (#m buys/sells/volume)": 3,
+  "dev already sold": 114,
+  "serial dev (many launches, low graduation)": 9,
+  "score # below min #": 5,
+  "weak live activity (#m buys/sells/volume)": 4,
   "serial dev (many launches, none graduated)": 3,
+  "bundler rate high": 3,
   "copycat X link": 3,
+  "top# concentration": 3,
   "dev holds too much": 2,
-  "bundler rate high": 2,
-  "top# concentration": 2,
   "snipers hold too much": 1,
   "mcap out of range": 1,
-  "watch: buyers dried up (last #m)": 1
+  "watch: buyers dried up (last #m)": 1,
+  "age window": 1
  },
  "watching": [],
  "open_positions": [],
@@ -34,27 +35,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1000,
+  "calls": 1182,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795174850.157445
+  "last_ok": 1795176650.15347
  },
- "sol_usd": 71.92511244985923,
+ "sol_usd": 71.13469219534531,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-20 13:40:50",
-  "monitor": "2026-11-20 13:40:47",
+  "scan": "2026-11-20 14:10:50",
+  "monitor": "2026-11-20 14:10:47",
   "price": null,
-  "heartbeat": "2026-11-20 13:39:58"
+  "heartbeat": "2026-11-20 14:10:00"
  },
  "ticks_epoch": {
-  "scan": 1795174850.1578374,
-  "monitor": 1795174847.430226,
+  "scan": 1795176650.1538842,
+  "monitor": 1795176647.4599566,
   "price": 0,
-  "heartbeat": 1795174798.6848795
+  "heartbeat": 1795176600.755081
  }
 }
