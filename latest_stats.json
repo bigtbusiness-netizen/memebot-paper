@@ -1,29 +1,29 @@
 {
- "updated": "2026-11-20 16:10:50",
- "final": false,
+ "updated": "2026-11-20 16:36:03",
+ "final": true,
  "pid": 2556,
  "started": "2026-11-20 10:55:47",
  "ends": "2026-11-20 16:35:47",
  "counts": {
-  "launches_seen": 7227,
-  "candidates_evaluated": 260,
+  "launches_seen": 7952,
+  "candidates_evaluated": 276,
   "passed_filters": 7,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 195,
-  "serial dev (many launches, low graduation)": 14,
-  "dev holds too much": 10,
+  "dev already sold": 206,
+  "serial dev (many launches, low graduation)": 15,
+  "dev holds too much": 12,
   "bundler rate high": 9,
-  "score # below min #": 6,
+  "score # below min #": 7,
   "copycat X link": 6,
   "weak live activity (#m buys/sells/volume)": 5,
   "mcap out of range": 4,
   "top# concentration": 4,
   "serial dev (many launches, none graduated)": 3,
-  "snipers hold too much": 1,
+  "snipers hold too much": 2,
   "watch: buyers dried up (last #m)": 1,
   "age window": 1,
   "watch: sellers outweigh buyers (last #m)": 1
@@ -36,27 +36,45 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1906,
+  "calls": 2069,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795183850.2142413
+  "last_ok": 1795185363.1815212
  },
- "sol_usd": 71.20117031515707,
+ "sol_usd": 71.0971067496271,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-20 16:10:50",
-  "monitor": "2026-11-20 16:10:47",
+  "scan": "2026-11-20 16:35:30",
+  "monitor": "2026-11-20 16:35:35",
   "price": null,
-  "heartbeat": "2026-11-20 16:10:09"
+  "heartbeat": "2026-11-20 16:35:10"
  },
  "ticks_epoch": {
-  "scan": 1795183850.2145922,
-  "monitor": 1795183847.576157,
+  "scan": 1795185330.3196385,
+  "monitor": 1795185335.5998626,
   "price": 0,
-  "heartbeat": 1795183809.2764893
+  "heartbeat": 1795185310.259562
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 10,
+  "rugged_70pct": 0,
+  "examples": [
+   "FORKD pumped (skip $3127 -> ATH $6279, why: activity)",
+   "\u666e\u901a\u8bdd pumped (skip $3718 -> ATH $25376, why: dev already sold)",
+   "BiFi pumped (skip $3702 -> ATH $54402, why: serial dev (many launches, low graduation))",
+   "Pok\u00e9Mum pumped (skip $4421 -> ATH $11079, why: dev already sold)",
+   "Azuke pumped (skip $3026 -> ATH $18087, why: dev already sold)",
+   "\u5417\u55bd pumped (skip $4739 -> ATH $26999, why: dev already sold)",
+   "bed pumped (skip $4925 -> ATH $10422, why: dev already sold)",
+   "Shrek pumped (skip $3627 -> ATH $11775, why: serial dev (many launches, none graduated))",
+   "HODL pumped (skip $3141 -> ATH $6385, why: dev already sold)",
+   "Predict pumped (skip $4554 -> ATH $19112, why: activity)"
+  ],
+  "errors": 0
  }
 }
