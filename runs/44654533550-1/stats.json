@@ -1,26 +1,26 @@
 {
- "updated": "2026-11-20 10:29:35",
- "final": false,
+ "updated": "2026-11-20 10:54:38",
+ "final": true,
  "pid": 2528,
  "started": "2026-11-20 05:14:22",
  "ends": "2026-11-20 10:54:22",
  "counts": {
-  "launches_seen": 6462,
-  "candidates_evaluated": 254,
+  "launches_seen": 6968,
+  "candidates_evaluated": 264,
   "passed_filters": 11,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 176,
+  "dev already sold": 187,
   "dev holds too much": 16,
   "serial dev (many launches, low graduation)": 12,
   "score # below min #": 11,
   "copycat X link": 11,
   "weak live activity (#m buys/sells/volume)": 7,
-  "mcap out of range": 5,
   "serial dev (many launches, none graduated)": 4,
+  "mcap out of range": 4,
   "bundler rate high": 4,
   "snipers hold too much": 2,
   "watch: sellers outweigh buyers (last #m)": 2,
@@ -36,27 +36,45 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1915,
+  "calls": 2078,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795163365.7803392
+  "last_ok": 1795164878.7528112
  },
- "sol_usd": 72.5934173344942,
+ "sol_usd": 72.62248002536012,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-20 10:29:25",
-  "monitor": "2026-11-20 10:29:35",
+  "scan": "2026-11-20 10:54:05",
+  "monitor": "2026-11-20 10:54:11",
   "price": null,
-  "heartbeat": "2026-11-20 10:29:33"
+  "heartbeat": "2026-11-20 10:53:34"
  },
  "ticks_epoch": {
-  "scan": 1795163365.780621,
-  "monitor": 1795163375.2121253,
+  "scan": 1795164845.8014565,
+  "monitor": 1795164851.2340617,
   "price": 0,
-  "heartbeat": 1795163373.4748497
+  "heartbeat": 1795164814.3682706
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 10,
+  "rugged_70pct": 1,
+  "examples": [
+   "PEPPS pumped (skip $4029 -> ATH $12574, why: dev already sold)",
+   "BAM pumped (skip $3506 -> ATH $15996, why: dev already sold)",
+   "Joe pumped (skip $4207 -> ATH $19434, why: dev already sold)",
+   "SWRDXSTFF pumped (skip $4519 -> ATH $475425, why: dev holds too much)",
+   "Neko pumped (skip $4163 -> ATH $17939, why: dev already sold)",
+   "gato pumped (skip $4254 -> ATH $9950, why: dev already sold)",
+   "WANTED pumped (skip $3550 -> ATH $7375, why: activity)",
+   "DOGGY pumped (skip $3986 -> ATH $12788, why: dev already sold)",
+   "WASTED pumped (skip $4572 -> ATH $10537, why: dev already sold)",
+   "FWH pumped (skip $3149 -> ATH $7355, why: activity)"
+  ],
+  "errors": 0
  }
 }
