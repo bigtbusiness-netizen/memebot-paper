@@ -1,29 +1,29 @@
 {
- "updated": "2026-11-21 00:33:53",
+ "updated": "2026-11-21 01:03:53",
  "final": false,
  "pid": 2354,
  "started": "2026-11-20 22:18:50",
  "ends": "2026-11-21 03:58:50",
  "counts": {
-  "launches_seen": 5545,
-  "candidates_evaluated": 121,
-  "passed_filters": 5,
+  "launches_seen": 6628,
+  "candidates_evaluated": 144,
+  "passed_filters": 6,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 80,
-  "serial dev (many launches, low graduation)": 8,
+  "dev already sold": 95,
+  "serial dev (many launches, low graduation)": 10,
+  "score # below min #": 9,
   "dev holds too much": 7,
-  "score # below min #": 6,
-  "serial dev (many launches, none graduated)": 4,
+  "serial dev (many launches, none graduated)": 5,
+  "bundler rate high": 4,
   "snipers hold too much": 3,
-  "bundler rate high": 3,
   "copycat X link": 2,
+  "weak live activity (#m buys/sells/volume)": 2,
   "mcap out of range": 2,
   "watch: down #% from peak": 2,
-  "weak live activity (#m buys/sells/volume)": 1,
   "top# concentration": 1,
   "mcap fell below range": 1,
   "activity faded during confirm": 1
@@ -36,27 +36,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 824,
+  "calls": 1006,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795214033.5434117
+  "last_ok": 1795215833.5598752
  },
- "sol_usd": 68.74402638779826,
+ "sol_usd": 69.32721719321174,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-21 00:33:53",
-  "monitor": "2026-11-21 00:33:50",
+  "scan": "2026-11-21 01:03:53",
+  "monitor": "2026-11-21 01:03:50",
   "price": null,
-  "heartbeat": "2026-11-21 00:33:04"
+  "heartbeat": "2026-11-21 01:03:05"
  },
  "ticks_epoch": {
-  "scan": 1795214033.5437045,
-  "monitor": 1795214030.926903,
+  "scan": 1795215833.5601788,
+  "monitor": 1795215830.9527705,
   "price": 0,
-  "heartbeat": 1795213984.0950253
+  "heartbeat": 1795215785.8786805
  }
 }
