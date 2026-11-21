@@ -1,29 +1,21 @@
 {
- "updated": "2026-11-21 09:40:36",
- "final": true,
- "pid": 2331,
- "started": "2026-11-21 04:00:20",
- "ends": "2026-11-21 09:40:20",
+ "updated": "2026-11-21 09:46:40",
+ "final": false,
+ "pid": 2528,
+ "started": "2026-11-21 09:41:52",
+ "ends": "2026-11-21 15:21:52",
  "counts": {
-  "launches_seen": 9041,
-  "candidates_evaluated": 245,
-  "passed_filters": 7,
+  "launches_seen": 160,
+  "candidates_evaluated": 10,
+  "passed_filters": 0,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 1
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 177,
-  "dev holds too much": 14,
-  "bundler rate high": 10,
-  "score # below min #": 10,
-  "serial dev (many launches, low graduation)": 9,
-  "mcap out of range": 7,
-  "serial dev (many launches, none graduated)": 7,
-  "weak live activity (#m buys/sells/volume)": 6,
-  "top# concentration": 2,
-  "copycat X link": 2,
-  "activity faded during confirm": 1
+  "dev already sold": 8,
+  "serial dev (many launches, none graduated)": 1,
+  "score # below min #": 1
  },
  "watching": [],
  "open_positions": [],
@@ -33,43 +25,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 2070,
+  "calls": 30,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795246836.0631766
+  "last_ok": 1795247194.9253166
  },
- "sol_usd": 67.8329690493598,
+ "sol_usd": 67.67260563258267,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-21 09:40:03",
-  "monitor": "2026-11-21 09:40:08",
+  "scan": "2026-11-21 09:46:34",
+  "monitor": "2026-11-21 09:46:40",
   "price": null,
-  "heartbeat": "2026-11-21 09:39:44"
+  "heartbeat": "2026-11-21 09:45:52"
  },
  "ticks_epoch": {
-  "scan": 1795246803.1150353,
-  "monitor": 1795246808.5758064,
+  "scan": 1795247194.9255161,
+  "monitor": 1795247200.33893,
   "price": 0,
-  "heartbeat": 1795246784.6236386
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 8,
-  "rugged_70pct": 0,
-  "examples": [
-   "MengLan pumped (skip $3917 -> ATH $10500, why: dev already sold)",
-   "Altruists pumped (skip $4022 -> ATH $18602, why: dev already sold)",
-   "RUG pumped (skip $3898 -> ATH $23165, why: dev already sold)",
-   "Rockstar pumped (skip $1949 -> ATH $6006, why: mcap out of range)",
-   "ELON pumped (skip $3035 -> ATH $15802, why: dev already sold)",
-   "Lebrain pumped (skip $3237 -> ATH $7400, why: dev already sold)",
-   "MANLETS pumped (skip $3202 -> ATH $11438, why: dev already sold)",
-   "PANIC pumped (skip $4234 -> ATH $12507, why: dev already sold)"
-  ],
-  "errors": 0
+  "heartbeat": 1795247152.3955376
  }
 }
