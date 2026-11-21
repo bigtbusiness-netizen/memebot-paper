@@ -1,16 +1,17 @@
 # Paper bot summary (simulated only)
 
-- updated: 2026-11-21 18:08 EET
+- updated: 2026-11-21 18:38 EET
 - v2 started: 2026-11-19 23:32:54
 
 ## v2 (current version, since 2026-11-19 23:32:54)
 - paper buys: 1  | fully closed: 0
-- realized paper P&L: $+0.00 (stake $2/trade)
+- realized paper P&L: $+1.03 (stake $2/trade)
+- winners: 1/1 (100%)
 
 ## All-time (all versions)
 - paper buys: 11  | fully closed: 10
-- realized paper P&L: $-4.73 (stake $2/trade)
-- winners: 1/10 (10%)
+- realized paper P&L: $-3.70 (stake $2/trade)
+- winners: 2/11 (18%)
 
 ## v1 only
 - paper buys: 10  | fully closed: 10
@@ -21,7 +22,6 @@ Last 15 trade rows:
 
 | time | ver | action | symbol | reason | usd | pnl |
 |---|---|---|---|---|---|---|
-| 2026-11-19 21:16:50 | v1 | BUY | P2P | passed GMGN filters + confirm | 2.00 |  |
 | 2026-11-19 21:18:08 | v1 | SELL | P2P | early dump -20% in 1.3m | 1.60 | -0.40 |
 | 2026-11-19 21:33:30 | v1 | SELL | District  | stop loss -36% | 1.27 | -0.73 |
 | 2026-11-19 22:20:10 | v1 | BUY | JANITOR | passed GMGN filters + confirm | 2.00 |  |
@@ -36,3 +36,4 @@ Last 15 trade rows:
 | 2026-11-19 23:03:18 | v1 | SELL50% | COOLDOG | TP1 +128% | 2.28 | +1.28 |
 | 2026-11-19 23:07:07 | v1 | SELL | COOLDOG | trailing stop (+57%) | 1.57 | +0.57 |
 | 2026-11-21 17:59:04 | v2 | BUY | GTA VII | passed GMGN filters + confirm | 2.00 |  |
+| 2026-11-21 18:30:43 | v2 | SELL50% | GTA VII | TP1 +103% | 2.03 | +1.03 |
