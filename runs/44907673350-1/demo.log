@@ -136,3 +136,39 @@
 2026-11-21 17:35:25 HEARTBEAT up 132.1m left 207.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px -1s ago api 807/0t0 r0 errors 0
 2026-11-21 17:36:25 HEARTBEAT up 133.1m left 206.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px -1s ago api 813/0t0 r0 errors 0
 2026-11-21 17:37:25 HEARTBEAT up 134.1m left 205.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px -1s ago api 819/0t0 r0 errors 0
+2026-11-21 17:38:25 HEARTBEAT up 135.1m left 204.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px -1s ago api 825/0t0 r0 errors 0
+2026-11-21 17:39:24 WATCH mooni GSot3VcbBbcxBfsNywXPDVhyVaUxRmBfj3TFXzbBpump mcap $4,574 age 5.0m score 5.36 — re-check every 30s, buy after >= 90s and age >= 3m if it survives
+2026-11-21 17:39:26 HEARTBEAT up 136.1m left 203.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 1 scan 1s ago mon 6s ago px -1s ago api 833/0t0 r0 errors 0
+2026-11-21 17:40:26 HEARTBEAT up 137.1m left 202.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 1 scan 3s ago mon 6s ago px -1s ago api 840/0t0 r0 errors 0
+2026-11-21 17:40:43 CONFIRM REJECT mooni GSot3VcbBbcxBfsNywXPDVhyVaUxRmBfj3TFXzbBpump — mcap fell below range
+2026-11-21 17:41:26 HEARTBEAT up 138.1m left 201.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px -1s ago api 847/0t0 r0 errors 0
+2026-11-21 17:42:26 HEARTBEAT up 139.1m left 200.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px -1s ago api 853/0t0 r0 errors 0
+2026-11-21 17:43:26 HEARTBEAT up 140.1m left 199.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px -1s ago api 859/0t0 r0 errors 0
+2026-11-21 17:44:26 HEARTBEAT up 141.1m left 198.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 3s ago mon 6s ago px -1s ago api 865/0t0 r0 errors 0
+2026-11-21 17:45:26 HEARTBEAT up 142.1m left 197.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 6s ago px -1s ago api 871/0t0 r0 errors 0
+2026-11-21 17:46:26 HEARTBEAT up 143.1m left 196.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 6s ago px -1s ago api 877/0t0 r0 errors 0
+2026-11-21 17:47:26 HEARTBEAT up 144.1m left 195.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 6s ago px -1s ago api 883/0t0 r0 errors 0
+2026-11-21 17:48:26 HEARTBEAT up 145.1m left 194.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 6s ago px -1s ago api 889/0t0 r0 errors 0
+2026-11-21 17:49:26 HEARTBEAT up 146.1m left 193.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 6s ago px -1s ago api 895/0t0 r0 errors 0
+2026-11-21 17:50:26 HEARTBEAT up 147.1m left 192.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 6s ago px -1s ago api 901/0t0 r0 errors 0
+2026-11-21 17:51:26 HEARTBEAT up 148.1m left 191.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 6s ago px -1s ago api 907/0t0 r0 errors 0
+2026-11-21 17:52:26 HEARTBEAT up 149.1m left 190.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 6s ago px -1s ago api 913/0t0 r0 errors 0
+2026-11-21 17:53:26 HEARTBEAT up 150.1m left 189.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 7s ago px -1s ago api 919/0t0 r0 errors 0
+2026-11-21 17:54:26 HEARTBEAT up 151.1m left 188.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 7s ago px -1s ago api 925/0t0 r0 errors 0
+2026-11-21 17:55:26 HEARTBEAT up 152.1m left 187.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 7s ago px -1s ago api 931/0t0 r0 errors 0
+2026-11-21 17:56:26 HEARTBEAT up 153.1m left 186.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 4s ago mon 7s ago px -1s ago api 937/0t0 r0 errors 0
+2026-11-21 17:57:04 WATCH GTA VII 5hNyf7yxDRyip1r37DnJySQofKfnjBBfzK5BDhmNpump mcap $4,655 age 3.3m score 6.76 — re-check every 30s, buy after >= 90s and age >= 3m if it survives
+2026-11-21 17:57:24 WATCH HOU$E CoCSHzpcKcod7mbxTBevZBhu75aCbR4wCE9TWi4apump mcap $3,822 age 20.9m score 5.29 — re-check every 30s, buy after >= 90s and age >= 3m if it survives
+2026-11-21 17:57:26 HEARTBEAT up 154.1m left 185.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 2 scan 2s ago mon 7s ago px -1s ago api 947/0t0 r0 errors 0
+2026-11-21 17:58:26 HEARTBEAT up 155.1m left 184.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 2 scan 1s ago mon 7s ago px -1s ago api 958/0t0 r0 errors 0
+2026-11-21 17:59:04 PAPER BUY GTA VII 5hNyf7yxDRyip1r37DnJySQofKfnjBBfzK5BDhmNpump mcap $4,835 score 6.76 | age 5m holders 29 top10 25% smart 1 kol 0 5m 109b/40s $3556 dev_launches 2 confirmed v2 checks 3 age 5.3m 1m 25b peak_dd 2%
+2026-11-21 17:59:24 CONFIRM REJECT HOU$E CoCSHzpcKcod7mbxTBevZBhu75aCbR4wCE9TWi4apump — sellers outweigh buyers (last 1m)
+2026-11-21 17:59:26 HEARTBEAT up 156.1m left 183.9m open 1 [GTA VII] closed 0 pnl $+0.00 unreal $+0.04 watching 0 scan 2s ago mon 7s ago px 5s ago api 970/0t0 r0 errors 0
+2026-11-21 18:00:26 HEARTBEAT up 157.1m left 182.9m open 1 [GTA VII] closed 0 pnl $+0.00 unreal $+0.33 watching 0 scan 3s ago mon 7s ago px 5s ago api 981/0t0 r0 errors 0
+2026-11-21 18:01:27 HEARTBEAT up 158.1m left 181.9m open 1 [GTA VII] closed 0 pnl $+0.00 unreal $+1.12 watching 0 scan 3s ago mon 7s ago px 5s ago api 992/0t0 r0 errors 0
+2026-11-21 18:02:27 HEARTBEAT up 159.1m left 180.9m open 1 [GTA VII] closed 0 pnl $+0.00 unreal $+0.41 watching 0 scan 3s ago mon 7s ago px 5s ago api 1003/0t0 r0 errors 0
+2026-11-21 18:03:27 HEARTBEAT up 160.1m left 179.9m open 1 [GTA VII] closed 0 pnl $+0.00 unreal $+0.44 watching 0 scan 3s ago mon 7s ago px 6s ago api 1014/0t0 r0 errors 0
+2026-11-21 18:04:27 HEARTBEAT up 161.1m left 178.9m open 1 [GTA VII] closed 0 pnl $+0.00 unreal $+0.28 watching 0 scan 3s ago mon 7s ago px 6s ago api 1025/0t0 r0 errors 0
+2026-11-21 18:05:27 HEARTBEAT up 162.1m left 177.9m open 1 [GTA VII] closed 0 pnl $+0.00 unreal $+0.39 watching 0 scan 3s ago mon 7s ago px 6s ago api 1036/0t0 r0 errors 0
+2026-11-21 18:06:27 HEARTBEAT up 163.1m left 176.9m open 1 [GTA VII] closed 0 pnl $+0.00 unreal $+0.55 watching 0 scan 3s ago mon 7s ago px 6s ago api 1047/0t0 r0 errors 0
+2026-11-21 18:07:27 HEARTBEAT up 164.1m left 175.9m open 1 [GTA VII] closed 0 pnl $+0.00 unreal $+0.56 watching 0 scan 3s ago mon 7s ago px 6s ago api 1058/0t0 r0 errors 0
