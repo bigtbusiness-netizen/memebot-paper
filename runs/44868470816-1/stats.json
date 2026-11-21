@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-21 14:57:04",
- "final": false,
+ "updated": "2026-11-21 15:22:08",
+ "final": true,
  "pid": 2528,
  "started": "2026-11-21 09:41:52",
  "ends": "2026-11-21 15:21:52",
  "counts": {
-  "launches_seen": 5889,
-  "candidates_evaluated": 173,
+  "launches_seen": 6308,
+  "candidates_evaluated": 185,
   "passed_filters": 7,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 4
  },
  "filtered_by_reason": {
-  "dev already sold": 125,
-  "score # below min #": 10,
+  "dev already sold": 134,
+  "score # below min #": 12,
   "dev holds too much": 7,
   "serial dev (many launches, low graduation)": 6,
   "mcap out of range": 5,
@@ -36,27 +36,41 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1912,
+  "calls": 2075,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795265815.132126
+  "last_ok": 1795267328.0961761
  },
- "sol_usd": 69.0245006195553,
+ "sol_usd": 69.48194653782092,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-21 14:56:55",
-  "monitor": "2026-11-21 14:57:04",
+  "scan": "2026-11-21 15:21:35",
+  "monitor": "2026-11-21 15:21:40",
   "price": null,
-  "heartbeat": "2026-11-21 14:57:01"
+  "heartbeat": "2026-11-21 15:21:02"
  },
  "ticks_epoch": {
-  "scan": 1795265815.1323154,
-  "monitor": 1795265824.645588,
+  "scan": 1795267295.1272588,
+  "monitor": 1795267300.6710422,
   "price": 0,
-  "heartbeat": 1795265821.4253426
+  "heartbeat": 1795267262.1441073
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 6,
+  "rugged_70pct": 0,
+  "examples": [
+   "SI pumped (skip $3384 -> ATH $16051, why: dev already sold)",
+   "SI pumped (skip $3413 -> ATH $16223, why: dev already sold)",
+   "TAI pumped (skip $4712 -> ATH $22363, why: dev already sold)",
+   "pcat  pumped (skip $4944 -> ATH $22126, why: dev already sold)",
+   "RIEMANN pumped (skip $4172 -> ATH $10899, why: dev already sold)",
+   "Crack pumped (skip $3844 -> ATH $11790, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
