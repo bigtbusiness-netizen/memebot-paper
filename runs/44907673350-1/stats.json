@@ -1,74 +1,72 @@
 {
- "updated": "2026-11-21 18:38:23",
+ "updated": "2026-11-21 19:08:22",
  "final": false,
  "pid": 2363,
  "started": "2026-11-21 15:23:19",
  "ends": "2026-11-21 21:03:19",
  "counts": {
-  "launches_seen": 5123,
-  "candidates_evaluated": 151,
-  "passed_filters": 9,
+  "launches_seen": 6069,
+  "candidates_evaluated": 172,
+  "passed_filters": 11,
   "security_rejects": 0,
   "bought": 1,
-  "confirm_rejects": 3
+  "confirm_rejects": 4
  },
  "filtered_by_reason": {
-  "dev already sold": 107,
-  "dev holds too much": 9,
-  "copycat X link": 6,
+  "dev already sold": 121,
+  "dev holds too much": 12,
+  "copycat X link": 7,
+  "weak live activity (#m buys/sells/volume)": 6,
   "score # below min #": 6,
-  "weak live activity (#m buys/sells/volume)": 5,
   "serial dev (many launches, low graduation)": 5,
-  "mcap out of range": 4,
+  "mcap out of range": 5,
   "snipers hold too much": 3,
   "bundler rate high": 2,
   "activity faded during confirm": 1,
   "mcap fell below range": 1,
   "BOUGHT": 1,
-  "sellers outweigh buyers (last #m)": 1
+  "sellers outweigh buyers (last #m)": 1,
+  "down #% from peak": 1
  },
  "watching": [],
- "open_positions": [
+ "open_positions": [],
+ "closed": [
   {
    "symbol": "GTA VII",
    "mint": "5hNyf7yxDRyip1r37DnJySQofKfnjBBfzK5BDhmNpump",
    "entry_mcap": 4835,
-   "mcap_now": 12918,
-   "value_usd": 2.516,
-   "unrealized_pnl_usd": 1.516,
-   "realized_usd": 1.032,
-   "tp1_hit": true,
-   "held_min": 39.3,
-   "stale_s": 2.4
+   "exit_reason": "trailing stop (+96%)",
+   "pnl_usd": 1.992,
+   "pnl_pct": 99.6,
+   "held_min": 42.9
   }
  ],
- "closed": [],
- "realized_pnl_usd": 1.032,
- "unrealized_pnl_usd": 1.516,
- "total_pnl_usd": 2.548,
- "win_rate": null,
+ "realized_pnl_usd": 1.992,
+ "unrealized_pnl_usd": 0,
+ "total_pnl_usd": 1.992,
+ "win_rate": 1.0,
  "api": {
-  "calls": 1399,
+  "calls": 1602,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795279103.474016
+  "last_ok": 1795280902.306925
  },
- "sol_usd": 70.24457526941742,
+ "sol_usd": 70.57992081243493,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-21 18:38:23",
-  "monitor": "2026-11-21 18:38:19",
-  "price": "2026-11-21 18:38:21",
-  "heartbeat": "2026-11-21 18:37:28"
+  "scan": "2026-11-21 19:08:22",
+  "monitor": "2026-11-21 19:08:19",
+  "price": "2026-11-21 18:41:55",
+  "heartbeat": "2026-11-21 19:07:30"
  },
  "ticks_epoch": {
-  "scan": 1795279103.4743047,
-  "monitor": 1795279099.6934,
-  "price": 1795279101.103232,
-  "heartbeat": 1795279048.8851318
+  "scan": 1795280902.30724,
+  "monitor": 1795280899.7196355,
+  "price": 1795279315.992258,
+  "heartbeat": 1795280850.5907655
  }
 }
