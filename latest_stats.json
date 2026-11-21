@@ -1,27 +1,27 @@
 {
- "updated": "2026-11-21 20:38:31",
- "final": false,
+ "updated": "2026-11-21 21:03:35",
+ "final": true,
  "pid": 2363,
  "started": "2026-11-21 15:23:19",
  "ends": "2026-11-21 21:03:19",
  "counts": {
-  "launches_seen": 9045,
-  "candidates_evaluated": 258,
+  "launches_seen": 9894,
+  "candidates_evaluated": 284,
   "passed_filters": 11,
   "security_rejects": 0,
   "bought": 1,
   "confirm_rejects": 4
  },
  "filtered_by_reason": {
-  "dev already sold": 182,
+  "dev already sold": 201,
   "dev holds too much": 19,
-  "score # below min #": 11,
+  "score # below min #": 13,
   "serial dev (many launches, low graduation)": 10,
   "copycat X link": 9,
   "mcap out of range": 9,
   "weak live activity (#m buys/sells/volume)": 6,
+  "bundler rate high": 4,
   "snipers hold too much": 3,
-  "bundler rate high": 2,
   "activity faded during confirm": 1,
   "mcap fell below range": 1,
   "BOUGHT": 1,
@@ -48,27 +48,41 @@
  "total_pnl_usd": 1.992,
  "win_rate": 1.0,
  "api": {
-  "calls": 2142,
+  "calls": 2305,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795286302.3502529
+  "last_ok": 1795287815.3248582
  },
- "sol_usd": 70.67103187999497,
+ "sol_usd": 70.61684622495636,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-21 20:38:22",
-  "monitor": "2026-11-21 20:38:31",
+  "scan": "2026-11-21 21:03:02",
+  "monitor": "2026-11-21 21:03:07",
   "price": "2026-11-21 18:41:55",
-  "heartbeat": "2026-11-21 20:37:35"
+  "heartbeat": "2026-11-21 21:02:36"
  },
  "ticks_epoch": {
-  "scan": 1795286302.3505573,
-  "monitor": 1795286311.7979488,
+  "scan": 1795287782.393207,
+  "monitor": 1795287787.8189852,
   "price": 1795279315.992258,
-  "heartbeat": 1795286255.4154072
+  "heartbeat": 1795287756.9986107
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 6,
+  "rugged_70pct": 0,
+  "examples": [
+   "PANIC pumped (skip $3683 -> ATH $8186, why: dev already sold)",
+   "SUB pumped (skip $3268 -> ATH $25701, why: dev already sold)",
+   "drill pumped (skip $4796 -> ATH $10342, why: dev already sold)",
+   "memeguy pumped (skip $3677 -> ATH $8354, why: dev already sold)",
+   "TRUMPCOIN pumped (skip $4726 -> ATH $37494, why: dev already sold)",
+   "WHALLET pumped (skip $4495 -> ATH $9950, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
