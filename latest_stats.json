@@ -1,32 +1,21 @@
 {
- "updated": "2026-11-21 03:59:06",
- "final": true,
- "pid": 2354,
- "started": "2026-11-20 22:18:50",
- "ends": "2026-11-21 03:58:50",
+ "updated": "2026-11-21 04:05:08",
+ "final": false,
+ "pid": 2331,
+ "started": "2026-11-21 04:00:20",
+ "ends": "2026-11-21 09:40:20",
  "counts": {
-  "launches_seen": 12193,
-  "candidates_evaluated": 296,
-  "passed_filters": 12,
+  "launches_seen": 210,
+  "candidates_evaluated": 10,
+  "passed_filters": 0,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 2
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 199,
-  "serial dev (many launches, low graduation)": 21,
-  "dev holds too much": 18,
-  "score # below min #": 14,
-  "bundler rate high": 9,
-  "weak live activity (#m buys/sells/volume)": 8,
-  "serial dev (many launches, none graduated)": 7,
-  "copycat X link": 6,
-  "snipers hold too much": 4,
-  "mcap out of range": 4,
-  "watch: down #% from peak": 2,
-  "top# concentration": 1,
-  "mcap fell below range": 1,
-  "activity faded during confirm": 1
+  "dev already sold": 8,
+  "bundler rate high": 1,
+  "mcap out of range": 1
  },
  "watching": [],
  "open_positions": [],
@@ -36,44 +25,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 2081,
+  "calls": 30,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795226346.6448514
+  "last_ok": 1795226702.95963
  },
- "sol_usd": 68.55010362970063,
+ "sol_usd": 68.56968787436476,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-21 03:58:33",
-  "monitor": "2026-11-21 03:58:39",
+  "scan": "2026-11-21 04:05:02",
+  "monitor": "2026-11-21 04:05:08",
   "price": null,
-  "heartbeat": "2026-11-21 03:58:19"
+  "heartbeat": "2026-11-21 04:04:20"
  },
  "ticks_epoch": {
-  "scan": 1795226313.6820917,
-  "monitor": 1795226319.105565,
+  "scan": 1795226702.9600155,
+  "monitor": 1795226708.298436,
   "price": 0,
-  "heartbeat": 1795226299.2891364
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 9,
-  "rugged_70pct": 0,
-  "examples": [
-   "tired pumped (skip $3086 -> ATH $17503, why: dev already sold)",
-   "RIFTRAT pumped (skip $4343 -> ATH $9547, why: copycat X link)",
-   "S&P500 pumped (skip $3813 -> ATH $9184, why: dev already sold)",
-   "STX pumped (skip $3031 -> ATH $31599, why: snipers hold too much)",
-   "SDC pumped (skip $3248 -> ATH $7245, why: activity)",
-   "Cockroach pumped (skip $2132 -> ATH $12839, why: mcap out of range)",
-   "bobby pumped (skip $4625 -> ATH $31229, why: dev already sold)",
-   "SCC pumped (skip $3359 -> ATH $7682, why: snipers hold too much)",
-   "VICKY pumped (skip $4738 -> ATH $9639, why: dev already sold)"
-  ],
-  "errors": 0
+  "heartbeat": 1795226660.3850331
  }
 }
