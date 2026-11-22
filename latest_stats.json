@@ -1,33 +1,22 @@
 {
- "updated": "2026-11-22 08:26:37",
- "final": true,
- "pid": 2502,
- "started": "2026-11-22 02:46:21",
- "ends": "2026-11-22 08:26:21",
+ "updated": "2026-11-22 08:32:36",
+ "final": false,
+ "pid": 2338,
+ "started": "2026-11-22 08:27:48",
+ "ends": "2026-11-22 14:07:48",
  "counts": {
-  "launches_seen": 8413,
-  "candidates_evaluated": 256,
-  "passed_filters": 11,
+  "launches_seen": 159,
+  "candidates_evaluated": 8,
+  "passed_filters": 0,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 5
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 172,
-  "dev holds too much": 21,
-  "serial dev (many launches, low graduation)": 17,
-  "bundler rate high": 7,
-  "score # below min #": 7,
-  "serial dev (many launches, none graduated)": 7,
-  "weak live activity (#m buys/sells/volume)": 5,
-  "mcap out of range": 5,
-  "copycat X link": 3,
-  "snipers hold too much": 3,
-  "mcap fell below range": 2,
-  "mcap $#,# above $#,# hard cap": 2,
-  "buyers dried up (last #m)": 1,
-  "insider/rat traders high": 1,
-  "watch: sellers outweigh buyers (last #m)": 1
+  "dev already sold": 5,
+  "serial dev (many launches, none graduated)": 1,
+  "score # below min #": 1,
+  "serial dev (many launches, low graduation)": 1
  },
  "watching": [],
  "open_positions": [],
@@ -37,43 +26,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 2083,
+  "calls": 30,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795328797.0353558
+  "last_ok": 1795329151.0367997
  },
- "sol_usd": 68.72969330695183,
+ "sol_usd": 68.87683818175935,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-22 08:26:04",
-  "monitor": "2026-11-22 08:26:09",
+  "scan": "2026-11-22 08:32:31",
+  "monitor": "2026-11-22 08:32:36",
   "price": null,
-  "heartbeat": "2026-11-22 08:25:31"
+  "heartbeat": "2026-11-22 08:31:48"
  },
  "ticks_epoch": {
-  "scan": 1795328764.075732,
-  "monitor": 1795328769.6033075,
+  "scan": 1795329151.0371187,
+  "monitor": 1795329156.3784928,
   "price": 0,
-  "heartbeat": 1795328731.8172746
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 8,
-  "rugged_70pct": 0,
-  "examples": [
-   "HOE pumped (skip $4903 -> ATH $10340, why: dev already sold)",
-   "Faucet pumped (skip $3162 -> ATH $14589, why: dev already sold)",
-   "GTAMAS pumped (skip $4660 -> ATH $10789, why: dev already sold)",
-   "RIZZMAS3 pumped (skip $3803 -> ATH $17228, why: serial dev (many launches, low graduation))",
-   "Pibblemas pumped (skip $3449 -> ATH $6903, why: dev holds too much)",
-   "EI pumped (skip $4185 -> ATH $10429, why: dev already sold)",
-   "Tots pumped (skip $3816 -> ATH $27572, why: dev already sold)",
-   "PUMPMAS pumped (skip $4441 -> ATH $14586, why: snipers hold too much)"
-  ],
-  "errors": 0
+  "heartbeat": 1795329108.4551475
  }
 }
