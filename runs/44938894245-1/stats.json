@@ -1,30 +1,30 @@
 {
- "updated": "2026-11-22 01:49:57",
+ "updated": "2026-11-22 02:19:57",
  "final": false,
  "pid": 3029,
  "started": "2026-11-21 21:04:44",
  "ends": "2026-11-22 02:44:44",
  "counts": {
-  "launches_seen": 8768,
-  "candidates_evaluated": 287,
-  "passed_filters": 20,
+  "launches_seen": 9467,
+  "candidates_evaluated": 331,
+  "passed_filters": 21,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 6
  },
  "filtered_by_reason": {
-  "dev already sold": 187,
-  "dev holds too much": 25,
-  "serial dev (many launches, low graduation)": 14,
-  "score # below min #": 13,
-  "weak live activity (#m buys/sells/volume)": 11,
-  "bundler rate high": 10,
+  "dev already sold": 217,
+  "dev holds too much": 29,
+  "score # below min #": 16,
+  "serial dev (many launches, low graduation)": 16,
+  "weak live activity (#m buys/sells/volume)": 12,
+  "bundler rate high": 12,
   "serial dev (many launches, none graduated)": 4,
   "mcap out of range": 4,
   "snipers hold too much": 4,
   "top# concentration": 4,
+  "copycat X link": 3,
   "buyers dried up (last #m)": 2,
-  "copycat X link": 2,
   "watch: down #% from peak": 1,
   "activity faded during confirm": 1,
   "watch: sellers outweigh buyers (last #m)": 1,
@@ -41,27 +41,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1760,
+  "calls": 1942,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795304987.7502923
+  "last_ok": 1795306787.778743
  },
- "sol_usd": 70.23370625248485,
+ "sol_usd": 70.24168173399968,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-22 01:49:47",
-  "monitor": "2026-11-22 01:49:57",
+  "scan": "2026-11-22 02:19:47",
+  "monitor": "2026-11-22 02:19:57",
   "price": null,
-  "heartbeat": "2026-11-22 01:49:04"
+  "heartbeat": "2026-11-22 02:19:06"
  },
  "ticks_epoch": {
-  "scan": 1795304987.7505577,
-  "monitor": 1795304997.1716485,
+  "scan": 1795306787.7791374,
+  "monitor": 1795306797.197029,
   "price": 0,
-  "heartbeat": 1795304944.0421357
+  "heartbeat": 1795306746.0408156
  }
 }
