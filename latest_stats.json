@@ -1,34 +1,23 @@
 {
- "updated": "2026-11-23 01:31:03",
- "final": true,
- "pid": 2340,
- "started": "2026-11-22 19:50:48",
- "ends": "2026-11-23 01:30:48",
+ "updated": "2026-11-23 01:37:02",
+ "final": false,
+ "pid": 2526,
+ "started": "2026-11-23 01:32:14",
+ "ends": "2026-11-23 07:12:14",
  "counts": {
-  "launches_seen": 11822,
-  "candidates_evaluated": 306,
-  "passed_filters": 16,
+  "launches_seen": 220,
+  "candidates_evaluated": 14,
+  "passed_filters": 1,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 3
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 201,
-  "dev holds too much": 20,
-  "serial dev (many launches, low graduation)": 19,
-  "score # below min #": 17,
-  "weak live activity (#m buys/sells/volume)": 10,
-  "copycat X link": 9,
-  "snipers hold too much": 6,
-  "bundler rate high": 5,
-  "mcap out of range": 4,
-  "top# concentration": 3,
-  "serial dev (many launches, none graduated)": 3,
-  "no smart money and buy pressure not strong enough": 2,
-  "mcap $#,# above $#,# hard cap": 2,
-  "dumped #% during confirm wait": 1,
-  "watch: sellers outweigh buyers (last #m)": 1,
-  "age window": 1
+  "dev already sold": 10,
+  "serial dev (many launches, low graduation)": 1,
+  "weak live activity (#m buys/sells/volume)": 1,
+  "snipers hold too much": 1,
+  "score # below min #": 1
  },
  "watching": [],
  "open_positions": [],
@@ -38,40 +27,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 2091,
+  "calls": 32,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795390263.984009
+  "last_ok": 1795390617.6243596
  },
- "sol_usd": 70.46922768247055,
+ "sol_usd": 70.47010093680497,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-23 01:30:31",
-  "monitor": "2026-11-23 01:30:36",
+  "scan": "2026-11-23 01:36:57",
+  "monitor": "2026-11-23 01:37:02",
   "price": null,
-  "heartbeat": "2026-11-23 01:30:10"
+  "heartbeat": "2026-11-23 01:36:15"
  },
  "ticks_epoch": {
-  "scan": 1795390231.0262358,
-  "monitor": 1795390236.5226555,
+  "scan": 1795390617.6246908,
+  "monitor": 1795390622.8960888,
   "price": 0,
-  "heartbeat": 1795390210.9249585
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 5,
-  "rugged_70pct": 0,
-  "examples": [
-   "Lemong pumped (skip $4997 -> ATH $20803, why: dev holds too much)",
-   "Bat pumped (skip $3682 -> ATH $11409, why: dev already sold)",
-   "SNGULARITY pumped (skip $4506 -> ATH $14049, why: dev holds too much)",
-   "MC pumped (skip $3277 -> ATH $6590, why: dev already sold)",
-   "neko pumped (skip $4610 -> ATH $9422, why: dev already sold)"
-  ],
-  "errors": 0
+  "heartbeat": 1795390575.1118877
  }
 }
