@@ -1,58 +1,69 @@
 {
- "updated": "2026-11-22 10:12:51",
+ "updated": "2026-11-22 10:42:51",
  "final": false,
  "pid": 2338,
  "started": "2026-11-22 08:27:48",
  "ends": "2026-11-22 14:07:48",
  "counts": {
-  "launches_seen": 2232,
-  "candidates_evaluated": 68,
-  "passed_filters": 4,
+  "launches_seen": 2777,
+  "candidates_evaluated": 83,
+  "passed_filters": 5,
   "security_rejects": 0,
-  "bought": 0,
+  "bought": 1,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 44,
-  "serial dev (many launches, low graduation)": 8,
-  "serial dev (many launches, none graduated)": 4,
-  "dev holds too much": 3,
+  "dev already sold": 55,
+  "serial dev (many launches, low graduation)": 9,
+  "serial dev (many launches, none graduated)": 5,
+  "dev holds too much": 4,
   "mcap $#,# above $#,# hard cap": 2,
   "bundler rate high": 2,
   "weak live activity (#m buys/sells/volume)": 2,
   "score # below min #": 1,
   "snipers hold too much": 1,
-  "copycat X link": 1
+  "copycat X link": 1,
+  "BOUGHT": 1
  },
  "watching": [],
  "open_positions": [],
- "closed": [],
- "realized_pnl_usd": 0,
+ "closed": [
+  {
+   "symbol": "RILO",
+   "mint": "3fzHFKS8hpWmhTYy9CygLPJpJJd2y8TBsdfxqHZppump",
+   "entry_mcap": 4432,
+   "exit_reason": "stop loss -36%",
+   "pnl_usd": -0.715,
+   "pnl_pct": -35.8,
+   "held_min": 6.9
+  }
+ ],
+ "realized_pnl_usd": -0.715,
  "unrealized_pnl_usd": 0,
- "total_pnl_usd": 0,
- "win_rate": null,
+ "total_pnl_usd": -0.715,
+ "win_rate": 0.0,
  "api": {
-  "calls": 644,
+  "calls": 865,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795335171.0790277
+  "last_ok": 1795336971.096562
  },
- "sol_usd": 69.12506923992073,
+ "sol_usd": 69.93166461830425,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-22 10:12:51",
-  "monitor": "2026-11-22 10:12:48",
-  "price": null,
-  "heartbeat": "2026-11-22 10:11:53"
+  "scan": "2026-11-22 10:42:51",
+  "monitor": "2026-11-22 10:42:48",
+  "price": "2026-11-22 10:37:24",
+  "heartbeat": "2026-11-22 10:41:55"
  },
  "ticks_epoch": {
-  "scan": 1795335171.0792587,
-  "monitor": 1795335168.461632,
-  "price": 0,
-  "heartbeat": 1795335113.5634665
+  "scan": 1795336971.096859,
+  "monitor": 1795336968.4903595,
+  "price": 1795336644.7732139,
+  "heartbeat": 1795336915.4483862
  }
 }
