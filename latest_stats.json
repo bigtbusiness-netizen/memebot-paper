@@ -1,37 +1,23 @@
 {
- "updated": "2026-11-22 02:45:00",
- "final": true,
- "pid": 3029,
- "started": "2026-11-21 21:04:44",
- "ends": "2026-11-22 02:44:44",
+ "updated": "2026-11-22 02:51:09",
+ "final": false,
+ "pid": 2502,
+ "started": "2026-11-22 02:46:21",
+ "ends": "2026-11-22 08:26:21",
  "counts": {
-  "launches_seen": 10028,
-  "candidates_evaluated": 361,
-  "passed_filters": 21,
+  "launches_seen": 179,
+  "candidates_evaluated": 12,
+  "passed_filters": 0,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 6
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 236,
-  "dev holds too much": 31,
-  "score # below min #": 17,
-  "serial dev (many launches, low graduation)": 17,
-  "bundler rate high": 13,
-  "weak live activity (#m buys/sells/volume)": 12,
-  "serial dev (many launches, none graduated)": 6,
-  "mcap out of range": 5,
-  "snipers hold too much": 4,
-  "top# concentration": 4,
-  "copycat X link": 4,
-  "buyers dried up (last #m)": 2,
-  "watch: down #% from peak": 1,
-  "activity faded during confirm": 1,
-  "watch: sellers outweigh buyers (last #m)": 1,
-  "mcap $#,# above $#,# hard cap": 1,
-  "no smart money and buy pressure not strong enough": 1,
-  "dumped #% during confirm wait": 1,
-  "sellers outweigh buyers (last #m)": 1
+  "dev already sold": 6,
+  "bundler rate high": 2,
+  "serial dev (many launches, low graduation)": 2,
+  "copycat X link": 1,
+  "dev holds too much": 1
  },
  "watching": [],
  "open_positions": [],
@@ -41,46 +27,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 2105,
+  "calls": 30,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795308300.7391331
+  "last_ok": 1795308663.8362134
  },
- "sol_usd": 70.27768761083651,
+ "sol_usd": 70.21482799582527,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-22 02:44:27",
-  "monitor": "2026-11-22 02:44:33",
+  "scan": "2026-11-22 02:51:03",
+  "monitor": "2026-11-22 02:51:09",
   "price": null,
-  "heartbeat": "2026-11-22 02:44:07"
+  "heartbeat": "2026-11-22 02:50:21"
  },
  "ticks_epoch": {
-  "scan": 1795308267.7854278,
-  "monitor": 1795308273.2175052,
+  "scan": 1795308663.8364396,
+  "monitor": 1795308669.2521536,
   "price": 0,
-  "heartbeat": 1795308247.7725832
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 11,
-  "rugged_70pct": 1,
-  "examples": [
-   "CI pumped (skip $3849 -> ATH $10550, why: dev already sold)",
-   "CUCKULUS pumped (skip $4484 -> ATH $9620, why: dev already sold)",
-   "PAIR pumped (skip $3269 -> ATH $6737, why: score 2.22 below min 4.0)",
-   "FuckCrypto pumped (skip $4451 -> ATH $24354, why: activity)",
-   "RIEMANN pumped (skip $5000 -> ATH $11132, why: dev already sold)",
-   "HATS pumped (skip $3124 -> ATH $6531, why: activity)",
-   "Employed pumped (skip $4653 -> ATH $16313, why: dev already sold)",
-   "SENTIENT pumped (skip $3949 -> ATH $15300, why: dev holds too much)",
-   "GUS pumped (skip $4927 -> ATH $26460, why: dev already sold)",
-   "Anusha pumped (skip $4245 -> ATH $19427, why: dev holds too much)",
-   "OBAMA pumped (skip $3238 -> ATH $14407, why: dev already sold)"
-  ],
-  "errors": 0
+  "heartbeat": 1795308621.3150656
  }
 }
