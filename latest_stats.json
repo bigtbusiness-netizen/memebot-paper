@@ -1,92 +1,52 @@
 {
- "updated": "2026-11-23 18:35:13",
- "final": true,
- "pid": 2564,
- "started": "2026-11-23 12:54:57",
- "ends": "2026-11-23 18:34:57",
+ "updated": "2026-11-23 18:41:09",
+ "final": false,
+ "pid": 2332,
+ "started": "2026-11-23 18:36:21",
+ "ends": "2026-11-24 00:16:21",
  "counts": {
-  "launches_seen": 11565,
-  "candidates_evaluated": 371,
-  "passed_filters": 15,
+  "launches_seen": 256,
+  "candidates_evaluated": 18,
+  "passed_filters": 0,
   "security_rejects": 0,
-  "bought": 1,
-  "confirm_rejects": 3
+  "bought": 0,
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 264,
-  "score # below min #": 22,
-  "dev holds too much": 16,
-  "serial dev (many launches, low graduation)": 15,
-  "weak live activity (#m buys/sells/volume)": 9,
-  "bundler rate high": 9,
-  "serial dev (many launches, none graduated)": 9,
-  "snipers hold too much": 5,
-  "copycat X link": 4,
-  "entrapment ratio high": 4,
-  "mcap out of range": 3,
-  "age window": 2,
-  "BOUGHT": 1,
-  "no smart money and buy pressure not strong enough": 1,
-  "dumped #% during confirm wait": 1,
-  "buyers dried up (last #m)": 1,
-  "mcap fell below range": 1,
-  "watch: down #% from peak": 1
+  "dev already sold": 13,
+  "score # below min #": 3,
+  "dev holds too much": 1,
+  "copycat X link": 1
  },
  "watching": [],
  "open_positions": [],
- "closed": [
-  {
-   "symbol": "CAIN",
-   "mint": "C78HR46S9A1dSGBdneNhnTuGE7yENibWkKzsBgVbpump",
-   "entry_mcap": 4619,
-   "exit_reason": "trailing stop (+57%)",
-   "pnl_usd": 1.89,
-   "pnl_pct": 94.5,
-   "held_min": 18.3
-  }
- ],
- "realized_pnl_usd": 1.89,
+ "closed": [],
+ "realized_pnl_usd": 0,
  "unrealized_pnl_usd": 0,
- "total_pnl_usd": 1.89,
- "win_rate": 1.0,
+ "total_pnl_usd": 0,
+ "win_rate": null,
  "api": {
-  "calls": 2185,
+  "calls": 30,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795451713.13045
+  "last_ok": 1795452064.2237937
  },
- "sol_usd": 75.0666548379035,
+ "sol_usd": 74.43515959972558,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-23 18:34:40",
-  "monitor": "2026-11-23 18:34:45",
-  "price": "2026-11-23 13:34:21",
-  "heartbeat": "2026-11-23 18:34:16"
+  "scan": "2026-11-23 18:41:04",
+  "monitor": "2026-11-23 18:41:09",
+  "price": null,
+  "heartbeat": "2026-11-23 18:40:21"
  },
  "ticks_epoch": {
-  "scan": 1795451680.1824358,
-  "monitor": 1795451685.5284765,
-  "price": 1795433661.647332,
-  "heartbeat": 1795451656.2473128
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 8,
-  "rugged_70pct": 0,
-  "examples": [
-   "RETEST pumped (skip $3650 -> ATH $17571, why: dev already sold)",
-   "Planimal pumped (skip $4996 -> ATH $12595, why: dev already sold)",
-   "INUBURN pumped (skip $4202 -> ATH $18547, why: dev holds too much)",
-   "Rantaro pumped (skip $3268 -> ATH $24065, why: dev already sold)",
-   "bobcat pumped (skip $4897 -> ATH $21485, why: dev already sold)",
-   "Santa pumped (skip $3209 -> ATH $11175, why: dev already sold)",
-   "IMAGINE pumped (skip $4319 -> ATH $28317, why: activity)",
-   "PRCAT pumped (skip $3821 -> ATH $15337, why: dev already sold)"
-  ],
-  "errors": 0
+  "scan": 1795452064.2241108,
+  "monitor": 1795452069.5958755,
+  "price": 0,
+  "heartbeat": 1795452021.8039424
  }
 }
