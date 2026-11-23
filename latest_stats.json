@@ -1,27 +1,27 @@
 {
- "updated": "2026-11-23 04:47:17",
+ "updated": "2026-11-23 05:17:17",
  "final": false,
  "pid": 2526,
  "started": "2026-11-23 01:32:14",
  "ends": "2026-11-23 07:12:14",
  "counts": {
-  "launches_seen": 5501,
-  "candidates_evaluated": 201,
-  "passed_filters": 13,
+  "launches_seen": 6315,
+  "candidates_evaluated": 225,
+  "passed_filters": 14,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 134,
-  "serial dev (many launches, low graduation)": 16,
+  "dev already sold": 150,
+  "serial dev (many launches, low graduation)": 18,
+  "dev holds too much": 13,
   "bundler rate high": 12,
-  "weak live activity (#m buys/sells/volume)": 10,
-  "dev holds too much": 10,
-  "score # below min #": 7,
-  "mcap out of range": 4,
-  "snipers hold too much": 2,
-  "serial dev (many launches, none graduated)": 2,
+  "weak live activity (#m buys/sells/volume)": 11,
+  "score # below min #": 8,
+  "snipers hold too much": 3,
+  "mcap out of range": 3,
+  "serial dev (many launches, none graduated)": 3,
   "watch: sellers outweigh buyers (last #m)": 1,
   "dev sold during confirm wait": 1,
   "copycat X link": 1,
@@ -35,27 +35,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1201,
+  "calls": 1383,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795402037.738385
+  "last_ok": 1795403837.7444277
  },
- "sol_usd": 69.89966723317433,
+ "sol_usd": 70.77784017627846,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-23 04:47:17",
-  "monitor": "2026-11-23 04:47:15",
+  "scan": "2026-11-23 05:17:17",
+  "monitor": "2026-11-23 05:17:15",
   "price": null,
-  "heartbeat": "2026-11-23 04:46:28"
+  "heartbeat": "2026-11-23 05:16:32"
  },
  "ticks_epoch": {
-  "scan": 1795402037.738692,
-  "monitor": 1795402035.0536628,
+  "scan": 1795403837.7447135,
+  "monitor": 1795403835.0787308,
   "price": 0,
-  "heartbeat": 1795401988.1641219
+  "heartbeat": 1795403792.9326048
  }
 }
