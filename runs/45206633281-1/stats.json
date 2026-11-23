@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-23 23:51:33",
- "final": false,
+ "updated": "2026-11-24 00:16:37",
+ "final": true,
  "pid": 2332,
  "started": "2026-11-23 18:36:21",
  "ends": "2026-11-24 00:16:21",
  "counts": {
-  "launches_seen": 13707,
-  "candidates_evaluated": 431,
+  "launches_seen": 14601,
+  "candidates_evaluated": 453,
   "passed_filters": 21,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 5
  },
  "filtered_by_reason": {
-  "dev already sold": 290,
-  "dev holds too much": 31,
-  "score # below min #": 30,
-  "serial dev (many launches, low graduation)": 16,
+  "dev already sold": 303,
+  "dev holds too much": 33,
+  "score # below min #": 32,
+  "serial dev (many launches, low graduation)": 17,
   "copycat X link": 12,
+  "mcap out of range": 10,
   "weak live activity (#m buys/sells/volume)": 10,
-  "mcap out of range": 9,
   "snipers hold too much": 9,
-  "bundler rate high": 7,
-  "serial dev (many launches, none graduated)": 5,
+  "bundler rate high": 8,
+  "serial dev (many launches, none graduated)": 6,
   "watch: down #% from peak": 3,
   "activity faded during confirm": 2,
   "watch: sellers outweigh buyers (last #m)": 1,
@@ -41,27 +41,46 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1941,
+  "calls": 2104,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795470684.4138901
+  "last_ok": 1795472197.365424
  },
- "sol_usd": 72.03139384979147,
+ "sol_usd": 72.08283404317301,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-23 23:51:24",
-  "monitor": "2026-11-23 23:51:33",
+  "scan": "2026-11-24 00:16:04",
+  "monitor": "2026-11-24 00:16:09",
   "price": null,
-  "heartbeat": "2026-11-23 23:50:43"
+  "heartbeat": "2026-11-24 00:15:45"
  },
  "ticks_epoch": {
-  "scan": 1795470684.4142685,
-  "monitor": 1795470693.868592,
+  "scan": 1795472164.4053795,
+  "monitor": 1795472169.8915632,
   "price": 0,
-  "heartbeat": 1795470643.6437716
+  "heartbeat": 1795472145.2628562
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 11,
+  "rugged_70pct": 2,
+  "examples": [
+   "JENSEN pumped (skip $4368 -> ATH $12088, why: dev already sold)",
+   "Motion pumped (skip $4477 -> ATH $10342, why: dev already sold)",
+   "EuropaCoin pumped (skip $3974 -> ATH $8597, why: dev already sold)",
+   "Aslan pumped (skip $4918 -> ATH $13484, why: dev already sold)",
+   "BURSTCOIN pumped (skip $3006 -> ATH $7709, why: dev already sold)",
+   "NGMI pumped (skip $3055 -> ATH $14035, why: dev already sold)",
+   "JENSEN pumped (skip $4014 -> ATH $29390, why: dev already sold)",
+   "CALLR pumped (skip $3360 -> ATH $7588, why: score 2.19 below min 4.0)",
+   "ANT pumped (skip $3172 -> ATH $6353, why: dev holds too much)",
+   "ROUTA pumped (skip $4728 -> ATH $24183, why: copycat X link)",
+   "BRA pumped (skip $3870 -> ATH $19955, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
