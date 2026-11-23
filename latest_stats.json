@@ -1,31 +1,32 @@
 {
- "updated": "2026-11-23 16:10:00",
+ "updated": "2026-11-23 16:40:00",
  "final": false,
  "pid": 2564,
  "started": "2026-11-23 12:54:57",
  "ends": "2026-11-23 18:34:57",
  "counts": {
-  "launches_seen": 4733,
-  "candidates_evaluated": 169,
-  "passed_filters": 8,
+  "launches_seen": 6062,
+  "candidates_evaluated": 201,
+  "passed_filters": 9,
   "security_rejects": 0,
   "bought": 1,
-  "confirm_rejects": 0
+  "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 127,
-  "score # below min #": 10,
+  "dev already sold": 153,
+  "score # below min #": 11,
   "dev holds too much": 8,
   "weak live activity (#m buys/sells/volume)": 6,
   "bundler rate high": 5,
   "serial dev (many launches, low graduation)": 4,
+  "serial dev (many launches, none graduated)": 4,
   "copycat X link": 2,
   "age window": 2,
+  "snipers hold too much": 2,
   "mcap out of range": 1,
   "BOUGHT": 1,
-  "serial dev (many launches, none graduated)": 1,
   "no smart money and buy pressure not strong enough": 1,
-  "snipers hold too much": 1
+  "dumped #% during confirm wait": 1
  },
  "watching": [],
  "open_positions": [],
@@ -45,27 +46,27 @@
  "total_pnl_usd": 1.89,
  "win_rate": 1.0,
  "api": {
-  "calls": 1284,
+  "calls": 1467,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795443000.0870767
+  "last_ok": 1795444800.1182976
  },
- "sol_usd": 75.42882427537113,
+ "sol_usd": 77.2631701204973,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-23 16:10:00",
-  "monitor": "2026-11-23 16:09:57",
+  "scan": "2026-11-23 16:40:00",
+  "monitor": "2026-11-23 16:39:57",
   "price": "2026-11-23 13:34:21",
-  "heartbeat": "2026-11-23 16:09:08"
+  "heartbeat": "2026-11-23 16:39:09"
  },
  "ticks_epoch": {
-  "scan": 1795443000.0873737,
-  "monitor": 1795442997.4083748,
+  "scan": 1795444800.1186252,
+  "monitor": 1795444797.4330556,
   "price": 1795433661.647332,
-  "heartbeat": 1795442948.4065132
+  "heartbeat": 1795444749.4665647
  }
 }
