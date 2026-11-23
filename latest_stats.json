@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-23 06:47:27",
- "final": false,
+ "updated": "2026-11-23 07:12:30",
+ "final": true,
  "pid": 2526,
  "started": "2026-11-23 01:32:14",
  "ends": "2026-11-23 07:12:14",
  "counts": {
-  "launches_seen": 8582,
-  "candidates_evaluated": 298,
+  "launches_seen": 9174,
+  "candidates_evaluated": 313,
   "passed_filters": 15,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 202,
-  "serial dev (many launches, low graduation)": 23,
+  "dev already sold": 213,
+  "serial dev (many launches, low graduation)": 25,
+  "dev holds too much": 15,
   "bundler rate high": 14,
-  "dev holds too much": 14,
   "score # below min #": 13,
   "weak live activity (#m buys/sells/volume)": 12,
-  "mcap out of range": 6,
+  "mcap out of range": 7,
   "snipers hold too much": 4,
   "serial dev (many launches, none graduated)": 3,
   "copycat X link": 3,
@@ -35,27 +35,43 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1925,
+  "calls": 2088,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795409237.7891312
+  "last_ok": 1795410750.7634966
  },
- "sol_usd": 71.23353379128396,
+ "sol_usd": 71.13594287533365,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-23 06:47:17",
-  "monitor": "2026-11-23 06:47:27",
+  "scan": "2026-11-23 07:11:57",
+  "monitor": "2026-11-23 07:12:03",
   "price": null,
-  "heartbeat": "2026-11-23 06:46:38"
+  "heartbeat": "2026-11-23 07:11:39"
  },
  "ticks_epoch": {
-  "scan": 1795409237.7894354,
-  "monitor": 1795409247.154417,
+  "scan": 1795410717.7834954,
+  "monitor": 1795410723.1747394,
   "price": 0,
-  "heartbeat": 1795409198.8078604
+  "heartbeat": 1795410699.575209
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 8,
+  "rugged_70pct": 0,
+  "examples": [
+   "SPERM pumped (skip $3006 -> ATH $10999, why: dev already sold)",
+   "heliushas pumped (skip $4222 -> ATH $9849, why: serial dev (many launches, low graduation))",
+   "Rug pumped (skip $4932 -> ATH $54015, why: dev already sold)",
+   "\u2588\u2588\u2588\u2588 pumped (skip $4645 -> ATH $13305, why: dev already sold)",
+   "REPTILIAN pumped (skip $4516 -> ATH $9314, why: dev already sold)",
+   "PairRing pumped (skip $3266 -> ATH $15257, why: dev already sold)",
+   "Solar pumped (skip $3750 -> ATH $22937, why: activity)",
+   "IShowSpeed pumped (skip $3532 -> ATH $8614, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
