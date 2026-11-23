@@ -1,17 +1,17 @@
 # Paper bot summary (simulated only)
 
-- updated: 2026-11-23 13:09 EET
+- updated: 2026-11-23 13:39 EET
 - v2 started: 2026-11-19 23:32:54
 
 ## v2 (current version, since 2026-11-19 23:32:54)
-- paper buys: 2  | fully closed: 2
-- realized paper P&L: $+1.27 (stake $2/trade)
-- winners: 1/2 (50%)
+- paper buys: 3  | fully closed: 3
+- realized paper P&L: $+3.16 (stake $2/trade)
+- winners: 2/3 (67%)
 
 ## All-time (all versions)
-- paper buys: 12  | fully closed: 12
-- realized paper P&L: $-3.46 (stake $2/trade)
-- winners: 2/12 (17%)
+- paper buys: 13  | fully closed: 13
+- realized paper P&L: $-1.57 (stake $2/trade)
+- winners: 3/13 (23%)
 
 ## v1 only
 - paper buys: 10  | fully closed: 10
@@ -22,9 +22,6 @@ Last 15 trade rows:
 
 | time | ver | action | symbol | reason | usd | pnl |
 |---|---|---|---|---|---|---|
-| 2026-11-19 22:23:42 | v1 | SELL | JANITOR | stop loss -35% | 1.29 | -0.71 |
-| 2026-11-19 22:31:50 | v1 | BUY | COOLDOG | passed GMGN filters + confirm | 2.00 |  |
-| 2026-11-19 22:52:11 | v1 | BUY | DTTY | passed GMGN filters + confirm | 2.00 |  |
 | 2026-11-19 22:53:18 | v1 | SELL | DTTY | early dump -23% in 1.1m | 1.54 | -0.46 |
 | 2026-11-19 22:56:11 | v1 | BUY | DINO | passed GMGN filters + confirm | 2.00 |  |
 | 2026-11-19 22:56:30 | v1 | BUY | ANTS | passed GMGN filters + confirm | 2.00 |  |
@@ -37,3 +34,6 @@ Last 15 trade rows:
 | 2026-11-21 18:41:55 | v2 | SELL | GTA VII | trailing stop (+96%) | 1.96 | +0.96 |
 | 2026-11-22 10:30:33 | v2 | BUY | RILO | passed GMGN filters + confirm | 2.00 |  |
 | 2026-11-22 10:37:24 | v2 | SELL | RILO | stop loss -36% | 1.28 | -0.72 |
+| 2026-11-23 13:16:02 | v2 | BUY | CAIN | passed GMGN filters + confirm | 2.00 |  |
+| 2026-11-23 13:31:09 | v2 | SELL50% | CAIN | TP1 +132% | 2.32 | +1.32 |
+| 2026-11-23 13:34:21 | v2 | SELL | CAIN | trailing stop (+57%) | 1.57 | +0.57 |

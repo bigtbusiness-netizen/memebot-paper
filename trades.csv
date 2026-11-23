@@ -26,3 +26,6 @@ time,action,mint,symbol,name,reason,price_usd,mcap_usd,usd_value,pnl_usd,pnl_pct
 2026-11-21 18:41:55,SELL,5hNyf7yxDRyip1r37DnJySQofKfnjBBfzK5BDhmNpump,GTA VII,GTA VII,trailing stop (+96%),1.0062e-05,10062,1.96,+0.96,+96.0,,
 2026-11-22 10:30:33,BUY,3fzHFKS8hpWmhTYy9CygLPJpJJd2y8TBsdfxqHZppump,RILO,RiloProtocol,passed GMGN filters + confirm,4.4323e-06,4432,2.00,,,5.45,age 5m holders 44 top10 25% smart 1 kol 0 5m 131b/69s $4994 dev_launches 1 confirmed v2 checks 3 age 5.6m 1m 27b peak_dd 14%
 2026-11-22 10:37:24,SELL,3fzHFKS8hpWmhTYy9CygLPJpJJd2y8TBsdfxqHZppump,RILO,RiloProtocol,stop loss -36%,3.0232e-06,3023,1.28,-0.72,-35.8,,
+2026-11-23 13:16:02,BUY,C78HR46S9A1dSGBdneNhnTuGE7yENibWkKzsBgVbpump,CAIN,Cain.Finance,passed GMGN filters + confirm,4.6193e-06,4619,2.00,,,8.21,age 7m holders 21 top10 21% smart 2 kol 0 5m 45b/21s $2492 dev_launches 2 confirmed v2 checks 3 age 7.6m 1m 9b peak_dd 3%
+2026-11-23 13:31:09,SELL50%,C78HR46S9A1dSGBdneNhnTuGE7yENibWkKzsBgVbpump,CAIN,Cain.Finance,TP1 +132%,1.1362e-05,11362,2.32,+1.32,+131.6,,
+2026-11-23 13:34:21,SELL,C78HR46S9A1dSGBdneNhnTuGE7yENibWkKzsBgVbpump,CAIN,Cain.Finance,trailing stop (+57%),7.7198e-06,7720,1.57,+0.57,+57.4,,
