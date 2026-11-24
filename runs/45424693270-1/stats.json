@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-24 22:38:17",
- "final": false,
+ "updated": "2026-11-24 23:03:20",
+ "final": true,
  "pid": 2569,
  "started": "2026-11-24 17:23:04",
  "ends": "2026-11-24 23:03:04",
  "counts": {
-  "launches_seen": 10284,
-  "candidates_evaluated": 351,
+  "launches_seen": 11065,
+  "candidates_evaluated": 383,
   "passed_filters": 16,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 223,
-  "dev holds too much": 26,
-  "bundler rate high": 21,
-  "score # below min #": 19,
+  "dev already sold": 246,
+  "dev holds too much": 29,
+  "bundler rate high": 22,
+  "score # below min #": 21,
   "serial dev (many launches, low graduation)": 16,
   "weak live activity (#m buys/sells/volume)": 14,
-  "mcap out of range": 12,
-  "copycat X link": 7,
+  "mcap out of range": 13,
+  "copycat X link": 8,
+  "serial dev (many launches, none graduated)": 4,
   "snipers hold too much": 4,
-  "serial dev (many launches, none graduated)": 3,
   "top# concentration": 3,
   "no smart money and buy pressure not strong enough": 1,
   "dumped #% during confirm wait": 1,
@@ -36,27 +36,42 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1926,
+  "calls": 2089,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795552687.6603618
+  "last_ok": 1795554200.8602262
  },
- "sol_usd": 68.83807254449762,
+ "sol_usd": 69.206760780744,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-24 22:38:07",
-  "monitor": "2026-11-24 22:38:17",
+  "scan": "2026-11-24 23:02:47",
+  "monitor": "2026-11-24 23:02:53",
   "price": null,
-  "heartbeat": "2026-11-24 22:37:26"
+  "heartbeat": "2026-11-24 23:02:27"
  },
  "ticks_epoch": {
-  "scan": 1795552687.6606824,
-  "monitor": 1795552697.0351243,
+  "scan": 1795554167.6752448,
+  "monitor": 1795554173.0565925,
   "price": 0,
-  "heartbeat": 1795552646.9644656
+  "heartbeat": 1795554147.6886473
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 7,
+  "rugged_70pct": 1,
+  "examples": [
+   "Greg pumped (skip $3001 -> ATH $7933, why: dev already sold)",
+   "h/monhook pumped (skip $3068 -> ATH $8499, why: activity)",
+   "AI pumped (skip $3306 -> ATH $9426, why: dev already sold)",
+   "Bear pumped (skip $4155 -> ATH $22004, why: dev holds too much)",
+   "AI pumped (skip $4117 -> ATH $11220, why: dev already sold)",
+   "UGY pumped (skip $4198 -> ATH $475056, why: score 1.20 below min 4.0)",
+   "PortWatch pumped (skip $4936 -> ATH $10399, why: bundler rate high)"
+  ],
+  "errors": 0
  }
 }
