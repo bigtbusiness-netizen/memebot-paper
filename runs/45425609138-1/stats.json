@@ -1,26 +1,26 @@
 {
- "updated": "2026-11-25 01:19:48",
+ "updated": "2026-11-25 01:49:49",
  "final": false,
  "pid": 2512,
  "started": "2026-11-24 23:04:45",
  "ends": "2026-11-25 04:44:45",
  "counts": {
-  "launches_seen": 4542,
-  "candidates_evaluated": 164,
+  "launches_seen": 5548,
+  "candidates_evaluated": 206,
   "passed_filters": 13,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 102,
-  "dev holds too much": 13,
+  "dev already sold": 137,
+  "dev holds too much": 15,
+  "serial dev (many launches, low graduation)": 11,
   "weak live activity (#m buys/sells/volume)": 10,
   "score # below min #": 10,
-  "serial dev (many launches, low graduation)": 9,
-  "bundler rate high": 7,
+  "bundler rate high": 9,
   "copycat X link": 4,
-  "snipers hold too much": 3,
+  "snipers hold too much": 4,
   "serial dev (many launches, none graduated)": 2,
   "mcap ran before entry": 1,
   "dumped #% during confirm wait": 1,
@@ -35,27 +35,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 838,
+  "calls": 1018,
   "errors": 16,
   "rate_limited": 16,
   "timeouts": 0,
   "last_error": "[gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:59:09 GMT+02:00 (~6s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up ",
-  "last_ok": 1795562387.3858278
+  "last_ok": 1795564187.4349492
  },
- "sol_usd": 69.86564926873241,
+ "sol_usd": 69.5694942247246,
  "error_count": 0,
  "api_warnings": 16,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-25 01:19:47",
-  "monitor": "2026-11-25 01:19:45",
+  "scan": "2026-11-25 01:49:47",
+  "monitor": "2026-11-25 01:49:45",
   "price": null,
-  "heartbeat": "2026-11-25 01:19:48"
+  "heartbeat": "2026-11-25 01:49:49"
  },
  "ticks_epoch": {
-  "scan": 1795562387.386064,
-  "monitor": 1795562385.2026892,
+  "scan": 1795564187.435202,
+  "monitor": 1795564185.2298832,
   "price": 0,
-  "heartbeat": 1795562388.5150013
+  "heartbeat": 1795564189.513145
  }
 }
