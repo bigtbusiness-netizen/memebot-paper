@@ -1,31 +1,23 @@
 {
- "updated": "2026-11-24 17:21:46",
- "final": true,
- "pid": 2535,
- "started": "2026-11-24 11:41:30",
- "ends": "2026-11-24 17:21:30",
+ "updated": "2026-11-24 17:27:52",
+ "final": false,
+ "pid": 2569,
+ "started": "2026-11-24 17:23:04",
+ "ends": "2026-11-24 23:03:04",
  "counts": {
-  "launches_seen": 8742,
-  "candidates_evaluated": 281,
-  "passed_filters": 8,
+  "launches_seen": 224,
+  "candidates_evaluated": 13,
+  "passed_filters": 2,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 175,
-  "score # below min #": 24,
-  "dev holds too much": 23,
-  "serial dev (many launches, low graduation)": 16,
-  "bundler rate high": 9,
-  "mcap out of range": 8,
-  "copycat X link": 6,
-  "weak live activity (#m buys/sells/volume)": 4,
-  "snipers hold too much": 3,
-  "serial dev (many launches, none graduated)": 3,
-  "watch: buyers dried up (last #m)": 2,
-  "watch: sellers outweigh buyers (last #m)": 2,
-  "top# concentration": 2
+  "dev already sold": 8,
+  "weak live activity (#m buys/sells/volume)": 2,
+  "serial dev (many launches, none graduated)": 1,
+  "score # below min #": 1,
+  "dev holds too much": 1
  },
  "watching": [],
  "open_positions": [],
@@ -35,42 +27,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 2071,
+  "calls": 34,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795533706.541461
+  "last_ok": 1795534067.5029507
  },
- "sol_usd": 68.72709695895098,
+ "sol_usd": 68.85252680564082,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-24 17:21:13",
-  "monitor": "2026-11-24 17:21:19",
+  "scan": "2026-11-24 17:27:47",
+  "monitor": "2026-11-24 17:27:52",
   "price": null,
-  "heartbeat": "2026-11-24 17:20:42"
+  "heartbeat": "2026-11-24 17:27:04"
  },
  "ticks_epoch": {
-  "scan": 1795533673.590962,
-  "monitor": 1795533679.0220907,
+  "scan": 1795534067.5033398,
+  "monitor": 1795534072.7618957,
   "price": 0,
-  "heartbeat": 1795533642.4213433
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 7,
-  "rugged_70pct": 0,
-  "examples": [
-   "ASSEM pumped (skip $3946 -> ATH $8860, why: serial dev (many launches, low graduation))",
-   "ANSEM pumped (skip $3181 -> ATH $12564, why: dev already sold)",
-   "HACKINU pumped (skip $3286 -> ATH $18261, why: dev already sold)",
-   "Bull pumped (skip $4333 -> ATH $16628, why: dev holds too much)",
-   "black pumped (skip $3632 -> ATH $12557, why: snipers hold too much)",
-   "VEIL pumped (skip $4724 -> ATH $16725, why: snipers hold too much)",
-   "KOL pumped (skip $4417 -> ATH $13528, why: dev already sold)"
-  ],
-  "errors": 0
+  "heartbeat": 1795534024.853934
  }
 }
