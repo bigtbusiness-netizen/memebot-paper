@@ -45,3 +45,69 @@
 2026-11-24 23:47:45 HEARTBEAT up 43.0m left 297.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 18s ago mon 0s ago px -1s ago api 263/0t0 r0 errors 0
 2026-11-24 23:48:45 HEARTBEAT up 44.0m left 296.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 18s ago mon 0s ago px -1s ago api 269/0t0 r0 errors 0
 2026-11-24 23:49:45 HEARTBEAT up 45.0m left 295.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 18s ago mon 0s ago px -1s ago api 277/0t0 r0 errors 0
+2026-11-24 23:50:46 HEARTBEAT up 46.0m left 294.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 18s ago mon 0s ago px -1s ago api 283/0t0 r0 errors 0
+2026-11-24 23:50:50 WATCH UMBREX 8u98pSgT9fsv7QAfKDb8BjTXb55F4wUfMjqVMR33pump mcap $3,865 age 2.2m score 8.31 — re-check every 30s, buy after >= 90s and age >= 3m if it survives
+2026-11-24 23:51:28 CONFIRM REJECT UMBREX 8u98pSgT9fsv7QAfKDb8BjTXb55F4wUfMjqVMR33pump — dumped 23% during confirm wait
+2026-11-24 23:51:46 HEARTBEAT up 47.0m left 293.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 17s ago mon 0s ago px -1s ago api 292/0t0 r0 errors 0
+2026-11-24 23:52:46 HEARTBEAT up 48.0m left 292.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 18s ago mon 0s ago px -1s ago api 298/0t0 r0 errors 0
+2026-11-24 23:53:46 HEARTBEAT up 49.0m left 291.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 18s ago mon 0s ago px -1s ago api 304/0t0 r0 errors 0
+2026-11-24 23:54:46 HEARTBEAT up 50.0m left 290.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 18s ago mon 1s ago px -1s ago api 310/0t0 r0 errors 0
+2026-11-24 23:55:46 HEARTBEAT up 51.0m left 289.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 18s ago mon 1s ago px -1s ago api 316/0t0 r0 errors 0
+2026-11-24 23:56:05 GMGN rate limited; pausing until 2026-11-24 23:56:38
+2026-11-24 23:56:05 WARN trenches(all): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_EXCEEDED message=IP rate limit exceeded. Rate limit resets at 2026-11-24 23:56:35 GMT+02:00 (~30s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up to 5 minutes. 已达到当前套餐的限频上限，点击 https:/
+2026-11-24 23:56:38 GMGN rate limited; pausing until 2026-11-24 23:56:53
+2026-11-24 23:56:38 WARN trenches(candidates): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:56:50 GMT+02:00 (~12s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up
+2026-11-24 23:56:46 HEARTBEAT up 52.0m left 288.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 7s ago mon 1s ago px -1s ago api 319/2t0 r2 errors 0 blocked until 2026-11-24 23:56:53
+2026-11-24 23:56:53 GMGN rate limited; pausing until 2026-11-24 23:57:02
+2026-11-24 23:56:53 WARN trenches(all): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:56:59 GMT+02:00 (~6s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:57:03 GMGN rate limited; pausing until 2026-11-24 23:57:13
+2026-11-24 23:57:03 WARN trenches(candidates): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:57:09 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:57:13 GMGN rate limited; pausing until 2026-11-24 23:57:23
+2026-11-24 23:57:13 WARN trenches(all): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:57:20 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:57:23 GMGN rate limited; pausing until 2026-11-24 23:57:33
+2026-11-24 23:57:23 WARN trenches(candidates): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:57:30 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:57:33 GMGN rate limited; pausing until 2026-11-24 23:57:42
+2026-11-24 23:57:33 WARN trenches(all): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:57:39 GMT+02:00 (~6s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:57:42 GMGN rate limited; pausing until 2026-11-24 23:57:52
+2026-11-24 23:57:42 WARN trenches(candidates): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:57:49 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:57:46 HEARTBEAT up 53.0m left 287.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 3s ago mon 1s ago px -1s ago api 325/8t0 r8 errors 0 blocked until 2026-11-24 23:57:52
+2026-11-24 23:57:53 GMGN rate limited; pausing until 2026-11-24 23:58:03
+2026-11-24 23:57:53 WARN trenches(all): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:58:00 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:58:03 GMGN rate limited; pausing until 2026-11-24 23:58:13
+2026-11-24 23:58:03 WARN trenches(candidates): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:58:10 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:58:13 GMGN rate limited; pausing until 2026-11-24 23:58:22
+2026-11-24 23:58:13 WARN trenches(all): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:58:19 GMT+02:00 (~6s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:58:22 GMGN rate limited; pausing until 2026-11-24 23:58:32
+2026-11-24 23:58:22 WARN trenches(candidates): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:58:29 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:58:33 GMGN rate limited; pausing until 2026-11-24 23:58:43
+2026-11-24 23:58:33 WARN trenches(all): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:58:40 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:58:43 GMGN rate limited; pausing until 2026-11-24 23:58:53
+2026-11-24 23:58:43 WARN trenches(candidates): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:58:50 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:58:46 HEARTBEAT up 54.0m left 286.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 3s ago mon 1s ago px -1s ago api 331/14t0 r14 errors 0 blocked until 2026-11-24 23:58:53
+2026-11-24 23:58:53 GMGN rate limited; pausing until 2026-11-24 23:59:03
+2026-11-24 23:58:53 WARN trenches(all): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:59:00 GMT+02:00 (~7s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:59:03 GMGN rate limited; pausing until 2026-11-24 23:59:12
+2026-11-24 23:59:03 WARN trenches(candidates): ApiError: [gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:59:09 GMT+02:00 (~6s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up 
+2026-11-24 23:59:46 HEARTBEAT up 55.0m left 285.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 18s ago mon 1s ago px -1s ago api 340/16t0 r16 errors 0
+2026-11-25 00:00:46 HEARTBEAT up 56.0m left 284.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 346/16t0 r16 errors 0
+2026-11-25 00:01:46 HEARTBEAT up 57.0m left 283.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 352/16t0 r16 errors 0
+2026-11-25 00:02:46 HEARTBEAT up 58.0m left 282.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 358/16t0 r16 errors 0
+2026-11-25 00:03:46 HEARTBEAT up 59.0m left 281.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 364/16t0 r16 errors 0
+2026-11-25 00:04:46 HEARTBEAT up 60.0m left 280.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 370/16t0 r16 errors 0
+2026-11-25 00:05:46 HEARTBEAT up 61.0m left 279.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 376/16t0 r16 errors 0
+2026-11-25 00:06:46 HEARTBEAT up 62.0m left 278.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 382/16t0 r16 errors 0
+2026-11-25 00:07:46 HEARTBEAT up 63.0m left 277.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 388/16t0 r16 errors 0
+2026-11-25 00:08:46 HEARTBEAT up 64.0m left 276.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 394/16t0 r16 errors 0
+2026-11-25 00:09:46 HEARTBEAT up 65.0m left 275.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 400/16t0 r16 errors 0
+2026-11-25 00:10:46 HEARTBEAT up 66.0m left 274.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 406/16t0 r16 errors 0
+2026-11-25 00:11:46 HEARTBEAT up 67.0m left 273.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 412/16t0 r16 errors 0
+2026-11-25 00:12:46 HEARTBEAT up 68.0m left 272.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 420/16t0 r16 errors 0
+2026-11-25 00:13:46 HEARTBEAT up 69.0m left 271.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 426/16t0 r16 errors 0
+2026-11-25 00:14:46 HEARTBEAT up 70.0m left 270.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 432/16t0 r16 errors 0
+2026-11-25 00:15:46 HEARTBEAT up 71.0m left 269.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 438/16t0 r16 errors 0
+2026-11-25 00:15:49 WATCH Tide 8ASp3MtXJMpV5Zm3oYu7DZudfmuRGFeSQ7dcmXzUpump mcap $4,248 age 3.5m score 5.37 — re-check every 30s, buy after >= 90s and age >= 3m if it survives
+2026-11-25 00:16:30 CONFIRM REJECT Tide 8ASp3MtXJMpV5Zm3oYu7DZudfmuRGFeSQ7dcmXzUpump — activity faded during confirm
+2026-11-25 00:16:46 HEARTBEAT up 72.0m left 268.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 16s ago mon 1s ago px -1s ago api 449/16t0 r16 errors 0
+2026-11-25 00:17:46 HEARTBEAT up 73.0m left 267.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 455/16t0 r16 errors 0
+2026-11-25 00:18:46 HEARTBEAT up 74.0m left 266.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 461/16t0 r16 errors 0
+2026-11-25 00:19:46 HEARTBEAT up 75.0m left 265.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 19s ago mon 1s ago px -1s ago api 467/16t0 r16 errors 0
