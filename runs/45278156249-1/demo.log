@@ -107,3 +107,35 @@
 2026-11-24 02:01:09 HEARTBEAT up 103.0m left 237.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 2s ago px -1s ago api 639/0t0 r0 errors 0
 2026-11-24 02:02:09 HEARTBEAT up 104.0m left 236.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 2s ago px -1s ago api 645/0t0 r0 errors 0
 2026-11-24 02:03:09 HEARTBEAT up 105.1m left 234.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 2s ago px -1s ago api 651/0t0 r0 errors 0
+2026-11-24 02:04:09 HEARTBEAT up 106.1m left 233.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 2s ago px -1s ago api 657/0t0 r0 errors 0
+2026-11-24 02:05:09 HEARTBEAT up 107.1m left 232.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 2s ago px -1s ago api 663/0t0 r0 errors 0
+2026-11-24 02:06:09 HEARTBEAT up 108.1m left 231.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 2s ago px -1s ago api 669/0t0 r0 errors 0
+2026-11-24 02:07:09 HEARTBEAT up 109.1m left 230.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 2s ago px -1s ago api 675/0t0 r0 errors 0
+2026-11-24 02:08:09 HEARTBEAT up 110.1m left 229.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 2s ago px -1s ago api 681/0t0 r0 errors 0
+2026-11-24 02:09:09 HEARTBEAT up 111.1m left 228.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 2s ago px -1s ago api 687/0t0 r0 errors 0
+2026-11-24 02:10:09 HEARTBEAT up 112.1m left 227.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 2s ago px -1s ago api 693/0t0 r0 errors 0
+2026-11-24 02:11:09 HEARTBEAT up 113.1m left 226.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 699/0t0 r0 errors 0
+2026-11-24 02:12:09 HEARTBEAT up 114.1m left 225.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 705/0t0 r0 errors 0
+2026-11-24 02:12:51 WATCH PSYOPCAT A5b4s3qdWWYWVCPs7BVZsj1oawjDf7MPfyrbgvJMpump mcap $3,777 age 4.1m score 7.35 — re-check every 30s, buy after >= 90s and age >= 3m if it survives
+2026-11-24 02:13:09 HEARTBEAT up 115.1m left 224.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 1 scan 0s ago mon 3s ago px -1s ago api 713/0t0 r0 errors 0
+2026-11-24 02:13:30 CONFIRM REJECT PSYOPCAT A5b4s3qdWWYWVCPs7BVZsj1oawjDf7MPfyrbgvJMpump — activity faded during confirm
+2026-11-24 02:14:09 HEARTBEAT up 116.1m left 223.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 720/0t0 r0 errors 0
+2026-11-24 02:15:10 HEARTBEAT up 117.1m left 222.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 726/0t0 r0 errors 0
+2026-11-24 02:16:10 HEARTBEAT up 118.1m left 221.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 732/0t0 r0 errors 0
+2026-11-24 02:17:10 HEARTBEAT up 119.1m left 220.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 738/0t0 r0 errors 0
+2026-11-24 02:18:10 HEARTBEAT up 120.1m left 219.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 746/0t0 r0 errors 0
+2026-11-24 02:19:10 HEARTBEAT up 121.1m left 218.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 752/0t0 r0 errors 0
+2026-11-24 02:20:10 HEARTBEAT up 122.1m left 217.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 758/0t0 r0 errors 0
+2026-11-24 02:21:10 HEARTBEAT up 123.1m left 216.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 764/0t0 r0 errors 0
+2026-11-24 02:22:10 HEARTBEAT up 124.1m left 215.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 770/0t0 r0 errors 0
+2026-11-24 02:23:10 HEARTBEAT up 125.1m left 214.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 776/0t0 r0 errors 0
+2026-11-24 02:24:10 HEARTBEAT up 126.1m left 213.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 782/0t0 r0 errors 0
+2026-11-24 02:25:10 HEARTBEAT up 127.1m left 212.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 788/0t0 r0 errors 0
+2026-11-24 02:26:10 HEARTBEAT up 128.1m left 211.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 794/0t0 r0 errors 0
+2026-11-24 02:27:10 HEARTBEAT up 129.1m left 210.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 800/0t0 r0 errors 0
+2026-11-24 02:28:10 HEARTBEAT up 130.1m left 209.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 806/0t0 r0 errors 0
+2026-11-24 02:29:10 HEARTBEAT up 131.1m left 208.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 3s ago px -1s ago api 812/0t0 r0 errors 0
+2026-11-24 02:30:10 HEARTBEAT up 132.1m left 207.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 3s ago px -1s ago api 818/0t0 r0 errors 0
+2026-11-24 02:31:10 HEARTBEAT up 133.1m left 206.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 3s ago px -1s ago api 824/0t0 r0 errors 0
+2026-11-24 02:32:10 HEARTBEAT up 134.1m left 205.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 3s ago px -1s ago api 830/0t0 r0 errors 0
+2026-11-24 02:33:10 HEARTBEAT up 135.1m left 204.9m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 3s ago px -1s ago api 836/0t0 r0 errors 0
