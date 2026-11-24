@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-24 11:15:07",
- "final": false,
+ "updated": "2026-11-24 11:40:10",
+ "final": true,
  "pid": 2519,
  "started": "2026-11-24 05:59:54",
  "ends": "2026-11-24 11:39:54",
  "counts": {
-  "launches_seen": 5908,
-  "candidates_evaluated": 233,
+  "launches_seen": 6466,
+  "candidates_evaluated": 252,
   "passed_filters": 7,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 180,
-  "dev holds too much": 13,
+  "dev already sold": 198,
+  "dev holds too much": 12,
   "serial dev (many launches, low graduation)": 9,
-  "mcap out of range": 7,
-  "score # below min #": 7,
+  "mcap out of range": 8,
   "bundler rate high": 6,
+  "score # below min #": 6,
   "weak live activity (#m buys/sells/volume)": 4,
   "copycat X link": 3,
+  "snipers hold too much": 3,
   "watch: sellers outweigh buyers (last #m)": 1,
-  "snipers hold too much": 1,
   "watch: down #% from peak": 1,
   "mcap fell below range": 1
  },
@@ -34,27 +34,44 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1907,
+  "calls": 2070,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795511697.625699
+  "last_ok": 1795513210.5964756
  },
- "sol_usd": 70.60148437356901,
+ "sol_usd": 70.77184873990204,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-24 11:14:57",
-  "monitor": "2026-11-24 11:15:07",
+  "scan": "2026-11-24 11:39:37",
+  "monitor": "2026-11-24 11:39:43",
   "price": null,
-  "heartbeat": "2026-11-24 11:14:59"
+  "heartbeat": "2026-11-24 11:38:59"
  },
  "ticks_epoch": {
-  "scan": 1795511697.6259613,
-  "monitor": 1795511707.0978854,
+  "scan": 1795513177.6487026,
+  "monitor": 1795513183.1228933,
   "price": 0,
-  "heartbeat": 1795511699.4377968
+  "heartbeat": 1795513139.7301886
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 9,
+  "rugged_70pct": 0,
+  "examples": [
+   "yippee pumped (skip $4574 -> ATH $47736, why: dev already sold)",
+   "MOJAVE pumped (skip $4911 -> ATH $21316, why: dev already sold)",
+   "Asakana pumped (skip $3379 -> ATH $10514, why: dev already sold)",
+   "HIP pumped (skip $4304 -> ATH $10230, why: dev already sold)",
+   "MEME pumped (skip $4427 -> ATH $15526, why: dev already sold)",
+   "ANTOS pumped (skip $3265 -> ATH $10809, why: score 2.49 below min 4.0)",
+   "Payload pumped (skip $3173 -> ATH $8252, why: dev already sold)",
+   "POGI pumped (skip $4812 -> ATH $22466, why: dev already sold)",
+   "NAJIN pumped (skip $4776 -> ATH $35516, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
