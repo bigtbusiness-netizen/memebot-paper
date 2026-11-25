@@ -318,3 +318,34 @@
 2026-11-25 09:58:59 HEARTBEAT up 312.4m left 27.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 11s ago px -1s ago api 1906/0t0 r0 errors 0
 2026-11-25 09:59:59 HEARTBEAT up 313.4m left 26.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 0s ago mon 11s ago px -1s ago api 1912/0t0 r0 errors 0
 2026-11-25 10:00:59 HEARTBEAT up 314.4m left 25.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 11s ago px -1s ago api 1918/0t0 r0 errors 0
+2026-11-25 10:01:59 HEARTBEAT up 315.4m left 24.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 11s ago px -1s ago api 1924/0t0 r0 errors 0
+2026-11-25 10:02:59 HEARTBEAT up 316.4m left 23.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 11s ago px -1s ago api 1930/0t0 r0 errors 0
+2026-11-25 10:03:59 HEARTBEAT up 317.4m left 22.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 11s ago px -1s ago api 1936/0t0 r0 errors 0
+2026-11-25 10:04:59 HEARTBEAT up 318.4m left 21.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 11s ago px -1s ago api 1942/0t0 r0 errors 0
+2026-11-25 10:05:59 HEARTBEAT up 319.4m left 20.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 11s ago px -1s ago api 1948/0t0 r0 errors 0
+2026-11-25 10:06:59 HEARTBEAT up 320.4m left 19.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 0s ago px -1s ago api 1954/0t0 r0 errors 0
+2026-11-25 10:07:59 HEARTBEAT up 321.4m left 18.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 0s ago px -1s ago api 1960/0t0 r0 errors 0
+2026-11-25 10:08:59 HEARTBEAT up 322.4m left 17.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 0s ago px -1s ago api 1966/0t0 r0 errors 0
+2026-11-25 10:09:58 wind-down: 2 candidate(s) ignored, no new buys in the last 50m of the run
+2026-11-25 10:09:59 HEARTBEAT up 323.4m left 16.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 0s ago px -1s ago api 1972/0t0 r0 errors 0
+2026-11-25 10:10:18 wind-down: 2 candidate(s) ignored, no new buys in the last 50m of the run
+2026-11-25 10:10:38 wind-down: 2 candidate(s) ignored, no new buys in the last 50m of the run
+2026-11-25 10:10:58 wind-down: 2 candidate(s) ignored, no new buys in the last 50m of the run
+2026-11-25 10:11:00 HEARTBEAT up 324.4m left 15.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 0s ago px -1s ago api 1978/0t0 r0 errors 0
+2026-11-25 10:12:00 HEARTBEAT up 325.4m left 14.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 1s ago mon 0s ago px -1s ago api 1984/0t0 r0 errors 0
+2026-11-25 10:13:00 HEARTBEAT up 326.4m left 13.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 0s ago px -1s ago api 1990/0t0 r0 errors 0
+2026-11-25 10:14:00 HEARTBEAT up 327.4m left 12.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 0s ago px -1s ago api 1996/0t0 r0 errors 0
+2026-11-25 10:15:00 HEARTBEAT up 328.4m left 11.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 0s ago px -1s ago api 2002/0t0 r0 errors 0
+2026-11-25 10:16:00 HEARTBEAT up 329.4m left 10.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 0s ago px -1s ago api 2008/0t0 r0 errors 0
+2026-11-25 10:17:00 HEARTBEAT up 330.4m left 9.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 0s ago px -1s ago api 2014/0t0 r0 errors 0
+2026-11-25 10:18:00 HEARTBEAT up 331.4m left 8.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 0s ago px -1s ago api 2020/0t0 r0 errors 0
+2026-11-25 10:19:00 HEARTBEAT up 332.4m left 7.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 1s ago px -1s ago api 2026/0t0 r0 errors 0
+2026-11-25 10:20:00 HEARTBEAT up 333.4m left 6.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 1s ago px -1s ago api 2032/0t0 r0 errors 0
+2026-11-25 10:21:00 HEARTBEAT up 334.4m left 5.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 1s ago px -1s ago api 2038/0t0 r0 errors 0
+2026-11-25 10:22:00 HEARTBEAT up 335.4m left 4.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 1s ago px -1s ago api 2044/0t0 r0 errors 0
+2026-11-25 10:23:01 HEARTBEAT up 336.4m left 3.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 1s ago px -1s ago api 2050/0t0 r0 errors 0
+2026-11-25 10:24:01 HEARTBEAT up 337.4m left 2.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 1s ago px -1s ago api 2056/0t0 r0 errors 0
+2026-11-25 10:25:01 HEARTBEAT up 338.4m left 1.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 1s ago px -1s ago api 2062/0t0 r0 errors 0
+2026-11-25 10:25:58 wind-down: 2 candidate(s) ignored, no new buys in the last 50m of the run
+2026-11-25 10:26:01 HEARTBEAT up 339.4m left 0.6m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 2s ago mon 1s ago px -1s ago api 2068/0t0 r0 errors 0
+2026-11-25 10:26:51 demo end. closed 0 open 0 followup 15 checked errors 0

@@ -1,30 +1,31 @@
 {
- "updated": "2026-11-25 10:01:47",
- "final": false,
+ "updated": "2026-11-25 10:26:51",
+ "final": true,
  "pid": 2327,
  "started": "2026-11-25 04:46:35",
  "ends": "2026-11-25 10:26:35",
  "counts": {
-  "launches_seen": 7082,
-  "candidates_evaluated": 251,
+  "launches_seen": 7577,
+  "candidates_evaluated": 271,
   "passed_filters": 13,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 171,
+  "dev already sold": 186,
   "serial dev (many launches, low graduation)": 21,
+  "bundler rate high": 12,
+  "score # below min #": 12,
   "dev holds too much": 11,
-  "bundler rate high": 11,
   "weak live activity (#m buys/sells/volume)": 10,
-  "score # below min #": 10,
   "mcap out of range": 7,
   "copycat X link": 4,
   "serial dev (many launches, none graduated)": 3,
   "activity faded during confirm": 1,
   "dumped #% during confirm wait": 1,
-  "watch: sellers outweigh buyers (last #m)": 1
+  "watch: sellers outweigh buyers (last #m)": 1,
+  "top# concentration": 1
  },
  "watching": [],
  "open_positions": [],
@@ -34,27 +35,41 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1922,
+  "calls": 2085,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795593698.157172
+  "last_ok": 1795595211.1186545
  },
- "sol_usd": 67.71356822517555,
+ "sol_usd": 67.85751421660724,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-25 10:01:38",
-  "monitor": "2026-11-25 10:01:47",
+  "scan": "2026-11-25 10:26:18",
+  "monitor": "2026-11-25 10:26:23",
   "price": null,
-  "heartbeat": "2026-11-25 10:00:59"
+  "heartbeat": "2026-11-25 10:26:01"
  },
  "ticks_epoch": {
-  "scan": 1795593698.1574638,
-  "monitor": 1795593707.626421,
+  "scan": 1795595178.2708914,
+  "monitor": 1795595183.6432498,
   "price": 0,
-  "heartbeat": 1795593659.2147381
+  "heartbeat": 1795595161.1427166
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 6,
+  "rugged_70pct": 1,
+  "examples": [
+   "Perra pumped (skip $4437 -> ATH $10496, why: dev already sold)",
+   "FROOVIK pumped (skip $3981 -> ATH $20723, why: dev already sold)",
+   "JENSEN pumped (skip $3538 -> ATH $19815, why: dev already sold)",
+   "Solmas pumped (skip $4354 -> ATH $12054, why: dev holds too much)",
+   "manlet pumped (skip $4230 -> ATH $16720, why: dev already sold)",
+   "DICKBUTT pumped (skip $4592 -> ATH $28672, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
