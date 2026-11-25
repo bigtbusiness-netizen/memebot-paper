@@ -1,27 +1,30 @@
 {
- "updated": "2026-11-25 18:24:55",
+ "updated": "2026-11-25 18:54:56",
  "final": false,
  "pid": 2638,
  "started": "2026-11-25 16:09:32",
  "ends": "2026-11-25 21:49:32",
  "counts": {
-  "launches_seen": 4507,
-  "candidates_evaluated": 125,
-  "passed_filters": 0,
+  "launches_seen": 5516,
+  "candidates_evaluated": 171,
+  "passed_filters": 2,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 0
+  "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 93,
-  "score # below min #": 10,
-  "bundler rate high": 6,
-  "serial dev (many launches, low graduation)": 5,
+  "dev already sold": 124,
+  "score # below min #": 12,
+  "bundler rate high": 9,
+  "serial dev (many launches, low graduation)": 9,
+  "copycat X link": 4,
+  "serial dev (many launches, none graduated)": 3,
   "dev holds too much": 3,
   "mcap out of range": 3,
-  "serial dev (many launches, none graduated)": 2,
-  "copycat X link": 2,
-  "entrapment ratio high": 1
+  "entrapment ratio high": 1,
+  "weak live activity (#m buys/sells/volume)": 1,
+  "top# concentration": 1,
+  "activity faded during confirm": 1
  },
  "watching": [],
  "open_positions": [],
@@ -31,27 +34,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 814,
+  "calls": 1000,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795623895.4317596
+  "last_ok": 1795625695.4520013
  },
- "sol_usd": 68.04583144208571,
+ "sol_usd": 67.45544825215072,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-25 18:24:55",
-  "monitor": "2026-11-25 18:24:44",
+  "scan": "2026-11-25 18:54:55",
+  "monitor": "2026-11-25 18:54:56",
   "price": null,
-  "heartbeat": "2026-11-25 18:24:38"
+  "heartbeat": "2026-11-25 18:54:39"
  },
  "ticks_epoch": {
-  "scan": 1795623895.4320326,
-  "monitor": 1795623884.7791069,
+  "scan": 1795625695.452294,
+  "monitor": 1795625696.806098,
   "price": 0,
-  "heartbeat": 1795623878.1307697
+  "heartbeat": 1795625679.9348304
  }
 }
