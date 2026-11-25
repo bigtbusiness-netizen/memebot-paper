@@ -1,31 +1,31 @@
 {
- "updated": "2026-11-26 00:36:03",
+ "updated": "2026-11-26 01:06:03",
  "final": false,
  "pid": 2347,
  "started": "2026-11-25 21:51:00",
  "ends": "2026-11-26 03:31:00",
  "counts": {
-  "launches_seen": 6289,
-  "candidates_evaluated": 229,
-  "passed_filters": 13,
+  "launches_seen": 7374,
+  "candidates_evaluated": 277,
+  "passed_filters": 14,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 147,
-  "score # below min #": 15,
-  "serial dev (many launches, low graduation)": 14,
+  "dev already sold": 184,
+  "serial dev (many launches, low graduation)": 17,
+  "score # below min #": 17,
   "dev holds too much": 13,
-  "weak live activity (#m buys/sells/volume)": 9,
-  "copycat X link": 8,
+  "copycat X link": 10,
+  "weak live activity (#m buys/sells/volume)": 10,
+  "snipers hold too much": 7,
   "bundler rate high": 6,
-  "snipers hold too much": 6,
-  "serial dev (many launches, none graduated)": 5,
+  "serial dev (many launches, none graduated)": 6,
+  "mcap out of range": 2,
   "watch: down #% from peak": 1,
   "mcap ran before entry": 1,
   "sellers outweigh buyers (last #m)": 1,
-  "mcap out of range": 1,
   "top# concentration": 1,
   "buyers dried up (last #m)": 1
  },
@@ -37,27 +37,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1022,
+  "calls": 1204,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795646163.8205395
+  "last_ok": 1795647963.8332868
  },
- "sol_usd": 70.3254386414847,
+ "sol_usd": 70.15759691490818,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 00:36:03",
-  "monitor": "2026-11-26 00:36:01",
+  "scan": "2026-11-26 01:06:03",
+  "monitor": "2026-11-26 01:06:01",
   "price": null,
-  "heartbeat": "2026-11-26 00:35:14"
+  "heartbeat": "2026-11-26 01:05:17"
  },
  "ticks_epoch": {
-  "scan": 1795646163.8209255,
-  "monitor": 1795646161.170749,
+  "scan": 1795647963.833641,
+  "monitor": 1795647961.1964693,
   "price": 0,
-  "heartbeat": 1795646114.439239
+  "heartbeat": 1795647917.0219045
  }
 }
