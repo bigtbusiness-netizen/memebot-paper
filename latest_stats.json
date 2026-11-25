@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-25 21:24:56",
- "final": false,
+ "updated": "2026-11-25 21:49:48",
+ "final": true,
  "pid": 2638,
  "started": "2026-11-25 16:09:32",
  "ends": "2026-11-25 21:49:32",
  "counts": {
-  "launches_seen": 11703,
-  "candidates_evaluated": 394,
+  "launches_seen": 12632,
+  "candidates_evaluated": 432,
   "passed_filters": 12,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 266,
-  "score # below min #": 24,
-  "serial dev (many launches, low graduation)": 23,
-  "dev holds too much": 21,
-  "bundler rate high": 17,
-  "mcap out of range": 10,
+  "dev already sold": 286,
+  "score # below min #": 28,
+  "dev holds too much": 27,
+  "serial dev (many launches, low graduation)": 25,
+  "bundler rate high": 18,
+  "mcap out of range": 11,
   "weak live activity (#m buys/sells/volume)": 10,
-  "copycat X link": 6,
-  "serial dev (many launches, none graduated)": 5,
-  "top# concentration": 3,
+  "serial dev (many launches, none graduated)": 7,
+  "copycat X link": 7,
+  "top# concentration": 4,
   "entrapment ratio high": 1,
   "activity faded during confirm": 1,
   "watch: down #% from peak": 1,
@@ -37,27 +37,41 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1920,
+  "calls": 2081,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795634695.5588162
+  "last_ok": 1795636188.4920337
  },
- "sol_usd": 70.79405529729334,
+ "sol_usd": 70.29964739796375,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-25 21:24:55",
-  "monitor": "2026-11-25 21:24:56",
+  "scan": "2026-11-25 21:49:15",
+  "monitor": "2026-11-25 21:49:20",
   "price": null,
-  "heartbeat": "2026-11-25 21:24:47"
+  "heartbeat": "2026-11-25 21:48:48"
  },
  "ticks_epoch": {
-  "scan": 1795634695.5590901,
-  "monitor": 1795634696.9402618,
+  "scan": 1795636155.5212412,
+  "monitor": 1795636160.9644628,
   "price": 0,
-  "heartbeat": 1795634687.4676228
+  "heartbeat": 1795636128.613799
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 6,
+  "rugged_70pct": 0,
+  "examples": [
+   "CCOIN pumped (skip $3942 -> ATH $9560, why: dev already sold)",
+   "MCAT pumped (skip $3230 -> ATH $13050, why: copycat X link)",
+   "Ukrainu pumped (skip $4503 -> ATH $22674, why: dev already sold)",
+   "\ud835\udd4fmas pumped (skip $4983 -> ATH $12871, why: serial dev (many launches, low graduation))",
+   "BB pumped (skip $4189 -> ATH $12140, why: dev already sold)",
+   "RIGPAID pumped (skip $4845 -> ATH $17316, why: score 2.18 below min 4.0)"
+  ],
+  "errors": 0
  }
 }
