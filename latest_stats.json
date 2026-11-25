@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-25 15:43:15",
- "final": false,
+ "updated": "2026-11-25 16:08:19",
+ "final": true,
  "pid": 2569,
  "started": "2026-11-25 10:28:03",
  "ends": "2026-11-25 16:08:03",
  "counts": {
-  "launches_seen": 7898,
-  "candidates_evaluated": 269,
+  "launches_seen": 8552,
+  "candidates_evaluated": 286,
   "passed_filters": 12,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 204,
-  "score # below min #": 17,
-  "dev holds too much": 12,
+  "dev already sold": 214,
+  "score # below min #": 19,
+  "dev holds too much": 15,
   "weak live activity (#m buys/sells/volume)": 8,
-  "serial dev (many launches, low graduation)": 7,
+  "serial dev (many launches, low graduation)": 8,
   "bundler rate high": 6,
   "mcap out of range": 6,
   "watch: down #% from peak": 2,
@@ -35,27 +35,42 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1917,
+  "calls": 2080,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795614186.1559865
+  "last_ok": 1795615699.1101956
  },
- "sol_usd": 67.11874782608915,
+ "sol_usd": 66.60032553655724,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-25 15:43:06",
-  "monitor": "2026-11-25 15:43:15",
+  "scan": "2026-11-25 16:07:46",
+  "monitor": "2026-11-25 16:07:51",
   "price": null,
-  "heartbeat": "2026-11-25 15:42:27"
+  "heartbeat": "2026-11-25 16:07:28"
  },
  "ticks_epoch": {
-  "scan": 1795614186.1564505,
-  "monitor": 1795614195.5003448,
+  "scan": 1795615666.139164,
+  "monitor": 1795615671.521109,
   "price": 0,
-  "heartbeat": 1795614147.0298195
+  "heartbeat": 1795615648.8821733
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 7,
+  "rugged_70pct": 1,
+  "examples": [
+   "\u30ab\u30ef\u30a6\u30bd pumped (skip $4953 -> ATH $14055, why: dev already sold)",
+   "MooManao pumped (skip $3436 -> ATH $9029, why: bundler rate high)",
+   "PYGME pumped (skip $3157 -> ATH $7399, why: dev already sold)",
+   "cyber pumped (skip $4593 -> ATH $13977, why: dev already sold)",
+   "Hope pumped (skip $4957 -> ATH $14979, why: dev already sold)",
+   "hip pumped (skip $3898 -> ATH $14812, why: dev already sold)",
+   "GTA 6 pumped (skip $4924 -> ATH $13627, why: dev holds too much)"
+  ],
+  "errors": 0
  }
 }
