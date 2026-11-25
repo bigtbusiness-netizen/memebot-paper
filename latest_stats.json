@@ -1,29 +1,29 @@
 {
- "updated": "2026-11-25 18:54:56",
+ "updated": "2026-11-25 19:24:56",
  "final": false,
  "pid": 2638,
  "started": "2026-11-25 16:09:32",
  "ends": "2026-11-25 21:49:32",
  "counts": {
-  "launches_seen": 5516,
-  "candidates_evaluated": 171,
-  "passed_filters": 2,
+  "launches_seen": 6670,
+  "candidates_evaluated": 217,
+  "passed_filters": 3,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 124,
-  "score # below min #": 12,
-  "bundler rate high": 9,
-  "serial dev (many launches, low graduation)": 9,
+  "dev already sold": 154,
+  "score # below min #": 16,
+  "bundler rate high": 10,
+  "serial dev (many launches, low graduation)": 10,
+  "dev holds too much": 7,
+  "mcap out of range": 6,
   "copycat X link": 4,
   "serial dev (many launches, none graduated)": 3,
-  "dev holds too much": 3,
-  "mcap out of range": 3,
+  "top# concentration": 3,
+  "weak live activity (#m buys/sells/volume)": 2,
   "entrapment ratio high": 1,
-  "weak live activity (#m buys/sells/volume)": 1,
-  "top# concentration": 1,
   "activity faded during confirm": 1
  },
  "watching": [],
@@ -34,27 +34,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1000,
+  "calls": 1182,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795625695.4520013
+  "last_ok": 1795627495.463237
  },
- "sol_usd": 67.45544825215072,
+ "sol_usd": 68.54765911129427,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-25 18:54:55",
-  "monitor": "2026-11-25 18:54:56",
+  "scan": "2026-11-25 19:24:55",
+  "monitor": "2026-11-25 19:24:56",
   "price": null,
-  "heartbeat": "2026-11-25 18:54:39"
+  "heartbeat": "2026-11-25 19:24:41"
  },
  "ticks_epoch": {
-  "scan": 1795625695.452294,
-  "monitor": 1795625696.806098,
+  "scan": 1795627495.463545,
+  "monitor": 1795627496.833979,
   "price": 0,
-  "heartbeat": 1795625679.9348304
+  "heartbeat": 1795627481.4851165
  }
 }
