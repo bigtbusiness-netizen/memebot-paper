@@ -29,3 +29,4 @@ time,action,mint,symbol,name,reason,price_usd,mcap_usd,usd_value,pnl_usd,pnl_pct
 2026-11-23 13:16:02,BUY,C78HR46S9A1dSGBdneNhnTuGE7yENibWkKzsBgVbpump,CAIN,Cain.Finance,passed GMGN filters + confirm,4.6193e-06,4619,2.00,,,8.21,age 7m holders 21 top10 21% smart 2 kol 0 5m 45b/21s $2492 dev_launches 2 confirmed v2 checks 3 age 7.6m 1m 9b peak_dd 3%
 2026-11-23 13:31:09,SELL50%,C78HR46S9A1dSGBdneNhnTuGE7yENibWkKzsBgVbpump,CAIN,Cain.Finance,TP1 +132%,1.1362e-05,11362,2.32,+1.32,+131.6,,
 2026-11-23 13:34:21,SELL,C78HR46S9A1dSGBdneNhnTuGE7yENibWkKzsBgVbpump,CAIN,Cain.Finance,trailing stop (+57%),7.7198e-06,7720,1.57,+0.57,+57.4,,
+2026-11-26 01:30:26,BUY,4tVadS6VZqip9QiAaTheEdGm2twBKhy2ph741M4dKriv,RIVULET,Rivulet Pool,passed GMGN filters + confirm,3.5560e-06,3556,2.00,,,4.33,age 4m holders 33 top10 17% smart 1 kol 0 5m 100b/42s $3769 dev_launches 1 confirmed v2 checks 3 age 4.3m 1m 30b peak_dd 13%
