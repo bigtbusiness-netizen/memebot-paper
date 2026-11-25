@@ -1,28 +1,29 @@
 {
- "updated": "2026-11-25 14:13:06",
+ "updated": "2026-11-25 14:43:06",
  "final": false,
  "pid": 2569,
  "started": "2026-11-25 10:28:03",
  "ends": "2026-11-25 16:08:03",
  "counts": {
-  "launches_seen": 5346,
-  "candidates_evaluated": 202,
-  "passed_filters": 7,
+  "launches_seen": 6097,
+  "candidates_evaluated": 225,
+  "passed_filters": 8,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 154,
+  "dev already sold": 171,
   "score # below min #": 13,
-  "dev holds too much": 8,
+  "dev holds too much": 11,
+  "bundler rate high": 7,
   "serial dev (many launches, low graduation)": 7,
   "weak live activity (#m buys/sells/volume)": 6,
   "mcap out of range": 6,
-  "bundler rate high": 5,
   "copycat X link": 1,
   "age window": 1,
-  "mcap ran before entry": 1
+  "mcap ran before entry": 1,
+  "watch: down #% from peak": 1
  },
  "watching": [],
  "open_positions": [],
@@ -32,27 +33,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1366,
+  "calls": 1548,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795608786.0866566
+  "last_ok": 1795610586.1200008
  },
- "sol_usd": 67.55859793498274,
+ "sol_usd": 67.54147319791338,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-25 14:13:06",
-  "monitor": "2026-11-25 14:13:03",
+  "scan": "2026-11-25 14:43:06",
+  "monitor": "2026-11-25 14:43:03",
   "price": null,
-  "heartbeat": "2026-11-25 14:12:20"
+  "heartbeat": "2026-11-25 14:42:22"
  },
  "ticks_epoch": {
-  "scan": 1795608786.0869482,
-  "monitor": 1795608783.4206507,
+  "scan": 1795610586.1202734,
+  "monitor": 1795610583.4490402,
   "price": 0,
-  "heartbeat": 1795608740.6736095
+  "heartbeat": 1795610542.7295718
  }
 }
