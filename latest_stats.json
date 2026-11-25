@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-25 02:49:51",
+ "updated": "2026-11-25 03:19:57",
  "final": false,
  "pid": 2512,
  "started": "2026-11-24 23:04:45",
  "ends": "2026-11-25 04:44:45",
  "counts": {
-  "launches_seen": 7441,
-  "candidates_evaluated": 261,
-  "passed_filters": 14,
+  "launches_seen": 8220,
+  "candidates_evaluated": 287,
+  "passed_filters": 16,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 174,
+  "dev already sold": 188,
   "dev holds too much": 19,
-  "score # below min #": 13,
-  "serial dev (many launches, low graduation)": 13,
-  "bundler rate high": 11,
-  "weak live activity (#m buys/sells/volume)": 11,
-  "copycat X link": 5,
+  "serial dev (many launches, low graduation)": 18,
+  "score # below min #": 16,
+  "weak live activity (#m buys/sells/volume)": 13,
+  "bundler rate high": 12,
+  "copycat X link": 6,
   "snipers hold too much": 5,
   "serial dev (many launches, none graduated)": 3,
   "mcap out of range": 2,
@@ -37,27 +37,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1380,
+  "calls": 1564,
   "errors": 16,
   "rate_limited": 16,
   "timeouts": 0,
   "last_error": "[gmgn-cli] POST /v1/trenches failed: HTTP 429 code=429 error=RATE_LIMIT_BANNED message=IP is temporarily banned due to repeated rate limit violations. Rate limit resets at 2026-11-24 23:59:09 GMT+02:00 (~6s remaining). Stop sending requests before then; repeated requests can extend the ban by 5s up ",
-  "last_ok": 1795567787.4255228
+  "last_ok": 1795569587.443527
  },
- "sol_usd": 69.5871363201166,
+ "sol_usd": 69.42012144884437,
  "error_count": 0,
  "api_warnings": 16,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-25 02:49:47",
-  "monitor": "2026-11-25 02:49:45",
+  "scan": "2026-11-25 03:19:47",
+  "monitor": "2026-11-25 03:19:57",
   "price": null,
-  "heartbeat": "2026-11-25 02:49:51"
+  "heartbeat": "2026-11-25 03:19:52"
  },
  "ticks_epoch": {
-  "scan": 1795567787.425755,
-  "monitor": 1795567785.2816083,
+  "scan": 1795569587.4437106,
+  "monitor": 1795569597.308364,
   "price": 0,
-  "heartbeat": 1795567791.5650392
+  "heartbeat": 1795569592.5806086
  }
 }
