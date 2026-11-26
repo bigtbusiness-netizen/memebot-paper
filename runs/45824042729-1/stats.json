@@ -1,30 +1,31 @@
 {
- "updated": "2026-11-26 16:40:30",
+ "updated": "2026-11-26 17:10:30",
  "final": false,
  "pid": 2547,
  "started": "2026-11-26 14:55:27",
  "ends": "2026-11-26 20:35:27",
  "counts": {
-  "launches_seen": 2923,
-  "candidates_evaluated": 105,
-  "passed_filters": 5,
+  "launches_seen": 3817,
+  "candidates_evaluated": 145,
+  "passed_filters": 7,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 1
+  "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 72,
-  "score # below min #": 8,
-  "dev holds too much": 6,
+  "dev already sold": 102,
+  "score # below min #": 10,
+  "serial dev (many launches, low graduation)": 7,
+  "dev holds too much": 7,
   "bundler rate high": 4,
-  "serial dev (many launches, low graduation)": 3,
-  "weak live activity (#m buys/sells/volume)": 3,
+  "weak live activity (#m buys/sells/volume)": 4,
   "mcap out of range": 2,
   "snipers hold too much": 2,
   "top# concentration": 2,
+  "copycat X link": 2,
   "down #% from peak": 1,
   "watch: sellers outweigh buyers (last #m)": 1,
-  "copycat X link": 1
+  "activity faded during confirm": 1
  },
  "watching": [],
  "open_positions": [],
@@ -34,27 +35,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 643,
+  "calls": 828,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795704030.242456
+  "last_ok": 1795705830.2207863
  },
- "sol_usd": 71.20129983106136,
+ "sol_usd": 69.92251067695861,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 16:40:30",
-  "monitor": "2026-11-26 16:40:27",
+  "scan": "2026-11-26 17:10:30",
+  "monitor": "2026-11-26 17:10:27",
   "price": null,
-  "heartbeat": "2026-11-26 16:39:33"
+  "heartbeat": "2026-11-26 17:09:35"
  },
  "ticks_epoch": {
-  "scan": 1795704030.242863,
-  "monitor": 1795704027.4984016,
+  "scan": 1795705830.2211885,
+  "monitor": 1795705827.5260863,
   "price": 0,
-  "heartbeat": 1795703973.3912928
+  "heartbeat": 1795705775.5822246
  }
 }
