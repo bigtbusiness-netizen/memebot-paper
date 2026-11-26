@@ -1,27 +1,27 @@
 {
- "updated": "2026-11-26 02:36:13",
+ "updated": "2026-11-26 03:06:13",
  "final": false,
  "pid": 2347,
  "started": "2026-11-25 21:51:00",
  "ends": "2026-11-26 03:31:00",
  "counts": {
-  "launches_seen": 10181,
-  "candidates_evaluated": 362,
-  "passed_filters": 19,
+  "launches_seen": 11143,
+  "candidates_evaluated": 394,
+  "passed_filters": 20,
   "security_rejects": 0,
   "bought": 1,
   "confirm_rejects": 3
  },
  "filtered_by_reason": {
-  "dev already sold": 246,
-  "score # below min #": 20,
-  "serial dev (many launches, low graduation)": 19,
-  "dev holds too much": 18,
+  "dev already sold": 263,
+  "dev holds too much": 23,
+  "score # below min #": 23,
+  "serial dev (many launches, low graduation)": 21,
   "weak live activity (#m buys/sells/volume)": 12,
   "copycat X link": 11,
-  "snipers hold too much": 8,
-  "bundler rate high": 7,
-  "serial dev (many launches, none graduated)": 7,
+  "bundler rate high": 9,
+  "snipers hold too much": 9,
+  "serial dev (many launches, none graduated)": 8,
   "mcap out of range": 6,
   "watch: down #% from peak": 2,
   "mcap ran before entry": 1,
@@ -29,7 +29,8 @@
   "top# concentration": 1,
   "buyers dried up (last #m)": 1,
   "mcap $#,# above $#,# hard cap": 1,
-  "BOUGHT": 1
+  "BOUGHT": 1,
+  "watch: buyers dried up (last #m)": 1
  },
  "watching": [],
  "open_positions": [],
@@ -49,27 +50,27 @@
  "total_pnl_usd": -0.748,
  "win_rate": 0.0,
  "api": {
-  "calls": 1914,
+  "calls": 2096,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795653363.9769788
+  "last_ok": 1795655163.8768394
  },
- "sol_usd": 70.9181512080352,
+ "sol_usd": 70.78983771618296,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 02:36:03",
-  "monitor": "2026-11-26 02:36:13",
+  "scan": "2026-11-26 03:06:03",
+  "monitor": "2026-11-26 03:06:13",
   "price": "2026-11-26 02:01:25",
-  "heartbeat": "2026-11-26 02:35:23"
+  "heartbeat": "2026-11-26 03:05:25"
  },
  "ticks_epoch": {
-  "scan": 1795653363.9772642,
-  "monitor": 1795653373.2742841,
+  "scan": 1795655163.8772035,
+  "monitor": 1795655173.300113,
   "price": 1795651285.5625305,
-  "heartbeat": 1795653323.9330158
+  "heartbeat": 1795655125.1542494
  }
 }
