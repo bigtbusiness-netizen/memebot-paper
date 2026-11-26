@@ -1,17 +1,17 @@
 # Paper bot summary (simulated only)
 
-- updated: 2026-11-26 01:36 EET
+- updated: 2026-11-26 02:06 EET
 - v2 started: 2026-11-19 23:32:54
 
 ## v2 (current version, since 2026-11-19 23:32:54)
-- paper buys: 4  | fully closed: 3
-- realized paper P&L: $+3.16 (stake $2/trade)
-- winners: 2/3 (67%)
+- paper buys: 4  | fully closed: 4
+- realized paper P&L: $+2.41 (stake $2/trade)
+- winners: 2/4 (50%)
 
 ## All-time (all versions)
-- paper buys: 14  | fully closed: 13
-- realized paper P&L: $-1.57 (stake $2/trade)
-- winners: 3/13 (23%)
+- paper buys: 14  | fully closed: 14
+- realized paper P&L: $-2.32 (stake $2/trade)
+- winners: 3/14 (21%)
 
 ## v1 only
 - paper buys: 10  | fully closed: 10
@@ -22,7 +22,6 @@ Last 15 trade rows:
 
 | time | ver | action | symbol | reason | usd | pnl |
 |---|---|---|---|---|---|---|
-| 2026-11-19 22:56:11 | v1 | BUY | DINO | passed GMGN filters + confirm | 2.00 |  |
 | 2026-11-19 22:56:30 | v1 | BUY | ANTS | passed GMGN filters + confirm | 2.00 |  |
 | 2026-11-19 22:57:30 | v1 | SELL | DINO | early dump -30% in 1.3m | 1.41 | -0.59 |
 | 2026-11-19 22:59:08 | v1 | SELL | ANTS | early dump -21% in 2.6m | 1.57 | -0.43 |
@@ -37,3 +36,4 @@ Last 15 trade rows:
 | 2026-11-23 13:31:09 | v2 | SELL50% | CAIN | TP1 +132% | 2.32 | +1.32 |
 | 2026-11-23 13:34:21 | v2 | SELL | CAIN | trailing stop (+57%) | 1.57 | +0.57 |
 | 2026-11-26 01:30:26 | v2 | BUY | RIVULET | passed GMGN filters + confirm | 2.00 |  |
+| 2026-11-26 02:01:25 | v2 | SELL | RIVULET | stop loss -37% | 1.25 | -0.75 |

@@ -1,26 +1,26 @@
 {
- "updated": "2026-11-26 01:36:05",
+ "updated": "2026-11-26 02:06:03",
  "final": false,
  "pid": 2347,
  "started": "2026-11-25 21:51:00",
  "ends": "2026-11-26 03:31:00",
  "counts": {
-  "launches_seen": 8400,
-  "candidates_evaluated": 312,
-  "passed_filters": 16,
+  "launches_seen": 9322,
+  "candidates_evaluated": 343,
+  "passed_filters": 17,
   "security_rejects": 0,
   "bought": 1,
   "confirm_rejects": 3
  },
  "filtered_by_reason": {
-  "dev already sold": 210,
+  "dev already sold": 234,
+  "serial dev (many launches, low graduation)": 19,
   "score # below min #": 19,
-  "serial dev (many launches, low graduation)": 17,
-  "dev holds too much": 14,
+  "dev holds too much": 17,
   "copycat X link": 11,
-  "weak live activity (#m buys/sells/volume)": 10,
+  "weak live activity (#m buys/sells/volume)": 11,
+  "bundler rate high": 7,
   "snipers hold too much": 7,
-  "bundler rate high": 6,
   "serial dev (many launches, none graduated)": 6,
   "mcap out of range": 5,
   "watch: down #% from peak": 1,
@@ -32,47 +32,44 @@
   "BOUGHT": 1
  },
  "watching": [],
- "open_positions": [
+ "open_positions": [],
+ "closed": [
   {
    "symbol": "RIVULET",
    "mint": "4tVadS6VZqip9QiAaTheEdGm2twBKhy2ph741M4dKriv",
    "entry_mcap": 3556,
-   "mcap_now": 3777,
-   "value_usd": 2.001,
-   "unrealized_pnl_usd": 0.001,
-   "realized_usd": 0.0,
-   "tp1_hit": false,
-   "held_min": 5.6,
-   "stale_s": 2.4
+   "exit_reason": "stop loss -37%",
+   "pnl_usd": -0.748,
+   "pnl_pct": -37.4,
+   "held_min": 31.0
   }
  ],
- "closed": [],
- "realized_pnl_usd": 0.0,
- "unrealized_pnl_usd": 0.001,
- "total_pnl_usd": 0.001,
- "win_rate": null,
+ "realized_pnl_usd": -0.748,
+ "unrealized_pnl_usd": 0,
+ "total_pnl_usd": -0.748,
+ "win_rate": 0.0,
  "api": {
-  "calls": 1421,
+  "calls": 1730,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795649765.0085273
+  "last_ok": 1795651563.8609247
  },
- "sol_usd": 70.23239152339791,
+ "sol_usd": 70.41018695696314,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 01:36:05",
-  "monitor": "2026-11-26 01:36:01",
-  "price": "2026-11-26 01:36:02",
-  "heartbeat": "2026-11-26 01:35:19"
+  "scan": "2026-11-26 02:06:03",
+  "monitor": "2026-11-26 02:06:01",
+  "price": "2026-11-26 02:01:25",
+  "heartbeat": "2026-11-26 02:05:21"
  },
  "ticks_epoch": {
-  "scan": 1795649765.0088644,
-  "monitor": 1795649761.222927,
-  "price": 1795649762.644895,
-  "heartbeat": 1795649719.4804382
+  "scan": 1795651563.861241,
+  "monitor": 1795651561.2483122,
+  "price": 1795651285.5625305,
+  "heartbeat": 1795651521.9042304
  }
 }
