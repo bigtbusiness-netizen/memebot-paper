@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-26 14:29:11",
- "final": false,
+ "updated": "2026-11-26 14:54:14",
+ "final": true,
  "pid": 2337,
  "started": "2026-11-26 09:13:58",
  "ends": "2026-11-26 14:53:58",
  "counts": {
-  "launches_seen": 7479,
-  "candidates_evaluated": 243,
+  "launches_seen": 8054,
+  "candidates_evaluated": 266,
   "passed_filters": 14,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 6
  },
  "filtered_by_reason": {
-  "dev already sold": 178,
-  "dev holds too much": 17,
-  "score # below min #": 11,
+  "dev already sold": 194,
+  "dev holds too much": 18,
+  "score # below min #": 13,
+  "bundler rate high": 10,
   "serial dev (many launches, low graduation)": 9,
   "weak live activity (#m buys/sells/volume)": 7,
-  "bundler rate high": 7,
   "copycat X link": 3,
   "down #% from peak": 2,
   "mcap out of range": 2,
@@ -38,27 +38,41 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1928,
+  "calls": 2091,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795696141.7106144
+  "last_ok": 1795697654.704631
  },
- "sol_usd": 70.66294314734274,
+ "sol_usd": 70.8464536880831,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 14:29:01",
-  "monitor": "2026-11-26 14:29:11",
+  "scan": "2026-11-26 14:53:41",
+  "monitor": "2026-11-26 14:53:47",
   "price": null,
-  "heartbeat": "2026-11-26 14:28:21"
+  "heartbeat": "2026-11-26 14:53:23"
  },
  "ticks_epoch": {
-  "scan": 1795696141.710931,
-  "monitor": 1795696151.1838753,
+  "scan": 1795697621.7151105,
+  "monitor": 1795697627.2057705,
   "price": 0,
-  "heartbeat": 1795696101.8787868
+  "heartbeat": 1795697603.345313
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 6,
+  "rugged_70pct": 0,
+  "examples": [
+   "ECLYPSI pumped (skip $3129 -> ATH $10356, why: activity)",
+   "Pedro pumped (skip $3857 -> ATH $9014, why: dev already sold)",
+   "LOBBY pumped (skip $4971 -> ATH $17582, why: sellers outweigh buyers (last 1m))",
+   "RSI pumped (skip $3888 -> ATH $8635, why: dev already sold)",
+   "Marian pumped (skip $3419 -> ATH $7202, why: dev already sold)",
+   "itsmekwek pumped (skip $4356 -> ATH $35612, why: dev holds too much)"
+  ],
+  "errors": 0
  }
 }
