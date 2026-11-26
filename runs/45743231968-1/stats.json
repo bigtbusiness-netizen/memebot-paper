@@ -1,33 +1,33 @@
 {
- "updated": "2026-11-26 13:59:11",
+ "updated": "2026-11-26 14:29:11",
  "final": false,
  "pid": 2337,
  "started": "2026-11-26 09:13:58",
  "ends": "2026-11-26 14:53:58",
  "counts": {
-  "launches_seen": 6773,
-  "candidates_evaluated": 210,
+  "launches_seen": 7479,
+  "candidates_evaluated": 243,
   "passed_filters": 14,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 6
  },
  "filtered_by_reason": {
-  "dev already sold": 154,
-  "dev holds too much": 16,
-  "score # below min #": 10,
+  "dev already sold": 178,
+  "dev holds too much": 17,
+  "score # below min #": 11,
+  "serial dev (many launches, low graduation)": 9,
   "weak live activity (#m buys/sells/volume)": 7,
-  "serial dev (many launches, low graduation)": 7,
+  "bundler rate high": 7,
+  "copycat X link": 3,
   "down #% from peak": 2,
-  "copycat X link": 2,
-  "bundler rate high": 2,
   "mcap out of range": 2,
-  "snipers hold too much": 2,
   "watch: sellers outweigh buyers (last #m)": 1,
   "top# concentration": 1,
   "mcap $#,# above $#,# hard cap": 1,
   "sellers outweigh buyers (last #m)": 1,
   "activity faded during confirm": 1,
+  "snipers hold too much": 1,
   "buys collapsing vs watch start": 1
  },
  "watching": [],
@@ -38,27 +38,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1748,
+  "calls": 1928,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795694341.695001
+  "last_ok": 1795696141.7106144
  },
- "sol_usd": 70.76123955254643,
+ "sol_usd": 70.66294314734274,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 13:59:01",
-  "monitor": "2026-11-26 13:59:11",
+  "scan": "2026-11-26 14:29:01",
+  "monitor": "2026-11-26 14:29:11",
   "price": null,
-  "heartbeat": "2026-11-26 13:58:19"
+  "heartbeat": "2026-11-26 14:28:21"
  },
  "ticks_epoch": {
-  "scan": 1795694341.6953313,
-  "monitor": 1795694351.1585534,
+  "scan": 1795696141.710931,
+  "monitor": 1795696151.1838753,
   "price": 0,
-  "heartbeat": 1795694299.1309383
+  "heartbeat": 1795696101.8787868
  }
 }
