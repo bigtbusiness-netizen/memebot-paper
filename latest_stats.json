@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-26 20:10:39",
- "final": false,
+ "updated": "2026-11-26 20:35:43",
+ "final": true,
  "pid": 2547,
  "started": "2026-11-26 14:55:27",
  "ends": "2026-11-26 20:35:27",
  "counts": {
-  "launches_seen": 9565,
-  "candidates_evaluated": 312,
+  "launches_seen": 10469,
+  "candidates_evaluated": 331,
   "passed_filters": 13,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 217,
-  "score # below min #": 21,
-  "dev holds too much": 13,
+  "dev already sold": 230,
+  "score # below min #": 23,
+  "dev holds too much": 15,
   "serial dev (many launches, low graduation)": 12,
   "bundler rate high": 9,
-  "mcap out of range": 8,
+  "mcap out of range": 9,
   "weak live activity (#m buys/sells/volume)": 7,
   "copycat X link": 6,
+  "serial dev (many launches, none graduated)": 6,
   "snipers hold too much": 5,
-  "serial dev (many launches, none graduated)": 5,
   "top# concentration": 2,
   "down #% from peak": 1,
   "watch: sellers outweigh buyers (last #m)": 1,
@@ -40,27 +40,41 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1920,
+  "calls": 2083,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795716630.330266
+  "last_ok": 1795718143.29473
  },
- "sol_usd": 71.04466982399116,
+ "sol_usd": 71.16754851762927,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 20:10:30",
-  "monitor": "2026-11-26 20:10:39",
+  "scan": "2026-11-26 20:35:10",
+  "monitor": "2026-11-26 20:35:15",
   "price": null,
-  "heartbeat": "2026-11-26 20:09:44"
+  "heartbeat": "2026-11-26 20:34:45"
  },
  "ticks_epoch": {
-  "scan": 1795716630.3306563,
-  "monitor": 1795716639.6907475,
+  "scan": 1795718110.3506773,
+  "monitor": 1795718115.712263,
   "price": 0,
-  "heartbeat": 1795716584.6797624
+  "heartbeat": 1795718085.9418976
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 6,
+  "rugged_70pct": 0,
+  "examples": [
+   "BI pumped (skip $4197 -> ATH $19012, why: dev already sold)",
+   "BOTS pumped (skip $3852 -> ATH $13374, why: dev already sold)",
+   "Struggle pumped (skip $4616 -> ATH $12698, why: dev already sold)",
+   "P\u2260NP pumped (skip $3051 -> ATH $7562, why: dev already sold)",
+   "SPACE pumped (skip $3795 -> ATH $14842, why: dev already sold)",
+   "T\u2588\u2588S pumped (skip $3086 -> ATH $10173, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
