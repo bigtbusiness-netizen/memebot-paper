@@ -1,92 +1,53 @@
 {
- "updated": "2026-11-26 03:31:16",
- "final": true,
- "pid": 2347,
- "started": "2026-11-25 21:51:00",
- "ends": "2026-11-26 03:31:00",
+ "updated": "2026-11-26 03:37:19",
+ "final": false,
+ "pid": 2528,
+ "started": "2026-11-26 03:32:31",
+ "ends": "2026-11-26 09:12:31",
  "counts": {
-  "launches_seen": 11930,
-  "candidates_evaluated": 412,
-  "passed_filters": 20,
+  "launches_seen": 250,
+  "candidates_evaluated": 9,
+  "passed_filters": 0,
   "security_rejects": 0,
-  "bought": 1,
-  "confirm_rejects": 3
+  "bought": 0,
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 275,
-  "score # below min #": 24,
-  "serial dev (many launches, low graduation)": 23,
-  "dev holds too much": 23,
-  "copycat X link": 12,
-  "weak live activity (#m buys/sells/volume)": 12,
-  "bundler rate high": 11,
-  "snipers hold too much": 9,
-  "serial dev (many launches, none graduated)": 8,
-  "mcap out of range": 6,
-  "watch: down #% from peak": 2,
-  "mcap ran before entry": 1,
-  "sellers outweigh buyers (last #m)": 1,
-  "top# concentration": 1,
-  "buyers dried up (last #m)": 1,
-  "mcap $#,# above $#,# hard cap": 1,
-  "BOUGHT": 1,
-  "watch: buyers dried up (last #m)": 1
+  "dev already sold": 5,
+  "mcap out of range": 1,
+  "dev holds too much": 1,
+  "serial dev (many launches, low graduation)": 1,
+  "score # below min #": 1
  },
  "watching": [],
  "open_positions": [],
- "closed": [
-  {
-   "symbol": "RIVULET",
-   "mint": "4tVadS6VZqip9QiAaTheEdGm2twBKhy2ph741M4dKriv",
-   "entry_mcap": 3556,
-   "exit_reason": "stop loss -37%",
-   "pnl_usd": -0.748,
-   "pnl_pct": -37.4,
-   "held_min": 31.0
-  }
- ],
- "realized_pnl_usd": -0.748,
+ "closed": [],
+ "realized_pnl_usd": 0,
  "unrealized_pnl_usd": 0,
- "total_pnl_usd": -0.748,
- "win_rate": 0.0,
+ "total_pnl_usd": 0,
+ "win_rate": null,
  "api": {
-  "calls": 2259,
+  "calls": 30,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795656676.8604457
+  "last_ok": 1795657034.13601
  },
- "sol_usd": 70.84345552404878,
+ "sol_usd": 70.7253431893955,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 03:30:43",
-  "monitor": "2026-11-26 03:30:49",
-  "price": "2026-11-26 02:01:25",
-  "heartbeat": "2026-11-26 03:30:25"
+  "scan": "2026-11-26 03:37:14",
+  "monitor": "2026-11-26 03:37:19",
+  "price": null,
+  "heartbeat": "2026-11-26 03:36:31"
  },
  "ticks_epoch": {
-  "scan": 1795656643.90707,
-  "monitor": 1795656649.3216097,
-  "price": 1795651285.5625305,
-  "heartbeat": 1795656625.9101448
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 8,
-  "rugged_70pct": 0,
-  "examples": [
-   "Helipad pumped (skip $4561 -> ATH $10484, why: dev already sold)",
-   "RETIRE pumped (skip $4196 -> ATH $95553, why: dev already sold)",
-   "APE pumped (skip $3893 -> ATH $12014, why: dev already sold)",
-   "Resurrect pumped (skip $3812 -> ATH $16065, why: dev already sold)",
-   "jobcoin pumped (skip $3646 -> ATH $11666, why: dev already sold)",
-   "401k pumped (skip $3400 -> ATH $8743, why: dev already sold)",
-   "JOBLESS pumped (skip $4873 -> ATH $13181, why: bundler rate high)",
-   "Poly pumped (skip $4979 -> ATH $28838, why: dev already sold)"
-  ],
-  "errors": 0
+  "scan": 1795657034.13639,
+  "monitor": 1795657039.4009194,
+  "price": 0,
+  "heartbeat": 1795656991.5120509
  }
 }
