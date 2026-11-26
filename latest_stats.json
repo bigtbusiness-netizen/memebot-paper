@@ -1,31 +1,32 @@
 {
- "updated": "2026-11-26 11:59:01",
+ "updated": "2026-11-26 12:29:01",
  "final": false,
  "pid": 2337,
  "started": "2026-11-26 09:13:58",
  "ends": "2026-11-26 14:53:58",
  "counts": {
-  "launches_seen": 4178,
-  "candidates_evaluated": 121,
-  "passed_filters": 9,
+  "launches_seen": 4808,
+  "candidates_evaluated": 139,
+  "passed_filters": 10,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 4
+  "confirm_rejects": 5
  },
  "filtered_by_reason": {
-  "dev already sold": 89,
-  "dev holds too much": 11,
-  "score # below min #": 5,
+  "dev already sold": 98,
+  "dev holds too much": 13,
+  "score # below min #": 7,
   "weak live activity (#m buys/sells/volume)": 4,
+  "serial dev (many launches, low graduation)": 4,
   "down #% from peak": 2,
-  "serial dev (many launches, low graduation)": 2,
   "copycat X link": 2,
+  "bundler rate high": 2,
+  "mcap out of range": 2,
   "watch: sellers outweigh buyers (last #m)": 1,
-  "bundler rate high": 1,
   "top# concentration": 1,
   "mcap $#,# above $#,# hard cap": 1,
   "sellers outweigh buyers (last #m)": 1,
-  "mcap out of range": 1
+  "activity faded during confirm": 1
  },
  "watching": [],
  "open_positions": [],
@@ -35,27 +36,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1016,
+  "calls": 1199,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795687141.6243687
+  "last_ok": 1795688941.6573567
  },
- "sol_usd": 70.96168718982442,
+ "sol_usd": 70.88612894455218,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 11:59:01",
-  "monitor": "2026-11-26 11:58:59",
+  "scan": "2026-11-26 12:29:01",
+  "monitor": "2026-11-26 12:28:59",
   "price": null,
-  "heartbeat": "2026-11-26 11:58:09"
+  "heartbeat": "2026-11-26 12:28:11"
  },
  "ticks_epoch": {
-  "scan": 1795687141.6246858,
-  "monitor": 1795687139.050805,
+  "scan": 1795688941.6577036,
+  "monitor": 1795688939.077221,
   "price": 0,
-  "heartbeat": 1795687089.6186886
+  "heartbeat": 1795688891.987561
  }
 }
