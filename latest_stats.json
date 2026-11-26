@@ -1,29 +1,29 @@
 {
- "updated": "2026-11-26 08:47:43",
- "final": false,
+ "updated": "2026-11-26 09:12:47",
+ "final": true,
  "pid": 2528,
  "started": "2026-11-26 03:32:31",
  "ends": "2026-11-26 09:12:31",
  "counts": {
-  "launches_seen": 8124,
-  "candidates_evaluated": 274,
+  "launches_seen": 8705,
+  "candidates_evaluated": 295,
   "passed_filters": 8,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 184,
+  "dev already sold": 201,
   "dev holds too much": 22,
-  "score # below min #": 13,
+  "score # below min #": 14,
+  "mcap out of range": 13,
   "serial dev (many launches, low graduation)": 13,
-  "bundler rate high": 12,
-  "mcap out of range": 11,
+  "bundler rate high": 11,
   "weak live activity (#m buys/sells/volume)": 5,
   "serial dev (many launches, none graduated)": 4,
   "snipers hold too much": 3,
+  "top# concentration": 3,
   "copycat X link": 2,
-  "top# concentration": 2,
   "watch: down #% from peak": 1,
   "watch: buys collapsing vs watch start": 1,
   "mcap $#,# above $#,# hard cap": 1
@@ -36,27 +36,45 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1911,
+  "calls": 2074,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795675654.5434608
+  "last_ok": 1795677167.236344
  },
- "sol_usd": 70.55837496134382,
+ "sol_usd": 70.73499436667804,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 08:47:34",
-  "monitor": "2026-11-26 08:47:43",
+  "scan": "2026-11-26 09:12:14",
+  "monitor": "2026-11-26 09:12:19",
   "price": null,
-  "heartbeat": "2026-11-26 08:46:51"
+  "heartbeat": "2026-11-26 09:11:53"
  },
  "ticks_epoch": {
-  "scan": 1795675654.54373,
-  "monitor": 1795675663.6745899,
+  "scan": 1795677134.3164132,
+  "monitor": 1795677139.6960895,
   "price": 0,
-  "heartbeat": 1795675611.8534942
+  "heartbeat": 1795677113.9849007
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 10,
+  "rugged_70pct": 1,
+  "examples": [
+   "SILK pumped (skip $3010 -> ATH $21171, why: dev already sold)",
+   "Tolymas pumped (skip $3904 -> ATH $9492, why: dev already sold)",
+   "AGI pumped (skip $3777 -> ATH $26555, why: dev already sold)",
+   "Inu pumped (skip $3387 -> ATH $8772, why: dev already sold)",
+   "Inufinity pumped (skip $4458 -> ATH $20950, why: dev holds too much)",
+   "NALA pumped (skip $4697 -> ATH $11062, why: dev already sold)",
+   "TWIF pumped (skip $4543 -> ATH $14385, why: serial dev (many launches, low graduation))",
+   "MEME pumped (skip $3665 -> ATH $26053, why: dev holds too much)",
+   "PAIRRIT pumped (skip $4658 -> ATH $13287, why: bundler rate high)",
+   "MAS pumped (skip $2842 -> ATH $17216, why: mcap out of range)"
+  ],
+  "errors": 0
  }
 }
