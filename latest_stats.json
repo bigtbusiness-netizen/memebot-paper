@@ -1,34 +1,23 @@
 {
- "updated": "2026-11-26 14:54:14",
- "final": true,
- "pid": 2337,
- "started": "2026-11-26 09:13:58",
- "ends": "2026-11-26 14:53:58",
+ "updated": "2026-11-26 15:00:15",
+ "final": false,
+ "pid": 2547,
+ "started": "2026-11-26 14:55:27",
+ "ends": "2026-11-26 20:35:27",
  "counts": {
-  "launches_seen": 8054,
-  "candidates_evaluated": 266,
-  "passed_filters": 14,
+  "launches_seen": 171,
+  "candidates_evaluated": 13,
+  "passed_filters": 0,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 6
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 194,
-  "dev holds too much": 18,
-  "score # below min #": 13,
-  "bundler rate high": 10,
-  "serial dev (many launches, low graduation)": 9,
-  "weak live activity (#m buys/sells/volume)": 7,
-  "copycat X link": 3,
-  "down #% from peak": 2,
-  "mcap out of range": 2,
-  "watch: sellers outweigh buyers (last #m)": 1,
-  "top# concentration": 1,
-  "mcap $#,# above $#,# hard cap": 1,
-  "sellers outweigh buyers (last #m)": 1,
-  "activity faded during confirm": 1,
-  "snipers hold too much": 1,
-  "buys collapsing vs watch start": 1
+  "dev already sold": 9,
+  "bundler rate high": 1,
+  "serial dev (many launches, low graduation)": 1,
+  "score # below min #": 1,
+  "mcap out of range": 1
  },
  "watching": [],
  "open_positions": [],
@@ -38,41 +27,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 2091,
+  "calls": 30,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795697654.704631
+  "last_ok": 1795698010.1863396
  },
- "sol_usd": 70.8464536880831,
+ "sol_usd": 70.86336471039148,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-26 14:53:41",
-  "monitor": "2026-11-26 14:53:47",
+  "scan": "2026-11-26 15:00:10",
+  "monitor": "2026-11-26 15:00:15",
   "price": null,
-  "heartbeat": "2026-11-26 14:53:23"
+  "heartbeat": "2026-11-26 14:59:27"
  },
  "ticks_epoch": {
-  "scan": 1795697621.7151105,
-  "monitor": 1795697627.2057705,
+  "scan": 1795698010.1869204,
+  "monitor": 1795698015.4081817,
   "price": 0,
-  "heartbeat": 1795697603.345313
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 6,
-  "rugged_70pct": 0,
-  "examples": [
-   "ECLYPSI pumped (skip $3129 -> ATH $10356, why: activity)",
-   "Pedro pumped (skip $3857 -> ATH $9014, why: dev already sold)",
-   "LOBBY pumped (skip $4971 -> ATH $17582, why: sellers outweigh buyers (last 1m))",
-   "RSI pumped (skip $3888 -> ATH $8635, why: dev already sold)",
-   "Marian pumped (skip $3419 -> ATH $7202, why: dev already sold)",
-   "itsmekwek pumped (skip $4356 -> ATH $35612, why: dev holds too much)"
-  ],
-  "errors": 0
+  "heartbeat": 1795697967.6788387
  }
 }
