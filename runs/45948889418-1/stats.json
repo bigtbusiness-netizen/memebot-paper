@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-27 13:14:49",
- "final": false,
+ "updated": "2026-11-27 13:39:52",
+ "final": true,
  "pid": 2345,
  "started": "2026-11-27 07:59:36",
  "ends": "2026-11-27 13:39:36",
  "counts": {
-  "launches_seen": 6492,
-  "candidates_evaluated": 232,
+  "launches_seen": 7040,
+  "candidates_evaluated": 255,
   "passed_filters": 13,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 3
  },
  "filtered_by_reason": {
-  "dev already sold": 165,
-  "dev holds too much": 15,
+  "dev already sold": 187,
+  "dev holds too much": 16,
   "score # below min #": 14,
   "weak live activity (#m buys/sells/volume)": 7,
   "mcap out of range": 6,
@@ -37,27 +37,41 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1921,
+  "calls": 2084,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795778079.9986572
+  "last_ok": 1795779592.9950635
  },
- "sol_usd": 73.12961547156075,
+ "sol_usd": 73.20631376597295,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-27 13:14:39",
-  "monitor": "2026-11-27 13:14:49",
+  "scan": "2026-11-27 13:39:20",
+  "monitor": "2026-11-27 13:39:25",
   "price": null,
-  "heartbeat": "2026-11-27 13:14:00"
+  "heartbeat": "2026-11-27 13:39:00"
  },
  "ticks_epoch": {
-  "scan": 1795778079.9989712,
-  "monitor": 1795778089.4802685,
+  "scan": 1795779560.1239915,
+  "monitor": 1795779565.5040238,
   "price": 0,
-  "heartbeat": 1795778040.067306
+  "heartbeat": 1795779540.9266076
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 6,
+  "rugged_70pct": 0,
+  "examples": [
+   "Kibo pumped (skip $3813 -> ATH $9454, why: dev already sold)",
+   "\u54c8\u57fa\u7c73 pumped (skip $3555 -> ATH $16808, why: dev already sold)",
+   "BTC pumped (skip $3716 -> ATH $12143, why: dev already sold)",
+   "BON pumped (skip $3829 -> ATH $11981, why: dev already sold)",
+   "ZANTA pumped (skip $3919 -> ATH $14068, why: activity)",
+   "SANTA pumped (skip $3382 -> ATH $8152, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
