@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-27 01:51:59",
- "final": false,
+ "updated": "2026-11-27 02:17:03",
+ "final": true,
  "pid": 2352,
  "started": "2026-11-26 20:36:47",
  "ends": "2026-11-27 02:16:47",
  "counts": {
-  "launches_seen": 13201,
-  "candidates_evaluated": 325,
+  "launches_seen": 14049,
+  "candidates_evaluated": 345,
   "passed_filters": 16,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 3
  },
  "filtered_by_reason": {
-  "dev already sold": 233,
+  "dev already sold": 247,
+  "dev holds too much": 16,
+  "copycat X link": 16,
   "score # below min #": 15,
-  "dev holds too much": 15,
   "weak live activity (#m buys/sells/volume)": 13,
-  "copycat X link": 12,
+  "serial dev (many launches, low graduation)": 9,
   "bundler rate high": 9,
-  "serial dev (many launches, low graduation)": 8,
   "mcap out of range": 8,
   "snipers hold too much": 7,
   "dumped #% during confirm wait": 2,
@@ -35,27 +35,40 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1931,
+  "calls": 2094,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795737110.4635375
+  "last_ok": 1795738623.4516945
  },
- "sol_usd": 70.85160398532024,
+ "sol_usd": 70.96419691056138,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-27 01:51:50",
-  "monitor": "2026-11-27 01:51:59",
+  "scan": "2026-11-27 02:16:30",
+  "monitor": "2026-11-27 02:16:35",
   "price": null,
-  "heartbeat": "2026-11-27 01:51:10"
+  "heartbeat": "2026-11-27 02:16:12"
  },
  "ticks_epoch": {
-  "scan": 1795737110.463833,
-  "monitor": 1795737119.8751056,
+  "scan": 1795738590.4959834,
+  "monitor": 1795738595.896699,
   "price": 0,
-  "heartbeat": 1795737070.4928167
+  "heartbeat": 1795738572.1084158
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 5,
+  "rugged_70pct": 1,
+  "examples": [
+   "SBF pumped (skip $4541 -> ATH $12777, why: dev already sold)",
+   "MayaCat pumped (skip $4038 -> ATH $9800, why: dev holds too much)",
+   "Maya pumped (skip $3817 -> ATH $21460, why: dev already sold)",
+   "George pumped (skip $3671 -> ATH $9615, why: serial dev (many launches, low graduation))",
+   "XMR pumped (skip $3274 -> ATH $8757, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
