@@ -1,31 +1,25 @@
 {
- "updated": "2026-11-27 19:21:22",
- "final": true,
- "pid": 2987,
- "started": "2026-11-27 13:41:06",
- "ends": "2026-11-27 19:21:06",
+ "updated": "2026-11-27 19:27:35",
+ "final": false,
+ "pid": 2498,
+ "started": "2026-11-27 19:22:47",
+ "ends": "2026-11-28 01:02:47",
  "counts": {
-  "launches_seen": 9671,
-  "candidates_evaluated": 338,
-  "passed_filters": 7,
+  "launches_seen": 291,
+  "candidates_evaluated": 19,
+  "passed_filters": 2,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 223,
-  "dev holds too much": 30,
-  "score # below min #": 22,
-  "mcap out of range": 15,
-  "serial dev (many launches, low graduation)": 14,
-  "bundler rate high": 7,
-  "weak live activity (#m buys/sells/volume)": 6,
-  "top# concentration": 5,
-  "snipers hold too much": 5,
-  "copycat X link": 3,
-  "serial dev (many launches, none graduated)": 3,
-  "watch: down #% from peak": 1,
-  "age window": 1
+  "dev already sold": 11,
+  "serial dev (many launches, low graduation)": 2,
+  "weak live activity (#m buys/sells/volume)": 2,
+  "score # below min #": 1,
+  "top# concentration": 1,
+  "snipers hold too much": 1,
+  "bundler rate high": 1
  },
  "watching": [],
  "open_positions": [],
@@ -35,38 +29,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 2069,
+  "calls": 34,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795800082.9608397
+  "last_ok": 1795800450.4289844
  },
- "sol_usd": 71.9265502009335,
+ "sol_usd": 71.73741639306228,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-27 19:20:50",
-  "monitor": "2026-11-27 19:20:55",
+  "scan": "2026-11-27 19:27:30",
+  "monitor": "2026-11-27 19:27:35",
   "price": null,
-  "heartbeat": "2026-11-27 19:20:37"
+  "heartbeat": "2026-11-27 19:26:47"
  },
  "ticks_epoch": {
-  "scan": 1795800050.0839477,
-  "monitor": 1795800055.482016,
+  "scan": 1795800450.4292111,
+  "monitor": 1795800455.8223748,
   "price": 0,
-  "heartbeat": 1795800037.0503788
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 3,
-  "rugged_70pct": 0,
-  "examples": [
-   "sale pumped (skip $3136 -> ATH $11983, why: dev already sold)",
-   "MICROWAVE pumped (skip $4922 -> ATH $13474, why: dev already sold)",
-   "FIONATON pumped (skip $4606 -> ATH $9956, why: dev holds too much)"
-  ],
-  "errors": 0
+  "heartbeat": 1795800407.87652
  }
 }

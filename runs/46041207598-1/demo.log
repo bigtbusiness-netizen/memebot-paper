@@ -1,0 +1,6 @@
+2026-11-27 19:22:47 demo start pid 2498 (paper only, no wallet, no swaps) config: mcap $3000-5000, age 2-30m, min_score 4.0, version v2, buy age >= 3m, confirm 90s/2 checks, peak dd <= 35%, early_stop -20%/3m, time_stop 45m, run 340.0m, ends 2026-11-28 01:02:47
+2026-11-27 19:22:47 HEARTBEAT up 0.0m left 340.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan -1s ago mon 0s ago px -1s ago api 0/0t0 r0 errors 0
+2026-11-27 19:23:47 HEARTBEAT up 1.0m left 339.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 17s ago mon 0s ago px -1s ago api 9/0t0 r0 errors 0
+2026-11-27 19:24:47 HEARTBEAT up 2.0m left 338.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 17s ago mon 0s ago px -1s ago api 15/0t0 r0 errors 0
+2026-11-27 19:25:47 HEARTBEAT up 3.0m left 337.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 17s ago mon 0s ago px -1s ago api 21/0t0 r0 errors 0
+2026-11-27 19:26:47 HEARTBEAT up 4.0m left 336.0m open 0 [-] closed 0 pnl $+0.00 unreal $+0.00 watching 0 scan 17s ago mon 0s ago px -1s ago api 27/0t0 r0 errors 0
