@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-27 07:33:26",
- "final": false,
+ "updated": "2026-11-27 07:58:30",
+ "final": true,
  "pid": 2334,
  "started": "2026-11-27 02:18:14",
  "ends": "2026-11-27 07:58:14",
  "counts": {
-  "launches_seen": 8113,
-  "candidates_evaluated": 242,
+  "launches_seen": 8639,
+  "candidates_evaluated": 260,
   "passed_filters": 11,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 1
  },
  "filtered_by_reason": {
-  "dev already sold": 161,
+  "dev already sold": 175,
+  "dev holds too much": 16,
   "serial dev (many launches, low graduation)": 16,
-  "dev holds too much": 15,
-  "bundler rate high": 9,
+  "bundler rate high": 10,
   "mcap out of range": 9,
+  "score # below min #": 7,
   "copycat X link": 6,
-  "score # below min #": 5,
   "serial dev (many launches, none graduated)": 5,
   "weak live activity (#m buys/sells/volume)": 4,
   "watch: down #% from peak": 4,
@@ -37,27 +37,44 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1915,
+  "calls": 2078,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795757597.0573921
+  "last_ok": 1795759110.0142155
  },
- "sol_usd": 73.25787548715391,
+ "sol_usd": 72.97669669589676,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-27 07:33:17",
-  "monitor": "2026-11-27 07:33:26",
+  "scan": "2026-11-27 07:57:57",
+  "monitor": "2026-11-27 07:58:02",
   "price": null,
-  "heartbeat": "2026-11-27 07:32:34"
+  "heartbeat": "2026-11-27 07:57:36"
  },
  "ticks_epoch": {
-  "scan": 1795757597.0576482,
-  "monitor": 1795757606.5542064,
+  "scan": 1795759077.0926878,
+  "monitor": 1795759082.5754883,
   "price": 0,
-  "heartbeat": 1795757554.6365397
+  "heartbeat": 1795759056.1707098
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 9,
+  "rugged_70pct": 0,
+  "examples": [
+   "aura pumped (skip $3517 -> ATH $12013, why: dev already sold)",
+   "MEMEKING pumped (skip $3195 -> ATH $16702, why: dev already sold)",
+   "TOGI pumped (skip $3157 -> ATH $19466, why: copycat X link)",
+   "MDAQ pumped (skip $4967 -> ATH $17905, why: dev already sold)",
+   "Offgrid pumped (skip $3491 -> ATH $7682, why: dev already sold)",
+   "FLTR pumped (skip $4316 -> ATH $18749, why: copycat X link)",
+   "HushFun pumped (skip $3768 -> ATH $8572, why: dev already sold)",
+   "TOGI pumped (skip $3245 -> ATH $16619, why: activity)",
+   "MOSTO pumped (skip $3619 -> ATH $23139, why: dev already sold)"
+  ],
+  "errors": 0
  }
 }
