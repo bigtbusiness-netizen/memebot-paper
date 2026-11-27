@@ -1,30 +1,31 @@
 {
- "updated": "2026-11-27 21:07:50",
+ "updated": "2026-11-27 21:37:50",
  "final": false,
  "pid": 2498,
  "started": "2026-11-27 19:22:47",
  "ends": "2026-11-28 01:02:47",
  "counts": {
-  "launches_seen": 3692,
-  "candidates_evaluated": 133,
-  "passed_filters": 7,
+  "launches_seen": 4826,
+  "candidates_evaluated": 163,
+  "passed_filters": 8,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 1
+  "confirm_rejects": 2
  },
  "filtered_by_reason": {
-  "dev already sold": 83,
-  "dev holds too much": 15,
-  "score # below min #": 11,
+  "dev already sold": 101,
+  "dev holds too much": 19,
+  "score # below min #": 12,
   "weak live activity (#m buys/sells/volume)": 6,
   "bundler rate high": 6,
-  "serial dev (many launches, low graduation)": 3,
-  "top# concentration": 2,
+  "serial dev (many launches, low graduation)": 5,
+  "mcap out of range": 4,
+  "top# concentration": 3,
   "snipers hold too much": 2,
   "copycat X link": 2,
   "buyers dried up (last #m)": 1,
-  "mcap out of range": 1,
-  "entrapment ratio high": 1
+  "entrapment ratio high": 1,
+  "dumped #% during confirm wait": 1
  },
  "watching": [],
  "open_positions": [],
@@ -34,27 +35,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 647,
+  "calls": 830,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795806470.4869401
+  "last_ok": 1795808270.4944446
  },
- "sol_usd": 71.921303669916,
+ "sol_usd": 72.25764322232465,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-27 21:07:50",
-  "monitor": "2026-11-27 21:07:47",
+  "scan": "2026-11-27 21:37:50",
+  "monitor": "2026-11-27 21:37:47",
   "price": null,
-  "heartbeat": "2026-11-27 21:07:50"
+  "heartbeat": "2026-11-27 21:37:50"
  },
  "ticks_epoch": {
-  "scan": 1795806470.4871483,
-  "monitor": 1795806467.9262319,
+  "scan": 1795808270.4946787,
+  "monitor": 1795808267.9558833,
   "price": 0,
-  "heartbeat": 1795806470.5031717
+  "heartbeat": 1795808270.887242
  }
 }
