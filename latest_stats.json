@@ -1,33 +1,20 @@
 {
- "updated": "2026-11-27 13:39:52",
- "final": true,
- "pid": 2345,
- "started": "2026-11-27 07:59:36",
- "ends": "2026-11-27 13:39:36",
+ "updated": "2026-11-27 13:45:55",
+ "final": false,
+ "pid": 2987,
+ "started": "2026-11-27 13:41:06",
+ "ends": "2026-11-27 19:21:06",
  "counts": {
-  "launches_seen": 7040,
-  "candidates_evaluated": 255,
-  "passed_filters": 13,
+  "launches_seen": 164,
+  "candidates_evaluated": 11,
+  "passed_filters": 0,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 3
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 187,
-  "dev holds too much": 16,
-  "score # below min #": 14,
-  "weak live activity (#m buys/sells/volume)": 7,
-  "mcap out of range": 6,
-  "serial dev (many launches, low graduation)": 6,
-  "bundler rate high": 5,
-  "copycat X link": 4,
-  "snipers hold too much": 2,
-  "watch: down #% from peak": 2,
-  "serial dev (many launches, none graduated)": 2,
-  "watch: sellers outweigh buyers (last #m)": 1,
-  "down #% from peak": 1,
-  "dev sold during confirm wait": 1,
-  "buyers dried up (last #m)": 1
+  "dev already sold": 9,
+  "dev holds too much": 2
  },
  "watching": [],
  "open_positions": [],
@@ -37,41 +24,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 2084,
+  "calls": 30,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795779592.9950635
+  "last_ok": 1795779949.7930849
  },
- "sol_usd": 73.20631376597295,
+ "sol_usd": 73.04698785005813,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-27 13:39:20",
-  "monitor": "2026-11-27 13:39:25",
+  "scan": "2026-11-27 13:45:49",
+  "monitor": "2026-11-27 13:45:55",
   "price": null,
-  "heartbeat": "2026-11-27 13:39:00"
+  "heartbeat": "2026-11-27 13:45:07"
  },
  "ticks_epoch": {
-  "scan": 1795779560.1239915,
-  "monitor": 1795779565.5040238,
+  "scan": 1795779949.793374,
+  "monitor": 1795779955.1674154,
   "price": 0,
-  "heartbeat": 1795779540.9266076
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 6,
-  "rugged_70pct": 0,
-  "examples": [
-   "Kibo pumped (skip $3813 -> ATH $9454, why: dev already sold)",
-   "\u54c8\u57fa\u7c73 pumped (skip $3555 -> ATH $16808, why: dev already sold)",
-   "BTC pumped (skip $3716 -> ATH $12143, why: dev already sold)",
-   "BON pumped (skip $3829 -> ATH $11981, why: dev already sold)",
-   "ZANTA pumped (skip $3919 -> ATH $14068, why: activity)",
-   "SANTA pumped (skip $3382 -> ATH $8152, why: dev already sold)"
-  ],
-  "errors": 0
+  "heartbeat": 1795779907.4065647
  }
 }
