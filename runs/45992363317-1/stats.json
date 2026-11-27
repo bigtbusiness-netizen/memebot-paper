@@ -1,30 +1,31 @@
 {
- "updated": "2026-11-27 18:56:19",
- "final": false,
+ "updated": "2026-11-27 19:21:22",
+ "final": true,
  "pid": 2987,
  "started": "2026-11-27 13:41:06",
  "ends": "2026-11-27 19:21:06",
  "counts": {
-  "launches_seen": 8852,
-  "candidates_evaluated": 297,
+  "launches_seen": 9671,
+  "candidates_evaluated": 338,
   "passed_filters": 7,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 196,
-  "dev holds too much": 28,
-  "score # below min #": 19,
+  "dev already sold": 223,
+  "dev holds too much": 30,
+  "score # below min #": 22,
   "mcap out of range": 15,
-  "serial dev (many launches, low graduation)": 10,
+  "serial dev (many launches, low graduation)": 14,
   "bundler rate high": 7,
   "weak live activity (#m buys/sells/volume)": 6,
-  "top# concentration": 4,
-  "snipers hold too much": 4,
+  "top# concentration": 5,
+  "snipers hold too much": 5,
   "copycat X link": 3,
   "serial dev (many launches, none graduated)": 3,
-  "watch: down #% from peak": 1
+  "watch: down #% from peak": 1,
+  "age window": 1
  },
  "watching": [],
  "open_positions": [],
@@ -34,27 +35,38 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1906,
+  "calls": 2069,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795798570.004128
+  "last_ok": 1795800082.9608397
  },
- "sol_usd": 72.20833398357134,
+ "sol_usd": 71.9265502009335,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-27 18:56:10",
-  "monitor": "2026-11-27 18:56:19",
+  "scan": "2026-11-27 19:20:50",
+  "monitor": "2026-11-27 19:20:55",
   "price": null,
-  "heartbeat": "2026-11-27 18:55:34"
+  "heartbeat": "2026-11-27 19:20:37"
  },
  "ticks_epoch": {
-  "scan": 1795798570.004599,
-  "monitor": 1795798579.4582014,
+  "scan": 1795800050.0839477,
+  "monitor": 1795800055.482016,
   "price": 0,
-  "heartbeat": 1795798534.9934871
+  "heartbeat": 1795800037.0503788
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 3,
+  "rugged_70pct": 0,
+  "examples": [
+   "sale pumped (skip $3136 -> ATH $11983, why: dev already sold)",
+   "MICROWAVE pumped (skip $4922 -> ATH $13474, why: dev already sold)",
+   "FIONATON pumped (skip $4606 -> ATH $9956, why: dev holds too much)"
+  ],
+  "errors": 0
  }
 }
