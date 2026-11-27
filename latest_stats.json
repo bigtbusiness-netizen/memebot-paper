@@ -1,33 +1,21 @@
 {
- "updated": "2026-11-28 01:03:03",
- "final": true,
- "pid": 2498,
- "started": "2026-11-27 19:22:47",
- "ends": "2026-11-28 01:02:47",
+ "updated": "2026-11-28 01:09:10",
+ "final": false,
+ "pid": 2343,
+ "started": "2026-11-28 01:04:22",
+ "ends": "2026-11-28 06:44:22",
  "counts": {
-  "launches_seen": 12714,
-  "candidates_evaluated": 394,
-  "passed_filters": 16,
+  "launches_seen": 236,
+  "candidates_evaluated": 13,
+  "passed_filters": 2,
   "security_rejects": 0,
   "bought": 0,
-  "confirm_rejects": 4
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 256,
-  "dev holds too much": 38,
-  "score # below min #": 25,
-  "serial dev (many launches, low graduation)": 23,
-  "weak live activity (#m buys/sells/volume)": 12,
-  "bundler rate high": 11,
-  "copycat X link": 8,
-  "top# concentration": 4,
-  "snipers hold too much": 4,
-  "mcap out of range": 4,
-  "serial dev (many launches, none graduated)": 3,
-  "dumped #% during confirm wait": 2,
-  "buyers dried up (last #m)": 1,
-  "entrapment ratio high": 1,
-  "down #% from peak": 1
+  "dev already sold": 10,
+  "weak live activity (#m buys/sells/volume)": 2,
+  "serial dev (many launches, low graduation)": 1
  },
  "watching": [],
  "open_positions": [],
@@ -37,42 +25,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 2092,
+  "calls": 34,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795820583.5904171
+  "last_ok": 1795820944.8554645
  },
- "sol_usd": 71.59238156152364,
+ "sol_usd": 71.60136483989639,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-28 01:02:30",
-  "monitor": "2026-11-28 01:02:36",
+  "scan": "2026-11-28 01:09:04",
+  "monitor": "2026-11-28 01:09:10",
   "price": null,
-  "heartbeat": "2026-11-28 01:01:56"
+  "heartbeat": "2026-11-28 01:08:22"
  },
  "ticks_epoch": {
-  "scan": 1795820550.6297457,
-  "monitor": 1795820556.1696389,
+  "scan": 1795820944.855734,
+  "monitor": 1795820950.2094157,
   "price": 0,
-  "heartbeat": 1795820516.6946378
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 7,
-  "rugged_70pct": 0,
-  "examples": [
-   "NOTHING pumped (skip $3428 -> ATH $11839, why: dev already sold)",
-   "BOWIE pumped (skip $3186 -> ATH $14892, why: dev already sold)",
-   "NGUM pumped (skip $3946 -> ATH $11683, why: dev already sold)",
-   "SPLITCAT pumped (skip $4628 -> ATH $15004, why: dev already sold)",
-   "SLAPCAT pumped (skip $3822 -> ATH $12132, why: dev already sold)",
-   "SI pumped (skip $3197 -> ATH $9222, why: dev already sold)",
-   "LNT pumped (skip $3892 -> ATH $10757, why: snipers hold too much)"
-  ],
-  "errors": 0
+  "heartbeat": 1795820902.4041896
  }
 }
