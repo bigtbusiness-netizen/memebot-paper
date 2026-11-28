@@ -1,30 +1,30 @@
 {
- "updated": "2026-11-28 05:49:34",
+ "updated": "2026-11-28 06:19:34",
  "final": false,
  "pid": 2343,
  "started": "2026-11-28 01:04:22",
  "ends": "2026-11-28 06:44:22",
  "counts": {
-  "launches_seen": 8757,
-  "candidates_evaluated": 255,
+  "launches_seen": 9498,
+  "candidates_evaluated": 276,
   "passed_filters": 23,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 4
  },
  "filtered_by_reason": {
-  "dev already sold": 184,
+  "dev already sold": 198,
   "weak live activity (#m buys/sells/volume)": 15,
-  "serial dev (many launches, low graduation)": 11,
-  "dev holds too much": 8,
-  "mcap out of range": 7,
-  "bundler rate high": 7,
+  "serial dev (many launches, low graduation)": 13,
+  "dev holds too much": 11,
+  "mcap out of range": 8,
   "score # below min #": 6,
+  "bundler rate high": 6,
+  "serial dev (many launches, none graduated)": 4,
   "copycat X link": 4,
   "mcap $#,# above $#,# hard cap": 3,
   "snipers hold too much": 2,
   "watch: sellers outweigh buyers (last #m)": 2,
-  "serial dev (many launches, none graduated)": 2,
   "watch: down #% from peak": 1,
   "buyers dried up (last #m)": 1,
   "mcap ran before entry": 1,
@@ -38,27 +38,27 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1766,
+  "calls": 1946,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795837764.9985542
+  "last_ok": 1795839564.9964678
  },
- "sol_usd": 71.63395640544259,
+ "sol_usd": 71.68363141405443,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-28 05:49:24",
-  "monitor": "2026-11-28 05:49:34",
+  "scan": "2026-11-28 06:19:24",
+  "monitor": "2026-11-28 06:19:34",
   "price": null,
-  "heartbeat": "2026-11-28 05:48:45"
+  "heartbeat": "2026-11-28 06:18:46"
  },
  "ticks_epoch": {
-  "scan": 1795837764.9988236,
-  "monitor": 1795837774.437752,
+  "scan": 1795839564.9967258,
+  "monitor": 1795839574.4623327,
   "price": 0,
-  "heartbeat": 1795837725.0003483
+  "heartbeat": 1795839526.102038
  }
 }
