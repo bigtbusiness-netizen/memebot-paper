@@ -1,88 +1,51 @@
 {
- "updated": "2026-11-28 12:25:58",
- "final": true,
- "pid": 2349,
- "started": "2026-11-28 06:45:42",
- "ends": "2026-11-28 12:25:42",
+ "updated": "2026-11-28 12:31:57",
+ "final": false,
+ "pid": 2534,
+ "started": "2026-11-28 12:27:09",
+ "ends": "2026-11-28 18:07:09",
  "counts": {
-  "launches_seen": 6248,
-  "candidates_evaluated": 261,
-  "passed_filters": 14,
+  "launches_seen": 139,
+  "candidates_evaluated": 7,
+  "passed_filters": 1,
   "security_rejects": 0,
-  "bought": 1,
-  "confirm_rejects": 3
+  "bought": 0,
+  "confirm_rejects": 0
  },
  "filtered_by_reason": {
-  "dev already sold": 173,
-  "dev holds too much": 22,
-  "serial dev (many launches, low graduation)": 14,
-  "mcap out of range": 10,
-  "weak live activity (#m buys/sells/volume)": 9,
-  "score # below min #": 8,
-  "bundler rate high": 8,
-  "serial dev (many launches, none graduated)": 3,
-  "snipers hold too much": 3,
-  "top# concentration": 2,
-  "copycat X link": 2,
-  "mcap $#,# above $#,# hard cap": 2,
-  "buyers dried up (last #m)": 1,
-  "watch: sellers outweigh buyers (last #m)": 1,
-  "BOUGHT": 1
+  "dev already sold": 5,
+  "weak live activity (#m buys/sells/volume)": 1,
+  "bundler rate high": 1
  },
  "watching": [],
  "open_positions": [],
- "closed": [
-  {
-   "symbol": "HEART",
-   "mint": "29JAHtbeCqwGWoZvgGgpzvjbQfY7jarezzdTyyc9pump",
-   "entry_mcap": 3594,
-   "exit_reason": "trailing stop (+81%)",
-   "pnl_usd": 1.817,
-   "pnl_pct": 90.8,
-   "held_min": 8.9
-  }
- ],
- "realized_pnl_usd": 1.817,
+ "closed": [],
+ "realized_pnl_usd": 0,
  "unrealized_pnl_usd": 0,
- "total_pnl_usd": 1.817,
- "win_rate": 1.0,
+ "total_pnl_usd": 0,
+ "win_rate": null,
  "api": {
-  "calls": 2137,
+  "calls": 32,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795861558.7875621
+  "last_ok": 1795861912.5519934
  },
- "sol_usd": 70.87246566606093,
+ "sol_usd": 70.96667552158604,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-28 12:25:25",
-  "monitor": "2026-11-28 12:25:31",
-  "price": "2026-11-28 10:29:44",
-  "heartbeat": "2026-11-28 12:25:07"
+  "scan": "2026-11-28 12:31:52",
+  "monitor": "2026-11-28 12:31:57",
+  "price": null,
+  "heartbeat": "2026-11-28 12:31:10"
  },
  "ticks_epoch": {
-  "scan": 1795861525.810147,
-  "monitor": 1795861531.271619,
-  "price": 1795854584.5774448,
-  "heartbeat": 1795861507.586102
- },
- "skipped_followup": {
-  "checked": 15,
-  "pumped_2x": 7,
-  "rugged_70pct": 1,
-  "examples": [
-   "WLFI pumped (skip $3320 -> ATH $13737, why: dev already sold)",
-   "NPC pumped (skip $4648 -> ATH $19887, why: dev already sold)",
-   "CRIME pumped (skip $3832 -> ATH $8369, why: dev already sold)",
-   "SKS pumped (skip $3718 -> ATH $12632, why: dev already sold)",
-   "CORN pumped (skip $4959 -> ATH $19159, why: bundler rate high)",
-   "CRIME pumped (skip $4780 -> ATH $10990, why: dev already sold)",
-   "CRIMECAT pumped (skip $3510 -> ATH $8067, why: top10 concentration)"
-  ],
-  "errors": 0
+  "scan": 1795861912.5521932,
+  "monitor": 1795861917.8495657,
+  "price": 0,
+  "heartbeat": 1795861870.0035625
  }
 }
