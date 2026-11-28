@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-28 06:19:34",
- "final": false,
+ "updated": "2026-11-28 06:44:37",
+ "final": true,
  "pid": 2343,
  "started": "2026-11-28 01:04:22",
  "ends": "2026-11-28 06:44:22",
  "counts": {
-  "launches_seen": 9498,
-  "candidates_evaluated": 276,
+  "launches_seen": 10029,
+  "candidates_evaluated": 294,
   "passed_filters": 23,
   "security_rejects": 0,
   "bought": 0,
   "confirm_rejects": 4
  },
  "filtered_by_reason": {
-  "dev already sold": 198,
+  "dev already sold": 210,
   "weak live activity (#m buys/sells/volume)": 15,
-  "serial dev (many launches, low graduation)": 13,
-  "dev holds too much": 11,
+  "serial dev (many launches, low graduation)": 14,
+  "dev holds too much": 13,
   "mcap out of range": 8,
-  "score # below min #": 6,
-  "bundler rate high": 6,
+  "score # below min #": 8,
+  "bundler rate high": 7,
   "serial dev (many launches, none graduated)": 4,
   "copycat X link": 4,
   "mcap $#,# above $#,# hard cap": 3,
@@ -38,27 +38,43 @@
  "total_pnl_usd": 0,
  "win_rate": null,
  "api": {
-  "calls": 1946,
+  "calls": 2109,
   "errors": 0,
   "rate_limited": 0,
   "timeouts": 0,
   "last_error": "",
-  "last_ok": 1795839564.9964678
+  "last_ok": 1795841077.9627624
  },
- "sol_usd": 71.68363141405443,
+ "sol_usd": 71.5847098957173,
  "error_count": 0,
  "api_warnings": 0,
  "errors": [],
  "ticks": {
-  "scan": "2026-11-28 06:19:24",
-  "monitor": "2026-11-28 06:19:34",
+  "scan": "2026-11-28 06:44:05",
+  "monitor": "2026-11-28 06:44:10",
   "price": null,
-  "heartbeat": "2026-11-28 06:18:46"
+  "heartbeat": "2026-11-28 06:43:47"
  },
  "ticks_epoch": {
-  "scan": 1795839564.9967258,
-  "monitor": 1795839574.4623327,
+  "scan": 1795841045.2529438,
+  "monitor": 1795841050.4824607,
   "price": 0,
-  "heartbeat": 1795839526.102038
+  "heartbeat": 1795841027.061085
+ },
+ "skipped_followup": {
+  "checked": 15,
+  "pumped_2x": 8,
+  "rugged_70pct": 1,
+  "examples": [
+   "Maebashi pumped (skip $3636 -> ATH $13690, why: dev already sold)",
+   "koin pumped (skip $4172 -> ATH $9076, why: dev already sold)",
+   "Xbot pumped (skip $4869 -> ATH $10132, why: dev already sold)",
+   "ISLAND pumped (skip $3277 -> ATH $8383, why: dev already sold)",
+   "GLOWBALL pumped (skip $3306 -> ATH $7030, why: activity)",
+   "chairman pumped (skip $3659 -> ATH $21473, why: activity)",
+   "ETH pumped (skip $4973 -> ATH $11576, why: dev already sold)",
+   "BABYCATE pumped (skip $4722 -> ATH $28103, why: activity)"
+  ],
+  "errors": 0
  }
 }
