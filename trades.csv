@@ -31,3 +31,6 @@ time,action,mint,symbol,name,reason,price_usd,mcap_usd,usd_value,pnl_usd,pnl_pct
 2026-11-23 13:34:21,SELL,C78HR46S9A1dSGBdneNhnTuGE7yENibWkKzsBgVbpump,CAIN,Cain.Finance,trailing stop (+57%),7.7198e-06,7720,1.57,+0.57,+57.4,,
 2026-11-26 01:30:26,BUY,4tVadS6VZqip9QiAaTheEdGm2twBKhy2ph741M4dKriv,RIVULET,Rivulet Pool,passed GMGN filters + confirm,3.5560e-06,3556,2.00,,,4.33,age 4m holders 33 top10 17% smart 1 kol 0 5m 100b/42s $3769 dev_launches 1 confirmed v2 checks 3 age 4.3m 1m 30b peak_dd 13%
 2026-11-26 02:01:25,SELL,4tVadS6VZqip9QiAaTheEdGm2twBKhy2ph741M4dKriv,RIVULET,Rivulet Pool,stop loss -37%,2.3644e-06,2364,1.25,-0.75,-37.4,,
+2026-11-28 10:20:48,BUY,29JAHtbeCqwGWoZvgGgpzvjbQfY7jarezzdTyyc9pump,HEART,Help Get My Baby Heart Surgery,passed GMGN filters + confirm,3.5942e-06,3594,2.00,,,5.26,age 6m holders 25 top10 18% smart 1 kol 0 5m 83b/44s $3267 dev_launches 4 confirmed v2 checks 3 age 6.1m 1m 19b peak_dd 10%
+2026-11-28 10:26:31,SELL50%,29JAHtbeCqwGWoZvgGgpzvjbQfY7jarezzdTyyc9pump,HEART,Help Get My Baby Heart Surgery,TP1 +100%,7.6418e-06,7642,2.00,+1.00,+100.2,,
+2026-11-28 10:29:44,SELL,29JAHtbeCqwGWoZvgGgpzvjbQfY7jarezzdTyyc9pump,HEART,Help Get My Baby Heart Surgery,trailing stop (+81%),6.9250e-06,6925,1.81,+0.81,+81.4,,
